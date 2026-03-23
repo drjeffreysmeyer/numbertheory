@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp2sec1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Division Algorithm</title>
+
+  <p> </p>
+
+    <definition xml:id="def-definition-divisibility">
+    <title>Divisibility</title>
+    <statement>
+        <p>
+            An integer <m> a </m> is <term>divisible</term> by an integer <m>b</m> if there exists an integer <m>c</m> so that <m>a=bc</m>.  
+        </p>
+    </statement>
+  </definition>
+  
+<p>
+  If <m> a </m> is divisible by <m>b</m>, we say also say <m>b</m> <term>divides</term> <m>a</m>.  We symbolize this by <m>b\mid b</m>.  If <m>b</m> does not divide <m>a</m>, then we write <m>b\nmid b</m>. We say that <m>b</m> is a <term>divisor</term> of <m>a</m>.
+</p>
+
+<proposition xml:id="prop-2-0">
+  <title></title>
+  <statement>
+    <p>
+      If <m>a\in \Z</m> where <m>a\ne 0</m>, then 
+      <ol>
+        <li>
+          <p>
+            <m>1 \mid a </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>-1 \mid a </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>a \mid 0 </m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <proof>
+    <p>
+      ggg
+    </p>
+  </proof>
+</proposition>
+
+
+
+<proposition xml:id="prop-2-1">
+  <title>Divisibility is transitive</title>
+  <statement>
+    <p>
+      If <m>a,b,c\in \Z</m> where <m>a\mid b</m> and <m>b\mid c</m>, then <m>a\mid c</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      ggg
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="prop-2-2">
+  <title></title>
+  <statement>
+    <p>
+      If <m>a,b,c\in \Z</m> where <m>c\mid a</m> and <m>c\mid b</m>, then for any  <m>x,y\in \Z</m> <m>a\mid ax+by</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      ggg
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="prop-2-3">
+  <title>The Division Algorithm</title>
+  <statement>
+    <p>
+      If <m>a,b\in \Z</m> where <m>b &gt; 0</m>, then there exists unique integers <m>q,r</m> satisfying 
+      <ol>
+        <li>
+          <p>
+            <m>0\le r &lt; b</m> and
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>a=bq+r</m>.
+          </p>
+        </li>
+      </ol> 
+    </p>
+  </statement>
+  <proof>
+    <p>
+      ggg
+    </p>
+  </proof>
+</proposition>
+
+
+
+
+</section>

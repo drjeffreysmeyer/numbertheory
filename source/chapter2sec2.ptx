@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp2sec2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>GCD</title>
+
+  <p> </p>
+
+
+
+  <definition xml:id="def-definition-common_divisor">
+    <title>Common Divisor</title>
+    <statement>
+        <p>
+            If  <m> a </m>  and <m> b </m> are integers and there is an integer <m> d </m> that divides both of them, then <m> d </m> is a <term>common divisor</term> of <m> a </m>  and <m> b </m>.
+        </p>
+    </statement>
+  </definition>
+
+
+
+  <definition xml:id="def-definition-gcd">
+    <title>Greatest Common Divisor (GCD)</title>
+    <statement>
+        <p>
+            If  <m> a </m>  and <m> b </m> are integers, if <m> g </m> is a common divisor of <m> a </m>  and <m> b </m> such that if <m> d </m> is any other common divisor of <m> a </m>  and <m> b </m>, then <m> g \ge d</m>,  then <m> g </m> is the <term>greatest common divisor (gcd) </term> of <m> a </m>  and <m> b </m>.
+        </p>
+    </statement>
+  </definition>
+
+<p>
+  We denote the gcd of integers <m> a </m>  and <m> b </m> by <m>\gcd(a,b)</m>.
+</p>
+
+<proposition xml:id="prop-2_2-1">
+  <title></title>
+  <statement>
+    <p>
+      If <m>a,b,q,r\in \Z</m> where <m>b &gt; 0</m> and <m>a = bq+r </m>, then <m>\gcd(a,b) = \gcd(b,r)</m>. 
+    </p>
+  </statement>
+  <proof>
+    <p>
+      ggg
+    </p>
+  </proof>
+</proposition>
+
+
+<proposition xml:id="prop-2_2-2">
+  <title>The Euclidean Algorithm</title>
+  <statement>
+    <p>
+      If <m>a,b\in \Z</m> where <m>b &gt; 0</m>, then 
+    </p>
+  </statement>
+  <proof>
+    <p>
+      ggg
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="prop-2_2-3">
+  <title>Bezout Identity</title>
+  <statement>
+    <p>
+      If <m>a,b\in \Z</m> then there exists <m>x,y\in \Z</m> so that <m>ax+by = \gcd(a,b)</m>.   
+    </p>
+  </statement>
+  <proof>
+    <p>
+      ggg
+    </p>
+  </proof>
+</proposition>
+
+</section>

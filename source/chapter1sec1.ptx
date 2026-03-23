@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="chp1sec1" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>What are integers</title>
+  <title>The algebra of the integers</title>
 
-  <p> Text of section. </p>
-
-
-  <question>
-		<title>What are integers?</title>
-		<p>
-			We work with integers every day - but what are they?!  Give your definition of integers.
-		</p>
-	</question>
-
+  <p>  </p>
 
   <definition xml:id="def-definition-commutative-ring">
     <title>Commutative Ring with Identity</title>
@@ -68,7 +59,33 @@
     </statement>
   </definition>
 
+  <proposition xml:id="prop-1_1-01">
+  <title>s</title>
+  <statement>
+    <p>
+      If <m>R</m> is a commutative ring with identity, and <m>a \in R</m> <m>0a=0</m>.  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      ggg
+    </p>
+  </proof>
+</proposition>
 
+  <proposition xml:id="prop-1_1-02">
+  <title>s</title>
+  <statement>
+    <p>
+      If <m>R</m> is a commutative ring with identity, and <m>a \in R</m> <m>(-1)a=-a</m>.  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      ggg
+    </p>
+  </proof>
+</proposition>
 
 
 </section>

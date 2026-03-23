@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp1sec2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The order of the integers</title>
+
+  <p> </p>
+
+    <definition xml:id="def-definition-order">
+    <title>Order</title>
+    <statement>
+        <p>
+            A set <m>X</m> has a <term>(total) order</term> if there is a binary relationship <m>\le</m> satisfying: 
+            <ol>
+              <li>
+                <p>
+                  (<term>reflexivity</term>.) If <m>a\in X</m>, then <m>a\le a </m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  (<term>transitivity</term>.) If <m>a,b,c \in X</m> satisfy <m>a\le b</m> and <m>b\le c</m>, then <m>a \le c</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  (<term>symmetry</term>.) If <m>a,b \in X</m> satisfy <m>a\le b</m> and <m>b\le a</m>, then <m>a=b</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  (<term>totality</term>.) If <m>a,b \in X</m>, then one of the following hold: <m>a\le b</m> or <m>b\le a</m>
+                </p>
+              </li>
+            </ol>
+        </p>
+    </statement>
+  </definition>
+
+
+
+  <definition xml:id="def-definition-ordered-ring">
+    <title>Ordered Ring</title>
+    <statement>
+        <p>
+            A ring <m>R</m> is an <term>ordered ring</term> if <m>R</m> has an order that is compatible with its operations in the following satisfying: 
+            <ol>
+               <li>
+                <p>
+                  (<term>translation</term>.) If <m>a,b,c \in R</m> and <m>a\le b</m>, then <m>a +c\le b+c</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  (<term>scaling</term>.) If <m>a,b \in R</m> satisfy <m>0 \le a</m> and <m>0 \le b</m>, then <m>0\le ab</m>
+                </p>
+              </li>
+            </ol>
+        </p>
+    </statement>
+  </definition>
+
+  <p>
+  Observe the symbols <m>\le</m>, <m>\ge</m>, <m>&lt;</m>, and <m>&gt;</m> will all be used in the usual ways.
+</p>
+  
+  <p>
+    We call elements of an ordered ring <term> positive </term> if it is greater than zero and <term> negative </term> if it is less than zero.
+  </p>
+
+
+<proposition xml:id="prop-01">
+  <title></title>
+  <statement>
+    <p>
+      If <m>R</m> is an ordered ring and <m> a \in R </m> is positive (resp. negative), then <m>-a</m> is negative (resp. positive).  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      ggg
+    </p>
+  </proof>
+</proposition>
+
+<definition xml:id="def-definition-well-ordered">
+  <title>Well-Ordered Set</title>
+  <statement>
+    <p>
+      If <m>X</m> is a set with a total order, it is <term>well-ordered</term> if every subset contains a <term>minimal element</term>, i.e. in symbols, if <m>S\subset X</m> then there exists an element <m>a\in S</m> such that, for all <m>b\in S</m>  it is the case that <m>a\le b</m>. 
+    </p>
+  </statement>
+</definition>
+
+<proposition xml:id="prop-02">
+  <title></title>
+  <statement>
+    <p>
+      If <m>R</m> is a ordered ring whose positive elements are well-ordered, then the minimal positive element, <m> \epsilon</m> is invertible.  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      ggg
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="prop-03">
+  <title></title>
+  <statement>
+    <p>
+      If <m>R</m> is a ordered ring whose positive elements are well-ordered, then the minimal positive element is 1.  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      ggg
+    </p>
+  </proof>
+</proposition>
+
+
+<proposition xml:id="prop-04">
+  <title></title>
+  <statement>
+    <p>
+      If <m>R</m> is a ordered ring whose positive elements are well-ordered, and f <m>a,b \in R</m> satisfy <m>0 &lt; a</m> and <m>0 &lt; b</m>, then <m>0
+        &lt; ab</m>.  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      ggg
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="prop-05">
+  <title>Well-Ordered Rings are Domains</title>
+  <statement>
+    <p>
+      If <m>R</m> is a ordered ring whose positive elements are well-ordered, and <m>a,b \in R</m> satisfy <m>ab=0</m>, then either <m>a=0</m> or <m>b = 0</m>.  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      ggg
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="prop-06">
+  <title>Well-Ordered Rings Have Cancellation</title>
+  <statement>
+    <p>
+      If <m>R</m> is a ordered ring whose positive elements are well-ordered, and <m>a,b,c \in R</m> satisfy <m>ab=ac</m>, then either <m>a=0</m> or <m>b = c</m>.  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      ggg
+    </p>
+  </proof>
+</proposition>
+
+
+<p> The integers, <m>\Z</m> are in fact the <em>unique </em> ordered commutative ring with identity whose positive elements are well-ordered.  Going forward we will simply refer to this set as the integers and all properties of the integers will follow from these.
+</p>
+
+</section>

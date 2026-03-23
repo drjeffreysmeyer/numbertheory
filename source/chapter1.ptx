@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="chapter01" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Integers</title>
+
+  <introduction>
+    <p> In this chapter, we will determine the underlying structure of the integers which will serve as our foundations for the rest of the ocurse.. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="chapter1sec0.ptx" />
+  <xi:include href="chapter1sec1.ptx" />
+  <xi:include href="chapter1sec2.ptx" />
+
+</chapter>
