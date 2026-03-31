@@ -25,7 +25,7 @@
 
 
 <proposition xml:id="prop-2-0">
-  <title></title>
+  <title>Basic divisibilities</title>
   <statement>
     <p>
       If <m>a\in \Z</m> where <m>a\ne 0</m>, then 
@@ -72,7 +72,7 @@
 </proposition>
 
 <proposition xml:id="prop-2-2">
-  <title></title>
+  <title>Divisibility and multiplication</title>
   <statement>
     <p>
       If <m>a,b,c\in \Z</m> and <m>c\mid a</m>, then <m>c \mid ab</m>.
@@ -85,8 +85,17 @@
   </proof>
 </proposition>
 
+<definition xml:id="definition-linear_combination">
+    <title>Linear Combination</title>
+    <statement>
+        <p>
+            If  <m> a </m>  and <m> b </m> are integers, then an integer <m> c </m> is a <term>linear combination</term> of <m> a </m>  and <m> b </m> if there exist integers <m> x </m> and <m> y </m> such that <m>c = ax + by</m>.
+        </p>
+    </statement>
+  </definition>
+
 <proposition xml:id="prop-2-3">
-  <title></title>
+  <title>Divisibility and linear combinations</title>
   <statement>
     <p>
       If <m>a,b,c\in \Z</m> where <m>c\mid a</m> and <m>c\mid b</m>, then <m>c\mid ax+by</m>.

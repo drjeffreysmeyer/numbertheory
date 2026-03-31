@@ -31,8 +31,12 @@
   We denote the gcd of integers <m> a </m>  and <m> b </m> by <m>\gcd(a,b)</m>.
 </p>
 
+<p>
+  The following proposition is foundational for the rest of this chapter.  It is a consequence of the division algorithm and the well-ordering principle.
+</p>
+
 <proposition xml:id="prop-2_2-1">
-  <title></title>
+  <title> GCD and the Division Algorithm</title>
   <statement>
     <p>
       If <m>a,b,q,r\in \Z</m> where <m>b &gt; 0</m> and <m>a = bq+r </m>, then <m>\gcd(a,b) = \gcd(b,r)</m>. 

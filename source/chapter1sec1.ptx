@@ -71,7 +71,7 @@
   <p>We will establish some basic properties of commutative rings with identity in the following propositions.</p>
 
   <proposition xml:id="prop-1_1-01">
-  <title>s</title>
+  <title>Zero times any element is zero</title>
   <statement>
     <p>
       If <m>R</m> is a commutative ring with identity and <m>a \in R</m>, then <m>0a=0</m>.  
@@ -85,7 +85,7 @@
 </proposition>
 
   <proposition xml:id="prop-1_1-02">
-  <title>s</title>
+  <title>Negative one times any element is the additive inverse</title>
   <statement>
     <p>
       If <m>R</m> is a commutative ring with identity, and <m>a \in R</m> <m>(-1)a=-a</m>.  
