@@ -99,6 +99,16 @@
 </proposition>
 
 <p>
-  Both operations of addition and multiplication have a notion of inverse, however we are only guaranteed to have additive inverses.  We will say an element <m>a \in R</m> is <term>multiplicatively invertible</term> if it has a multiplicative inverse, i.e. if there exists an element <m>b \in R</m> such that <m>ab=1</m>.   When it is clear from context, we will simply say <m>a</m> is <term>invertible</term>, or that <m>a</m> is a <term>unit</term>.
+  Both operations of addition and multiplication have a notion of inverse, however we are only guaranteed to have additive inverses.  
 </p>  
+
+<definition xml:id="definition-unit">
+  <title>Units</title>
+  <statement>
+    <p>
+      We will say an element <m>a \in R</m> is <term>multiplicatively invertible</term> if it has a multiplicative inverse, i.e. if there exists an element <m>b \in R</m> such that <m>ab=1</m>.   When it is clear from context, we will simply say <m>a</m> is <term>invertible</term>, or that <m>a</m> is a <term>unit</term>.
+    </p>
+  </statement>
+</definition>
+
 </section>

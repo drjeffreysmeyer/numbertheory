@@ -50,7 +50,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  Let the definitions structure your proof.  You may find Definition <xref ref="definition-divisibility"/> and Definition <xref ref="definition-commutative_ring"/> useful.
+      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-divisibility"/> and  <xref ref="definition-commutative_ring"/> useful.
     </p>
   </proof>
 </proposition>
@@ -66,7 +66,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  Let the definitions structure your proof.  You may find Definition <xref ref="definition-divisibility"/> useful.
+      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-divisibility"/> useful.
     </p>
   </proof>
 </proposition>
@@ -80,7 +80,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  Let the definitions structure your proof.  You may find Definition <xref ref="definition-divisibility"/> useful.
+      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-divisibility"/> useful.
     </p>
   </proof>
 </proposition>
@@ -94,7 +94,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  Let the definitions structure your proof.  You may find Definition <xref ref="definition-divisibility"/> useful.
+      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-divisibility"/> useful.
     </p>
   </proof>
 </proposition>
@@ -142,7 +142,7 @@
       </me>
 
       The set <m>S</m> is nonempty (why???).  The set <m>S</m> has a minimal element (why???).  Call this minimal element <m>r</m>.  Show that this <m>r</m> has the desired properties.
-      You may find Definition <xref ref="definition-well-ordered"/> and Definition <xref ref="definition-well-ordered"/> useful.
+      You may find  <xref ref="definition-well-ordered"/> and  <xref ref="definition-well-ordered"/> useful.
     </p>
   </proof>
 </proposition>

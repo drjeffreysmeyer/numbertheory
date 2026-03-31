@@ -73,7 +73,7 @@
 <p>We will establish some basic properties of ordered rings in the following propositions.</p>
 
 <proposition xml:id="prop-01">
-  <title></title>
+  <title>Additive inverses of positive elements are negative</title>
   <statement>
     <p>
       If <m>R</m> is an ordered ring and <m> a \in R </m> is positive (resp. negative), then <m>-a</m> is negative (resp. positive).  
@@ -88,18 +88,19 @@
 
 
 <proposition xml:id="prop-1_2-055">
-  <title></title>
+  <title>Multiplication by a unit preserves inequality</title>
   <statement>
     <p>
-      If <m>R</m> is a ordered ring and <m>a,b,c\in R</m> are positive such that  <m>a</m> is (multiplicatively) invertible and <m>0&lt;b&lt;c</m>, then <m>0&lt;ab&lt;ac</m>.  
+      If <m>R</m> is a ordered ring and <m>a,b,c\in R</m> are positive such that  <m>a</m> is a unit and <m>0&lt;b&lt;c</m>, then <m>0&lt;ab&lt;ac</m>.  
     </p>
   </statement>
   <proof>
     <p>
-      Try a proof by contradiction.  We know it must be the case that <m>0 \le ab \le ac</m> (why???) but what could go wrong and how to we show those things cannot happen? Suppose one of the undesirable things happened - how does the invertibility of <m>a</m> lead to a contradiction?  You may find  <xref ref="definition-commutative_ring"/>, <xref ref="definition-ordered-ring"/>, <xref ref="definition-well-ordered"/> useful.
+      Try a proof by contradiction.  We know it must be the case that <m>0 \le ab \le ac</m> (why???) but what could go wrong and how to we show those things cannot happen? Suppose one of the undesirable things happened - how does the invertibility of <m>a</m> lead to a contradiction?  You may find  <xref ref="definition-commutative_ring"/>, <xref ref="definition-unit"/>,  <xref ref="definition-ordered-ring"/>, <xref ref="definition-well-ordered"/> useful.
     </p>
   </proof>
 </proposition>
+
 
 <definition xml:id="definition-well-ordered">
   <title>Well-Ordered Set</title>
@@ -115,7 +116,7 @@
 </p>
 
 <proposition xml:id="prop-1_2-05">
-  <title></title>
+  <title>The minimal positive element is invertible</title>
   <statement>
     <p>
       If <m>R</m> is an ordered ring whose positive elements are well-ordered, then the minimal positive element, <m>e</m> is (multiplicatively) invertible.  
@@ -127,7 +128,7 @@
       <me>
         S = \{1-ke >0 \mid k \in \Z \}
       </me> 
-      <m>S</m> is nonempty (why???).  There exists a minimal element <m>1-ne\in S</m>.  With minimality in mind, can <m>1-ne&gt; e</m>? Can <m>1-ne&lt; e</m>? Show  <m>1-ne=e</m> (why???).  Use this to find an element <m>m\in \Z</m> such that <m>me=1</m> (how???).  You may find  <xref ref="definition-commutative_ring"/>, <xref ref="definition-ordered-ring"/>, <xref ref="definition-well-ordered"/> useful.
+      <m>S</m> is nonempty (why???).  There exists a minimal element <m>1-ne\in S</m>.  With minimality in mind, can <m>1-ne&gt; e</m>? Can <m>1-ne&lt; e</m>? Show  <m>1-ne=e</m> (why???).  Use this to find an element <m>m\in \Z</m> such that <m>me=1</m> (how???).  You may find  <xref ref="definition-commutative_ring"/>, <xref ref="definition-unit"/>, <xref ref="definition-ordered-ring"/>, <xref ref="definition-well-ordered"/> useful.
     </p>
   </proof>
 </proposition>
@@ -135,7 +136,7 @@
 
 
 <proposition xml:id="prop-03">
-  <title></title>
+  <title>The minimal positive element is 1</title>
   <statement>
     <p>
       If <m>R</m> is a ordered ring whose positive elements are well-ordered, then the minimal positive element is 1.  
@@ -152,8 +153,26 @@
   Amazingly, we have shown that the structure of an ordered ring whose positive elements are well-ordered is quite rigid.  There are no element between 0 and 1!  
 </p>
 
+<proposition xml:id="prop-077">
+  <title>The only positive unit is 1</title>
+  <statement>
+    <p>
+      If <m>R</m> is a ordered ring whose positive elements are well-ordered, then only positive unit is 1.  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a proof by contradiction.  Let <m>a\in R</m> be a positive unit other than 1,  Then <m>1 &lt; a</m> (why???).  By assumption, <m>a</m> is invertible, so there exists <m>b \in R</m> with <m>ab=1</m>.  What happens when you multiply by <m>b</m>?  Can you find a contradiction?  You may find  <xref ref="definition-commutative_ring"/>,  <xref ref="definition-unit"/>, <xref ref="prop-03"/>,  and <xref ref="prop-1_2-05"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<p>
+  We now show that ordered rings whose positive elements are well-ordered have cancellation, a useful property we will use throughout this book. 
+</p>
+
 <proposition xml:id="prop-04">
-  <title></title>
+  <title>Products of positive elements are positive</title>
   <statement>
     <p>
       If <m>R</m> is a ordered ring whose positive elements are well-ordered, and <m>a,b \in R</m> satisfy <m>0 &lt; a</m> and <m>0 &lt; b</m>, then <m>0 &lt; ab</m>.  
@@ -167,7 +186,7 @@
 </proposition>
 
 <proposition xml:id="prop-08">
-  <title>Well-Ordered Rings are Domains</title>
+  <title>Well-ordered rings are domains</title>
   <statement>
     <p>
       If <m>R</m> is a ordered ring whose positive elements are well-ordered, and <m>a,b \in R</m> satisfy <m>ab=0</m>, then either <m>a = 0</m> or <m>b = 0</m>.  
@@ -181,7 +200,7 @@
 </proposition>
 
 <proposition xml:id="prop-06">
-  <title>Well-Ordered Rings Have Cancellation</title>
+  <title>Well-ordered rings have cancellation</title>
   <statement>
     <p>
       If <m>R</m> is a ordered ring whose positive elements are well-ordered, and <m>a,b,c \in R</m> satisfy <m>ab=ac</m>, then either <m>a=0</m> or <m>b = c</m>.  
