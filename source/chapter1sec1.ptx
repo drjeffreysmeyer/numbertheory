@@ -89,7 +89,7 @@
   </proof>
 </proposition>
 
-  <proposition xml:id="prop-1_1-02">
+<proposition xml:id="prop-1_1-02">
   <title>Negative one times any element is the additive inverse</title>
   <statement>
     <p>
@@ -115,5 +115,20 @@
     </p>
   </statement>
 </definition>
+
+<proposition xml:id="proposition-negative_one_squared_is_one">
+  <title>Negative one squared is one</title>
+  <statement>
+    <p>
+      If <m>R</m> is a commutative ring with identity, then <m>(-1)^2=1</m>.  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof. You may find <xref ref="definition-commutative_ring"/> and <xref ref="prop-1_1-01"/> useful.
+    </p>
+  </proof>
+</proposition>
+
 
 </section>

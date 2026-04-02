@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp1sec3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Well-Ordering</title>
+
+  <p>In addition to the algebraic and order structure of the integers, they also possess a well-ordering.</p>
+
+
+<definition xml:id="definition-well-ordered">
+  <title>Well-Ordered Set</title>
+  <statement>
+    <p>
+      If <m>X</m> is a set with a total order, it is <term>well-ordered</term> if every <em>non-empty</em> subset contains a <term>minimal element</term>, i.e. in symbols, if <m>S\subset X</m> is <em>non-empty</em>, then there exists an element <m>a\in S</m> such that, for all <m>b\in S</m>  it is the case that <m>a\le b</m>. 
+    </p>
+  </statement>
+</definition>
+
+<p> 
+  Note that to invoke well-ordering, we must certify the set in question is <em>non-empty</em>.
+</p>
+
+<proposition xml:id="proposition-positive_minimal_element_is_unit">
+  <title>The minimal positive element is invertible</title>
+  <statement>
+    <p>
+      If <m>R</m> is an ordered ring whose positive elements are well-ordered, then the minimal positive element, <m>e</m> is (multiplicatively) invertible.  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  Let <m>e</m> denote the minimal positive element of <m>R</m>.  (Why does <m>e</m> exist???) If <m>e=1</m>, we are done (why???).  Otherwise <m>0&lt; e &lt; 1</m>.  Look at the set 
+      <me>
+        S = \{1-ke >0 \mid k \in \Z \}
+      </me> 
+      <m>S</m> is nonempty (why???).  There exists a minimal element <m>1-ne\in S</m>.  With minimality in mind, can <m>1-ne&gt; e</m>? Can <m>1-ne&lt; e</m>? Show  <m>1-ne=e</m> (why???).  Use this to find an element <m>m\in \Z</m> such that <m>me=1</m> (how???).  You may find  <xref ref="definition-commutative_ring"/>, <xref ref="definition-unit"/>, <xref ref="definition-ordered-ring"/>, <xref ref="definition-well-ordered"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+
+
+<proposition xml:id="proposition-positive_minimal_element_is_one">
+  <title>The minimal positive element is 1</title>
+  <statement>
+    <p>
+      If <m>R</m> is a ordered ring whose positive elements are well-ordered, then the minimal positive element is 1.  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a proof by contradiction.  Let <m>e</m> denote the minimal positive element of <m>R</m> and suppose <m>0 &lt; e &lt; 1</m>.  What happens when you multiply by <m>e</m>?  Can you find a contradiction?  You may find  <xref ref="definition-commutative_ring"/>,  <xref ref="definition-ordered-ring"/>,  <xref ref="definition-ordered-ring"/>, <xref ref="proposition-positive_unit_preserves_inequality"/> <xref ref="proposition-positive_minimal_element_is_unit"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<p>
+  Amazingly, we have shown that the structure of an ordered ring whose positive elements are well-ordered is quite rigid.  There are no element between 0 and 1!  
+</p>
+
+<proposition xml:id="prop-077">
+  <title>The only positive unit is 1</title>
+  <statement>
+    <p>
+      If <m>R</m> is a ordered ring whose positive elements are well-ordered, then only positive unit is 1.  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a proof by contradiction.  Let <m>a\in R</m> be a positive unit other than 1,  Then <m>1 &lt; a</m> (why???).  By assumption, <m>a</m> is invertible, so there exists <m>b \in R</m> with <m>ab=1</m>.  What happens when you multiply by <m>b</m>?  Can you find a contradiction?  You may find  <xref ref="definition-commutative_ring"/>,  <xref ref="definition-unit"/>, <xref ref="proposition-positive_minimal_element_is_one"/>,  and <xref ref="proposition-positive_minimal_element_is_unit"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<p>
+  We now show that ordered rings whose positive elements are well-ordered have cancellation, a useful property we will use throughout this book. 
+</p>
+
+<proposition xml:id="proposition-product_of_positive_is_positive">
+  <title>Products of positive elements are positive</title>
+  <statement>
+    <p>
+      If <m>R</m> is a ordered ring whose positive elements are well-ordered, and <m>a,b \in R</m> satisfy <m>0 &lt; a</m> and <m>0 &lt; b</m>, then <m>0 &lt; ab</m>.  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a proof by contradiction.  We know it must be the case that <m>0 \le ab</m> (why???) but what could go wrong and how to we show those things cannot happen?  You may find  <xref ref="definition-commutative_ring"/>, <xref ref="definition-ordered-ring"/>, <xref ref="definition-well-ordered"/>, <xref ref="proposition-positive_minimal_element_is_one"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="proposition-well_ordered_rings_are_domains">
+  <title>Well-ordered rings are domains</title>
+  <statement>
+    <p>
+      If <m>R</m> is a ordered ring whose positive elements are well-ordered, and <m>a,b \in R</m> satisfy <m>ab=0</m>, then either <m>a = 0</m> or <m>b = 0</m>.  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a proof by contrapositive.   You may find  <xref ref="proposition-inverse_flips_sign"/> and <xref ref="proposition-product_of_positive_is_positive"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="proposition-well_ordered_rings_have_cancellation">
+  <title>Well-ordered rings have cancellation</title>
+  <statement>
+    <p>
+      If <m>R</m> is a ordered ring whose positive elements are well-ordered, and <m>a,b,c \in R</m> satisfy <m>ab=ac</m>, then either <m>a=0</m> or <m>b = c</m>.  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  Try algebraically rewriting the equation.  You may find  <xref ref="definition-commutative_ring"/> and <xref ref="proposition-well_ordered_rings_are_domains"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+
+<p> 
+  The integers, <m>\Z</m> are in fact the <em>unique </em> ordered commutative ring with identity whose positive elements are well-ordered.  Going forward we will simply refer to this set as the integers and all properties of the integers will follow from these.
+</p>
+
+</section>

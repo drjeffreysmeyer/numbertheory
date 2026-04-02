@@ -47,7 +47,7 @@
     <title>The Proof Dimensions Rubric (PDR)</title>
 
     <p>
-      Your written formal proofs will be assessed via six dimensions described below.  These dimensions are intended to be a guide for you as you write your formal proofs and for me as I assess your formal proofs. I will use these dimensions to provide feedback on your formal proofs and to assign a grade to your formal proofs.  
+      Your written formal proofs will be assessed via six dimensions described below. These are all taken to be norms for this course. These dimensions are intended to be a guide for you as you write your formal proofs and for me as I assess your formal proofs. I will use these dimensions to provide feedback on your formal proofs and to assign a grade to your formal proofs.  
     </p>
 
     <p>
@@ -60,11 +60,9 @@
 
     <remark xml:id="chp0sec3-remark1">
       <title>The importance of global structure</title>
-      <statement>
-        <p>
+      <p>
           Simple propositions may not require much of a global structure summary, but they should still be clearly structured and organized.  For complex propositions, global structure is both essential for the reader to understand your thinking and an important indicator to me of the depth of your understanding of the proposition and its proof.
-        </p>
-      </statement>
+      </p>
     </remark>
 
     <p>
@@ -77,11 +75,9 @@
 
     <remark xml:id="chp0sec3-remark2">
       <title>Completeness and correctness</title>
-      <statement>
-        <p>
+      <p>
           A proof can be logically correct but not logically complete.  In practice, for a proof to be logically complete, it is already logically correct.  
-        </p>
-      </statement>
+      </p>
     </remark>
 
     <p>
