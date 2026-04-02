@@ -79,7 +79,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "0.3",
   "title": "Proof Writing",
-  "body": " Proof Writing   Formal Proofs  A formal proof is the final written product you produce. In a formal proof, you carefully, clearly, and correctly, explain the logical sequence of known results that ascertains the truth of the given mathematical statement.   Formal proofs represent the culmination of your efforts and understanding. Proof construction can be messy, include detours and red herrings. The path your proof construction takes is rarely visible from the formal proof itself.    Formal proofs are a fundamental manifestation of mathematical knowledge.    Formal proofs follow the norms of academic language. This includes complete sentences and not using mathematical shorthand. They are proofread.    Formal proofs are clear and readable.    Formal proofs appropriately reference known definitions and conditionals.     Though I do not require it, I strongly encourage you to use LaTeX to write your formal proofs.    The Proof Dimensions Rubric (PDR)  Your written formal proofs will be assessed via six dimensions described below. These dimensions are intended to be a guide for you as you write your formal proofs and for me as I assess your formal proofs. I will use these dimensions to provide feedback on your formal proofs and to assign a grade to your formal proofs.   Global structure summary. A proof is expected to have a global structure summary. This is a brief statement at the beginning of the proof that outlines the overall strategy and key steps of the proof. A global structure summary helps the reader understand the overall flow of the proof and provides a roadmap for the logical deductions that follow. A global structure summary should include a clear statement of the proof strategy being used, such as direct proof, proof by contradiction, or proof by induction. It should also briefly outline the key steps that will be taken to establish the truth of the statement being proved.   Global structure enacted. A proof is expected to be clearly structured and organized. The logical flow of the proof should be easy to follow, with each step building upon the previous ones in a coherent manner. A well-structured proof allows the reader to understand the progression of ideas and the connections between different parts of the proof.   The importance of global structure   Simple propositions may not require much of a global structure summary, but they should still be clearly structured and organized. For complex propositions, global structure is both essential for the reader to understand your thinking and an important indicator to me of the depth of your understanding of the proposition and its proof.     Logical correctness. A proof is logically correct if all of its deductions follow the rules of logic and correctly invoke definitions and known conditional statements.   Logical completeness. A proof is logically complete if all necessary steps are included and that the logical flow of the proof is clear and unbroken. A proof that is logically correct but not logically complete may have gaps in the logical flow or may omit necessary steps, making it difficult for the reader to understand how the conclusion follows from the premises.   Completeness and correctness   A proof can be logically correct but not logically complete. In practice, for a proof to be logically complete, it is already logically correct.     Referencing. You are expected to reference appropriate definitions and conditional statements.   Mathematical fluency. Mathematics is a language, and as such, it has its own syntax and vocabulary. The extent to which you are fluent in this language will be assessed. Fluency includes the correct use of mathematical symbols and notation, the correct use of mathematical terminology, and the ability to express mathematical ideas in a concise and precise manner.   "
+  "body": " Proof Writing   Formal Proofs  A formal proof is the final written product you produce. In a formal proof, you carefully, clearly, and correctly, explain the logical sequence of known results that ascertains the truth of the given mathematical statement.   Formal proofs represent the culmination of your efforts and understanding. Proof construction can be messy, include detours and red herrings. The path your proof construction takes is rarely visible from the formal proof itself.    Formal proofs are a fundamental manifestation of mathematical knowledge.    Formal proofs follow the norms of academic language. This includes complete sentences and not using mathematical shorthand. They are proofread.    Formal proofs are clear and readable.    Formal proofs appropriately reference known definitions and conditionals.     Though I do not require it, I strongly encourage you to use LaTeX to write your formal proofs.    The Proof Dimensions Rubric (PDR)  Your written formal proofs will be assessed via six dimensions described below. These are all taken to be norms for this course. These dimensions are intended to be a guide for you as you write your formal proofs and for me as I assess your formal proofs. I will use these dimensions to provide feedback on your formal proofs and to assign a grade to your formal proofs.   Global structure summary. A proof is expected to have a global structure summary. This is a brief statement at the beginning of the proof that outlines the overall strategy and key steps of the proof. A global structure summary helps the reader understand the overall flow of the proof and provides a roadmap for the logical deductions that follow. A global structure summary should include a clear statement of the proof strategy being used, such as direct proof, proof by contradiction, or proof by induction. It should also briefly outline the key steps that will be taken to establish the truth of the statement being proved.   Global structure enacted. A proof is expected to be clearly structured and organized. The logical flow of the proof should be easy to follow, with each step building upon the previous ones in a coherent manner. A well-structured proof allows the reader to understand the progression of ideas and the connections between different parts of the proof.   The importance of global structure  Simple propositions may not require much of a global structure summary, but they should still be clearly structured and organized. For complex propositions, global structure is both essential for the reader to understand your thinking and an important indicator to me of the depth of your understanding of the proposition and its proof.    Logical correctness. A proof is logically correct if all of its deductions follow the rules of logic and correctly invoke definitions and known conditional statements.   Logical completeness. A proof is logically complete if all necessary steps are included and that the logical flow of the proof is clear and unbroken. A proof that is logically correct but not logically complete may have gaps in the logical flow or may omit necessary steps, making it difficult for the reader to understand how the conclusion follows from the premises.   Completeness and correctness  A proof can be logically correct but not logically complete. In practice, for a proof to be logically complete, it is already logically correct.    Referencing. You are expected to reference appropriate definitions and conditional statements.   Mathematical fluency. Mathematics is a language, and as such, it has its own syntax and vocabulary. The extent to which you are fluent in this language will be assessed. Fluency includes the correct use of mathematical symbols and notation, the correct use of mathematical terminology, and the ability to express mathematical ideas in a concise and precise manner.   "
 },
 {
   "id": "chp0sec3sub1-2",
@@ -115,7 +115,7 @@ var ptx_lunr_docs = [
   "type": "Remark",
   "number": "0.3.1",
   "title": "The importance of global structure.",
-  "body": " The importance of global structure   Simple propositions may not require much of a global structure summary, but they should still be clearly structured and organized. For complex propositions, global structure is both essential for the reader to understand your thinking and an important indicator to me of the depth of your understanding of the proposition and its proof.   "
+  "body": " The importance of global structure  Simple propositions may not require much of a global structure summary, but they should still be clearly structured and organized. For complex propositions, global structure is both essential for the reader to understand your thinking and an important indicator to me of the depth of your understanding of the proposition and its proof.  "
 },
 {
   "id": "chp0sec3sub2-6",
@@ -142,7 +142,7 @@ var ptx_lunr_docs = [
   "type": "Remark",
   "number": "0.3.2",
   "title": "Completeness and correctness.",
-  "body": " Completeness and correctness   A proof can be logically correct but not logically complete. In practice, for a proof to be logically complete, it is already logically correct.   "
+  "body": " Completeness and correctness  A proof can be logically correct but not logically complete. In practice, for a proof to be logically complete, it is already logically correct.  "
 },
 {
   "id": "chp0sec3sub2-9",
@@ -223,7 +223,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "The order of the integers",
-  "body": " The order of the integers  In addition to the algebraic structure of the integers, they also possess an ordering. This ordering is compatible with the algebraic operations and gives us a way to compare integers.   Order   A set has a total order if there is a binary relationship satisfying:  (O1)  ( Reflexivity .) If , then .   (O2)  ( Transitivity .) If satisfy and , then .   (O3)  ( Antisymmetry .) If satisfy and , then .   (O4)  ( Totality .) If , then either or .   If , where and , then we write . The expressions and are equivalent.    Observe the symbols , , , and will all be used in the usual ways.  A ring is an ordered ring if has a total order that is compatible with its operations as made precise in the following definition.   Ordered Ring   A ring is an ordered ring if has a total order satisfying:  (OR1)  ( Addition preserves order .) If and , then    (OR2)  ( Positive scaling preserves order .) If satisfy and , then        We call elements of an ordered ring positive if it is greater than zero and negative if it is less than zero.  We will establish some basic properties of ordered rings in the following propositions.   Additive inverses of positive elements are negative   If is an ordered ring and is positive (resp. negative), then is negative (resp. positive).    Try a proof by cases. For each case, do a direct proof. In the first case, suppose . Show (why???). Now do the other case. You may find and useful.     Multiplication by a unit preserves inequality   If is a ordered ring and are positive such that is a unit and , then .    Try a proof by contradiction. We know it must be the case that (why???) but what could go wrong and how to we show those things cannot happen? Suppose one of the undesirable things happened - how does the invertibility of lead to a contradiction? You may find , , , useful.     Well-Ordered Set   If is a set with a total order, it is well-ordered if every non-empty subset contains a minimal element , i.e. in symbols, if is non-empty , then there exists an element such that, for all it is the case that .    Note that to invoke well-ordering, we must certify the set in question is non-empty .   The minimal positive element is invertible   If is an ordered ring whose positive elements are well-ordered, then the minimal positive element, is (multiplicatively) invertible.    Try a direct proof. Let denote the minimal positive element of . (Why does exist???) If , we are done (why???). Otherwise . Look at the set  is nonempty (why???). There exists a minimal element . With minimality in mind, can ? Can ? Show (why???). Use this to find an element such that (how???). You may find , , , useful.     The minimal positive element is 1   If is a ordered ring whose positive elements are well-ordered, then the minimal positive element is 1.    Try a proof by contradiction. Let denote the minimal positive element of and suppose . What happens when you multiply by ? Can you find a contradiction? You may find , , ,  useful.    Amazingly, we have shown that the structure of an ordered ring whose positive elements are well-ordered is quite rigid. There are no element between 0 and 1!   The only positive unit is 1   If is a ordered ring whose positive elements are well-ordered, then only positive unit is 1.    Try a proof by contradiction. Let be a positive unit other than 1, Then (why???). By assumption, is invertible, so there exists with . What happens when you multiply by ? Can you find a contradiction? You may find , , , and useful.    We now show that ordered rings whose positive elements are well-ordered have cancellation, a useful property we will use throughout this book.   Products of positive elements are positive   If is a ordered ring whose positive elements are well-ordered, and satisfy and , then .    Try a proof by contradiction. We know it must be the case that (why???) but what could go wrong and how to we show those things cannot happen? You may find , , , useful.     Well-ordered rings are domains   If is a ordered ring whose positive elements are well-ordered, and satisfy , then either or .    Try a proof by contrapositive. You may find and useful.     Well-ordered rings have cancellation   If is a ordered ring whose positive elements are well-ordered, and satisfy , then either or .    Try a direct proof. Try algebraically rewriting the equation. You may find and useful.    The integers, are in fact the unique ordered commutative ring with identity whose positive elements are well-ordered. Going forward we will simply refer to this set as the integers and all properties of the integers will follow from these.  "
+  "body": " The order of the integers  In addition to the algebraic structure of the integers, they also possess an ordering. This ordering is compatible with the algebraic operations and gives us a way to compare integers.   Order   A set has a total order if there is a binary relationship satisfying:  (O1)  ( Reflexivity .) If , then .   (O2)  ( Transitivity .) If satisfy and , then .   (O3)  ( Antisymmetry .) If satisfy and , then .   (O4)  ( Totality .) If , then either or .   If , where and , then we write . The expressions and are equivalent.    Observe the symbols , , , and will all be used in the usual ways.  A ring is an ordered ring if has a total order that is compatible with its operations as made precise in the following definition.   Ordered Ring   A ring is an ordered ring if has a total order satisfying:  (OR1)  ( Addition preserves order .) If and , then    (OR2)  ( Positive scaling preserves order .) If satisfy and , then        We call elements of an ordered ring positive if it is greater than zero and negative if it is less than zero.  We will establish some basic properties of ordered rings in the following propositions.   Additive inverses of positive elements are negative   If is an ordered ring and is positive (resp. negative), then is negative (resp. positive).    Try a proof by cases. For each case, do a direct proof. In the first case, suppose . Show (why???). Now do the other case. You may find and useful.     Multiplication by a positive unit preserves inequality   If is a ordered ring and are positive such that is a unit and , then .    Try a proof by contradiction. We know it must be the case that (why???) but what could go wrong and how to we show those things cannot happen? Suppose one of the undesirable things happened - how does the invertibility of lead to a contradiction? You may find , , and useful.     A unit and its inverse have the same sign   If is a ordered ring and is a unit, then and have the same sign.    Try a proof by contradiction. Then, without loss of generality, suppose is positive and is negative. So . Think about multipliying this inequality with a couple known units. Can you find a contradiction? You may find , , , useful.     1 is positive   If is a ordered ring, then is positive.    Try a proof by contradiction. If 1 is negative, then -1 is positive (why???). So . Multiply by -1. What do you know about the sign of and why? Can you find a contradiction? You may find , , , , , , useful.    "
 },
 {
   "id": "def-definition-order",
@@ -262,83 +262,110 @@ var ptx_lunr_docs = [
   "body": "positive negative "
 },
 {
-  "id": "prop-01",
+  "id": "proposition-inverse_flips_sign",
   "level": "2",
-  "url": "chp1sec2.html#prop-01",
+  "url": "chp1sec2.html#proposition-inverse_flips_sign",
   "type": "Proposition",
   "number": "1.2.3",
   "title": "Additive inverses of positive elements are negative.",
   "body": " Additive inverses of positive elements are negative   If is an ordered ring and is positive (resp. negative), then is negative (resp. positive).    Try a proof by cases. For each case, do a direct proof. In the first case, suppose . Show (why???). Now do the other case. You may find and useful.   "
 },
 {
-  "id": "prop-1_2-055",
+  "id": "proposition-positive_unit_preserves_inequality",
   "level": "2",
-  "url": "chp1sec2.html#prop-1_2-055",
+  "url": "chp1sec2.html#proposition-positive_unit_preserves_inequality",
   "type": "Proposition",
   "number": "1.2.4",
-  "title": "Multiplication by a unit preserves inequality.",
-  "body": " Multiplication by a unit preserves inequality   If is a ordered ring and are positive such that is a unit and , then .    Try a proof by contradiction. We know it must be the case that (why???) but what could go wrong and how to we show those things cannot happen? Suppose one of the undesirable things happened - how does the invertibility of lead to a contradiction? You may find , , , useful.   "
+  "title": "Multiplication by a positive unit preserves inequality.",
+  "body": " Multiplication by a positive unit preserves inequality   If is a ordered ring and are positive such that is a unit and , then .    Try a proof by contradiction. We know it must be the case that (why???) but what could go wrong and how to we show those things cannot happen? Suppose one of the undesirable things happened - how does the invertibility of lead to a contradiction? You may find , , and useful.   "
+},
+{
+  "id": "proposition-positive_unit_preserves_inequality7",
+  "level": "2",
+  "url": "chp1sec2.html#proposition-positive_unit_preserves_inequality7",
+  "type": "Proposition",
+  "number": "1.2.5",
+  "title": "A unit and its inverse have the same sign.",
+  "body": " A unit and its inverse have the same sign   If is a ordered ring and is a unit, then and have the same sign.    Try a proof by contradiction. Then, without loss of generality, suppose is positive and is negative. So . Think about multipliying this inequality with a couple known units. Can you find a contradiction? You may find , , , useful.   "
+},
+{
+  "id": "proposition-one_is_positive",
+  "level": "2",
+  "url": "chp1sec2.html#proposition-one_is_positive",
+  "type": "Proposition",
+  "number": "1.2.6",
+  "title": "1 is positive.",
+  "body": " 1 is positive   If is a ordered ring, then is positive.    Try a proof by contradiction. If 1 is negative, then -1 is positive (why???). So . Multiply by -1. What do you know about the sign of and why? Can you find a contradiction? You may find , , , , , , useful.   "
+},
+{
+  "id": "chp1sec3",
+  "level": "1",
+  "url": "chp1sec3.html",
+  "type": "Section",
+  "number": "1.3",
+  "title": "Well-Ordering",
+  "body": " Well-Ordering  In addition to the algebraic and order structure of the integers, they also possess a well-ordering.   Well-Ordered Set   If is a set with a total order, it is well-ordered if every non-empty subset contains a minimal element , i.e. in symbols, if is non-empty , then there exists an element such that, for all it is the case that .    Note that to invoke well-ordering, we must certify the set in question is non-empty .   The minimal positive element is invertible   If is an ordered ring whose positive elements are well-ordered, then the minimal positive element, is (multiplicatively) invertible.    Try a direct proof. Let denote the minimal positive element of . (Why does exist???) If , we are done (why???). Otherwise . Look at the set  is nonempty (why???). There exists a minimal element . With minimality in mind, can ? Can ? Show (why???). Use this to find an element such that (how???). You may find , , , useful.     The minimal positive element is 1   If is a ordered ring whose positive elements are well-ordered, then the minimal positive element is 1.    Try a proof by contradiction. Let denote the minimal positive element of and suppose . What happens when you multiply by ? Can you find a contradiction? You may find , , ,  useful.    Amazingly, we have shown that the structure of an ordered ring whose positive elements are well-ordered is quite rigid. There are no element between 0 and 1!   The only positive unit is 1   If is a ordered ring whose positive elements are well-ordered, then only positive unit is 1.    Try a proof by contradiction. Let be a positive unit other than 1, Then (why???). By assumption, is invertible, so there exists with . What happens when you multiply by ? Can you find a contradiction? You may find , , , and useful.    We now show that ordered rings whose positive elements are well-ordered have cancellation, a useful property we will use throughout this book.   Products of positive elements are positive   If is a ordered ring whose positive elements are well-ordered, and satisfy and , then .    Try a proof by contradiction. We know it must be the case that (why???) but what could go wrong and how to we show those things cannot happen? You may find , , , useful.     Well-ordered rings are domains   If is a ordered ring whose positive elements are well-ordered, and satisfy , then either or .    Try a proof by contrapositive. You may find and useful.     Well-ordered rings have cancellation   If is a ordered ring whose positive elements are well-ordered, and satisfy , then either or .    Try a direct proof. Try algebraically rewriting the equation. You may find and useful.    The integers, are in fact the unique ordered commutative ring with identity whose positive elements are well-ordered. Going forward we will simply refer to this set as the integers and all properties of the integers will follow from these.  "
 },
 {
   "id": "definition-well-ordered",
   "level": "2",
-  "url": "chp1sec2.html#definition-well-ordered",
+  "url": "chp1sec3.html#definition-well-ordered",
   "type": "Definition",
-  "number": "1.2.5",
+  "number": "1.3.1",
   "title": "Well-Ordered Set.",
   "body": " Well-Ordered Set   If is a set with a total order, it is well-ordered if every non-empty subset contains a minimal element , i.e. in symbols, if is non-empty , then there exists an element such that, for all it is the case that .   "
 },
 {
-  "id": "prop-1_2-05",
+  "id": "proposition-positive_minimal_element_is_unit",
   "level": "2",
-  "url": "chp1sec2.html#prop-1_2-05",
+  "url": "chp1sec3.html#proposition-positive_minimal_element_is_unit",
   "type": "Proposition",
-  "number": "1.2.6",
+  "number": "1.3.2",
   "title": "The minimal positive element is invertible.",
   "body": " The minimal positive element is invertible   If is an ordered ring whose positive elements are well-ordered, then the minimal positive element, is (multiplicatively) invertible.    Try a direct proof. Let denote the minimal positive element of . (Why does exist???) If , we are done (why???). Otherwise . Look at the set  is nonempty (why???). There exists a minimal element . With minimality in mind, can ? Can ? Show (why???). Use this to find an element such that (how???). You may find , , , useful.   "
 },
 {
-  "id": "prop-03",
+  "id": "proposition-positive_minimal_element_is_one",
   "level": "2",
-  "url": "chp1sec2.html#prop-03",
+  "url": "chp1sec3.html#proposition-positive_minimal_element_is_one",
   "type": "Proposition",
-  "number": "1.2.7",
+  "number": "1.3.3",
   "title": "The minimal positive element is 1.",
   "body": " The minimal positive element is 1   If is a ordered ring whose positive elements are well-ordered, then the minimal positive element is 1.    Try a proof by contradiction. Let denote the minimal positive element of and suppose . What happens when you multiply by ? Can you find a contradiction? You may find , , ,  useful.   "
 },
 {
   "id": "prop-077",
   "level": "2",
-  "url": "chp1sec2.html#prop-077",
+  "url": "chp1sec3.html#prop-077",
   "type": "Proposition",
-  "number": "1.2.8",
+  "number": "1.3.4",
   "title": "The only positive unit is 1.",
   "body": " The only positive unit is 1   If is a ordered ring whose positive elements are well-ordered, then only positive unit is 1.    Try a proof by contradiction. Let be a positive unit other than 1, Then (why???). By assumption, is invertible, so there exists with . What happens when you multiply by ? Can you find a contradiction? You may find , , , and useful.   "
 },
 {
-  "id": "prop-04",
+  "id": "proposition-product_of_positive_is_positive",
   "level": "2",
-  "url": "chp1sec2.html#prop-04",
+  "url": "chp1sec3.html#proposition-product_of_positive_is_positive",
   "type": "Proposition",
-  "number": "1.2.9",
+  "number": "1.3.5",
   "title": "Products of positive elements are positive.",
   "body": " Products of positive elements are positive   If is a ordered ring whose positive elements are well-ordered, and satisfy and , then .    Try a proof by contradiction. We know it must be the case that (why???) but what could go wrong and how to we show those things cannot happen? You may find , , , useful.   "
 },
 {
-  "id": "prop-08",
+  "id": "proposition-well_ordered_rings_are_domains",
   "level": "2",
-  "url": "chp1sec2.html#prop-08",
+  "url": "chp1sec3.html#proposition-well_ordered_rings_are_domains",
   "type": "Proposition",
-  "number": "1.2.10",
+  "number": "1.3.6",
   "title": "Well-ordered rings are domains.",
   "body": " Well-ordered rings are domains   If is a ordered ring whose positive elements are well-ordered, and satisfy , then either or .    Try a proof by contrapositive. You may find and useful.   "
 },
 {
-  "id": "prop-06",
+  "id": "proposition-well_ordered_rings_have_cancellation",
   "level": "2",
-  "url": "chp1sec2.html#prop-06",
+  "url": "chp1sec3.html#proposition-well_ordered_rings_have_cancellation",
   "type": "Proposition",
-  "number": "1.2.11",
+  "number": "1.3.7",
   "title": "Well-ordered rings have cancellation.",
   "body": " Well-ordered rings have cancellation   If is a ordered ring whose positive elements are well-ordered, and satisfy , then either or .    Try a direct proof. Try algebraically rewriting the equation. You may find and useful.   "
 },
