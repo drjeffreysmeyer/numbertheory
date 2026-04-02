@@ -125,7 +125,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof. You may find <xref ref="definition-commutative_ring"/> and <xref ref="prop-1_1-01"/> useful.
+      Try a direct proof. You may find <xref ref="definition-commutative_ring"/> and <xref ref="prop-1_1-02"/> useful.
     </p>
   </proof>
 </proposition>
