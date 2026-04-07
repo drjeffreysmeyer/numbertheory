@@ -313,7 +313,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Well-Ordering",
-  "body": " Well-Ordering  In addition to the algebraic and order structure of the integers, they also possess a well-ordering.   Well-Ordered Set   If is a set with a total order, it is well-ordered if every non-empty subset contains a minimal element , i.e. in symbols, if is non-empty , then there exists an element such that, for all it is the case that .    Note that to invoke well-ordering, we must certify the set in question is non-empty .   The minimal positive element is invertible   If is an ordered ring whose positive elements are well-ordered, then the minimal positive element, is (multiplicatively) invertible.    Try a direct proof. Let denote the minimal positive element of . (Why does exist???) If , we are done (why???). Otherwise . Look at the set  is nonempty (why???). There exists a minimal element . With minimality in mind, can ? Can ? Show (why???). Use this to find an element such that (how???). You may find , , , useful.     The minimal positive element is 1   If is a ordered ring whose positive elements are well-ordered, then the minimal positive element is 1.    Try a proof by contradiction. Let denote the minimal positive element of and suppose . What happens when you multiply by ? Can you find a contradiction? You may find , , ,  useful.    Amazingly, we have shown that the structure of an ordered ring whose positive elements are well-ordered is quite rigid. There are no element between 0 and 1!   The only positive unit is 1   If is a ordered ring whose positive elements are well-ordered, then only positive unit is 1.    Try a proof by contradiction. Let be a positive unit other than 1, Then (why???). By assumption, is invertible, so there exists with . What happens when you multiply by ? Can you find a contradiction? You may find , , , and useful.    We now show that ordered rings whose positive elements are well-ordered have cancellation, a useful property we will use throughout this book.   Products of positive elements are positive   If is a ordered ring whose positive elements are well-ordered, and satisfy and , then .    Try a proof by contradiction. We know it must be the case that (why???) but what could go wrong and how to we show those things cannot happen? You may find , , , useful.     Well-ordered rings are domains   If is a ordered ring whose positive elements are well-ordered, and satisfy , then either or .    Try a proof by contrapositive. You may find and useful.     Well-ordered rings have cancellation   If is a ordered ring whose positive elements are well-ordered, and satisfy , then either or .    Try a direct proof. Try algebraically rewriting the equation. You may find and useful.    The integers, , are in fact the unique ordered commutative ring with identity whose positive elements are well-ordered. Going forward we will simply refer to this set as the integers and all properties of the integers will follow from these.  "
+  "body": " Well-Ordering  In addition to the algebraic and order structure of the integers, they also possess a well-ordering.   Well-Ordered Set   If is a set with a total order, it is well-ordered if every non-empty subset contains a minimal element , i.e. in symbols, if is non-empty , then there exists an element such that, for all it is the case that .    Note that to invoke well-ordering, we must certify the set in question is non-empty .   The minimal positive element is invertible   If is an ordered ring whose positive elements are well-ordered, then the minimal positive element, is (multiplicatively) invertible.    Try a direct proof. Let denote the minimal positive element of . (Why does exist???) If , we are done (why???). Otherwise . Look at the descending chain  is nonempty (why???). There exists a minimal element . With minimality in mind, can ? Can ? Show (why???). Use this to find an element such that (how???). You may find , , , useful.     The minimal positive element is 1   If is a ordered ring whose positive elements are well-ordered, then the minimal positive element is 1.    Try a proof by contradiction. Let denote the minimal positive element of and suppose . What happens when you multiply by ? Can you find a contradiction? You may find , , ,  useful.    Amazingly, we have shown that the structure of an ordered ring whose positive elements are well-ordered is quite rigid. There are no element between 0 and 1!   The only positive unit is 1   If is a ordered ring whose positive elements are well-ordered, then only positive unit is 1.    Try a proof by contradiction. Let be a positive unit other than 1, Then (why???). By assumption, is invertible, so there exists with . What happens when you multiply by ? Can you find a contradiction? You may find , , , and useful.    We now show that ordered rings whose positive elements are well-ordered have cancellation, a useful property we will use throughout this book.   Products of positive elements are positive   If is a ordered ring whose positive elements are well-ordered, and satisfy and , then .    Try a proof by contradiction. We know it must be the case that (why???) but what could go wrong and how to we show those things cannot happen? You may find , , , useful.     Well-ordered rings are domains   If is a ordered ring whose positive elements are well-ordered, and satisfy , then either or .    Try a proof by contrapositive. You may find and useful.     Well-ordered rings have cancellation   If is a ordered ring whose positive elements are well-ordered, and satisfy , then either or .    Try a direct proof. Try algebraically rewriting the equation. You may find and useful.    The integers, , are in fact the unique ordered commutative ring with identity whose positive elements are well-ordered. Going forward we will simply refer to this set as the integers and all properties of the integers will follow from these.  "
 },
 {
   "id": "definition-well-ordered",
@@ -331,7 +331,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "1.3.2",
   "title": "The minimal positive element is invertible.",
-  "body": " The minimal positive element is invertible   If is an ordered ring whose positive elements are well-ordered, then the minimal positive element, is (multiplicatively) invertible.    Try a direct proof. Let denote the minimal positive element of . (Why does exist???) If , we are done (why???). Otherwise . Look at the set  is nonempty (why???). There exists a minimal element . With minimality in mind, can ? Can ? Show (why???). Use this to find an element such that (how???). You may find , , , useful.   "
+  "body": " The minimal positive element is invertible   If is an ordered ring whose positive elements are well-ordered, then the minimal positive element, is (multiplicatively) invertible.    Try a direct proof. Let denote the minimal positive element of . (Why does exist???) If , we are done (why???). Otherwise . Look at the descending chain  is nonempty (why???). There exists a minimal element . With minimality in mind, can ? Can ? Show (why???). Use this to find an element such that (how???). You may find , , , useful.   "
 },
 {
   "id": "proposition-positive_minimal_element_is_one",
@@ -385,7 +385,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "The Division Algorithm",
-  "body": " The Division Algorithm     Divisibility   An integer is divisible by an integer if there exists an integer so that .  If is divisible by , we say also say  divides  . We symbolize this by . We say that is a divisor of .  If does not divide , then we write .     Basic divisibilities   If where , then                     Try a direct proof. Let the definitions structure your proof. You may find , , , and useful.     Divisibility is transitive   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find and useful.     Divisibility and multiplication   If and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.     Linear Combination   If and are integers, then an integer is a linear combination of and if there exist integers and such that .     Divisibility and linear combinations   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.      The Division Algorithm   If where , then there exists unique integers satisfying    and     .       Try a proof by cases. If then we are done (why???). So then assume . Consider the set The set is nonempty (why???). The set has a minimal element (why???). Call this minimal element . Show that this has the desired properties. You may find and useful.    "
+  "body": " The Division Algorithm     Divisibility   An integer is divisible by an integer if there exists an integer so that .  If is divisible by , we say also say  divides  . We symbolize this by . We say that is a divisor of .  If does not divide , then we write .     Basic divisibilities   If where , then                     Try a direct proof. Let the definitions structure your proof. You may find , , , and useful.     Divisibility is transitive   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find and useful.      Linear Combination   If and are integers, then an integer is a linear combination of and if there exist integers and such that .    We now prove one of the fundamental tools of number theory, the division algorithm. We will use the division algorithm to prove some of the most important results in number theory, including the Euclidean Algorithm and the Fundamental Theorem of Arithmetic.   Divisibility and linear combinations   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find and useful.      The Division Algorithm   If where , then there exists unique integers satisfying    and     .       Try a proof by cases for . If then we are done (why???). So then assume . Consider the descending chain The set is nonempty (why???). The set has a minimal element (why???). Call this minimal element . Show that this has the desired properties. Why must ? Why must it be unique? Lastly, do the case where . What can you say about ? How can you use the previous case to find the desired and ? You may find , , and useful.    "
 },
 {
   "id": "definition-divisibility",
@@ -415,20 +415,11 @@ var ptx_lunr_docs = [
   "body": " Divisibility is transitive   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find and useful.   "
 },
 {
-  "id": "proposition-divisibility_of_product",
-  "level": "2",
-  "url": "chp2sec1.html#proposition-divisibility_of_product",
-  "type": "Proposition",
-  "number": "2.1.4",
-  "title": "Divisibility and multiplication.",
-  "body": " Divisibility and multiplication   If and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.   "
-},
-{
   "id": "definition-linear_combination",
   "level": "2",
   "url": "chp2sec1.html#definition-linear_combination",
   "type": "Definition",
-  "number": "2.1.5",
+  "number": "2.1.4",
   "title": "Linear Combination.",
   "body": " Linear Combination   If and are integers, then an integer is a linear combination of and if there exist integers and such that .   "
 },
@@ -437,18 +428,18 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "chp2sec1.html#proposition-divisibility_of_linear_combination",
   "type": "Proposition",
-  "number": "2.1.6",
+  "number": "2.1.5",
   "title": "Divisibility and linear combinations.",
-  "body": " Divisibility and linear combinations   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find useful.   "
+  "body": " Divisibility and linear combinations   If where and , then .    Try a direct proof. Let the definitions structure your proof. You may find and useful.   "
 },
 {
   "id": "proposition-division_algorithm",
   "level": "2",
   "url": "chp2sec1.html#proposition-division_algorithm",
   "type": "Proposition",
-  "number": "2.1.7",
+  "number": "2.1.6",
   "title": "The Division Algorithm.",
-  "body": " The Division Algorithm   If where , then there exists unique integers satisfying    and     .       Try a proof by cases. If then we are done (why???). So then assume . Consider the set The set is nonempty (why???). The set has a minimal element (why???). Call this minimal element . Show that this has the desired properties. You may find and useful.   "
+  "body": " The Division Algorithm   If where , then there exists unique integers satisfying    and     .       Try a proof by cases for . If then we are done (why???). So then assume . Consider the descending chain The set is nonempty (why???). The set has a minimal element (why???). Call this minimal element . Show that this has the desired properties. Why must ? Why must it be unique? Lastly, do the case where . What can you say about ? How can you use the previous case to find the desired and ? You may find , , and useful.   "
 },
 {
   "id": "chp2sec2",
@@ -457,7 +448,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "GCD",
-  "body": " GCD     Common Divisor   If and are integers and there is an integer that divides both of them, then is a common divisor of and .     Greatest Common Divisor (GCD)   If and are integers, if is a common divisor of and such that if is any other common divisor of and , then , then is the greatest common divisor (gcd) of and .    We denote the gcd of integers and by .  The following proposition is foundational for the rest of this chapter. It is a consequence of the division algorithm and the well-ordering principle.   GCD and the Division Algorithm   If where and , then .    Try a direct proof. First show that any common divisor of and is also a common divisor of and . Then show the converse. You may find , , , useful.     The Euclidean Algorithm   If where , then using the division algorithm repeatedly: Let be the last nonzero remainder. Then .    Try a direct proof. You may find useful.     Bezout Identity   If then there exists so that .    Try a constructive proof. Use the Euclidean algorithm to find the gcd and then work backwards to find the coefficients. You may find useful.    "
+  "body": " GCD     Common Divisor   If and are integers and there is an integer that divides both of them, then is a common divisor of and .     Greatest Common Divisor (GCD)   If and are integers, if is a common divisor of and such that if is any other common divisor of and , then , then is the greatest common divisor (gcd) of and .    We denote the gcd of integers and by .  The following proposition is foundational for the rest of this chapter. It is a consequence of the division algorithm and the well-ordering principle.   GCD and the Division Algorithm   If where and , then .    Try a direct proof. First show that any common divisor of and is also a common divisor of and . Then show the converse. You may find , , , useful.     The Euclidean Algorithm   If where , then using the division algorithm repeatedly: Let be the last positive remainder. Then .    Try a direct proof. How do you know the process terminates? Can you find a nonempty decreasing sequences of positive integers? You may find , , and useful.    The Euclidean Algorithm is truly an amazing algorithm. If you go and inspect your proof, you will see that you iterate the division algorithm no more than times! This is a very efficient algorithm for computing the gcd of two integers. Even though it is over two thousand years old, it is still state-of-the-art and has profound applications in number theory and beyond.    Bezout Identity   If then there exists so that .    Try a constructive direct proof. Use the Euclidean Algorithm to find the gcd and then work backwards to find the coefficients. You may find useful.    This proof strategy is called the extended Euclidean algorithm . It is an efficient way to find the gcd of two integers and also find the coefficients in Bezout's identity. We will use this algorithm throughout this book.  While this may all seem very theoretical, it is also very concrete and gives explicit algorithms for computing the gcd and finding the coefficients in Bezout's identity. These algorithms are used in many applications, including cryptography, coding theory, and computational number theory.   Computing the GCD and Bezout Coefficients   Use the extended Euclidean algorithm to find integers and such that .    "
 },
 {
   "id": "definition-common_divisor",
@@ -493,7 +484,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "2.2.4",
   "title": "The Euclidean Algorithm.",
-  "body": " The Euclidean Algorithm   If where , then using the division algorithm repeatedly: Let be the last nonzero remainder. Then .    Try a direct proof. You may find useful.   "
+  "body": " The Euclidean Algorithm   If where , then using the division algorithm repeatedly: Let be the last positive remainder. Then .    Try a direct proof. How do you know the process terminates? Can you find a nonempty decreasing sequences of positive integers? You may find , , and useful.   "
 },
 {
   "id": "proposition-bezout_identity",
@@ -502,7 +493,160 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "2.2.5",
   "title": "Bezout Identity.",
-  "body": " Bezout Identity   If then there exists so that .    Try a constructive proof. Use the Euclidean algorithm to find the gcd and then work backwards to find the coefficients. You may find useful.   "
+  "body": " Bezout Identity   If then there exists so that .    Try a constructive direct proof. Use the Euclidean Algorithm to find the gcd and then work backwards to find the coefficients. You may find useful.   "
+},
+{
+  "id": "chp2sec2-11",
+  "level": "2",
+  "url": "chp2sec2.html#chp2sec2-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "extended Euclidean algorithm "
+},
+{
+  "id": "activity-extended_euclidean_algorithm",
+  "level": "2",
+  "url": "chp2sec2.html#activity-extended_euclidean_algorithm",
+  "type": "Activity",
+  "number": "2.2.1",
+  "title": "Computing the GCD and Bezout Coefficients.",
+  "body": " Computing the GCD and Bezout Coefficients   Use the extended Euclidean algorithm to find integers and such that .   "
+},
+{
+  "id": "chp2sec3",
+  "level": "1",
+  "url": "chp2sec3.html",
+  "type": "Section",
+  "number": "2.3",
+  "title": "Linear Diophantine Equations",
+  "body": " Linear Diophantine Equations     Linear Diophantine Equation   A linear Diophantine equation is an equation of the form , where , , and are integers and the solutions and are required to be integers.     Solvability of Linear Diophantine Equations   Given integers and , the linear Diophantine equation has a solution if and only if .    Try a direct proof. For the forward direction, assume that there is a solution to the equation. Show that . For the reverse direction, assume that . Show that there is a solution to the equation. You may find , , and useful.     Solvability of Linear Diophantine Equations (Unit Case)   Given integers and , the linear Diophantine equation has a solution if and only if .    Try a direct proof. You may find useful.     Relatively Prime   Two integers and are relatively prime if .     Dividing to Get Relatively Prime   If and , then and are relatively prime.    Try a direct proof. You may find , , and useful.    "
+},
+{
+  "id": "definition-linear_diophantine_equation",
+  "level": "2",
+  "url": "chp2sec3.html#definition-linear_diophantine_equation",
+  "type": "Definition",
+  "number": "2.3.1",
+  "title": "Linear Diophantine Equation.",
+  "body": " Linear Diophantine Equation   A linear Diophantine equation is an equation of the form , where , , and are integers and the solutions and are required to be integers.   "
+},
+{
+  "id": "proposition-solvability_of_linear_diophantine_equations",
+  "level": "2",
+  "url": "chp2sec3.html#proposition-solvability_of_linear_diophantine_equations",
+  "type": "Proposition",
+  "number": "2.3.2",
+  "title": "Solvability of Linear Diophantine Equations.",
+  "body": " Solvability of Linear Diophantine Equations   Given integers and , the linear Diophantine equation has a solution if and only if .    Try a direct proof. For the forward direction, assume that there is a solution to the equation. Show that . For the reverse direction, assume that . Show that there is a solution to the equation. You may find , , and useful.   "
+},
+{
+  "id": "proposition-solvability_of_linear_diophantine_equations_unit",
+  "level": "2",
+  "url": "chp2sec3.html#proposition-solvability_of_linear_diophantine_equations_unit",
+  "type": "Proposition",
+  "number": "2.3.3",
+  "title": "Solvability of Linear Diophantine Equations (Unit Case).",
+  "body": " Solvability of Linear Diophantine Equations (Unit Case)   Given integers and , the linear Diophantine equation has a solution if and only if .    Try a direct proof. You may find useful.   "
+},
+{
+  "id": "definition-relatively_prime",
+  "level": "2",
+  "url": "chp2sec3.html#definition-relatively_prime",
+  "type": "Definition",
+  "number": "2.3.4",
+  "title": "Relatively Prime.",
+  "body": " Relatively Prime   Two integers and are relatively prime if .   "
+},
+{
+  "id": "proposition-dividing_to_get_relatively_prime",
+  "level": "2",
+  "url": "chp2sec3.html#proposition-dividing_to_get_relatively_prime",
+  "type": "Proposition",
+  "number": "2.3.5",
+  "title": "Dividing to Get Relatively Prime.",
+  "body": " Dividing to Get Relatively Prime   If and , then and are relatively prime.    Try a direct proof. You may find , , and useful.   "
+},
+{
+  "id": "chp2sec4",
+  "level": "1",
+  "url": "chp2sec4.html",
+  "type": "Section",
+  "number": "2.4",
+  "title": "Congruences",
+  "body": " Congruences     Congruence   If and are integers and is a positive integer, then and are congruent modulo  , written , if .     Cancellation Theorem for Congruences   If are positive relatively prime integers and , then implies .    Coming soon...    "
+},
+{
+  "id": "definition-congruence",
+  "level": "2",
+  "url": "chp2sec4.html#definition-congruence",
+  "type": "Definition",
+  "number": "2.4.1",
+  "title": "Congruence.",
+  "body": " Congruence   If and are integers and is a positive integer, then and are congruent modulo  , written , if .   "
+},
+{
+  "id": "proposition-congruence_cancellation_theorem",
+  "level": "2",
+  "url": "chp2sec4.html#proposition-congruence_cancellation_theorem",
+  "type": "Proposition",
+  "number": "2.4.2",
+  "title": "Cancellation Theorem for Congruences.",
+  "body": " Cancellation Theorem for Congruences   If are positive relatively prime integers and , then implies .    Coming soon...   "
+},
+{
+  "id": "chp3sec1",
+  "level": "1",
+  "url": "chp3sec1.html",
+  "type": "Section",
+  "number": "3.1",
+  "title": "Prime Factorization",
+  "body": " Prime Factorization     Prime Number   A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself.     Prime Factorization   Every positive integer greater than 1 can be expressed as a product of prime numbers.    Coming soon...    "
+},
+{
+  "id": "definition-prime_number",
+  "level": "2",
+  "url": "chp3sec1.html#definition-prime_number",
+  "type": "Definition",
+  "number": "3.1.1",
+  "title": "Prime Number.",
+  "body": " Prime Number   A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself.   "
+},
+{
+  "id": "proposition-prime_factorization",
+  "level": "2",
+  "url": "chp3sec1.html#proposition-prime_factorization",
+  "type": "Proposition",
+  "number": "3.1.2",
+  "title": "Prime Factorization.",
+  "body": " Prime Factorization   Every positive integer greater than 1 can be expressed as a product of prime numbers.    Coming soon...   "
+},
+{
+  "id": "chp3sec2",
+  "level": "1",
+  "url": "chp3sec2.html",
+  "type": "Section",
+  "number": "3.2",
+  "title": "Uniqueness of Prime Factorization",
+  "body": " Uniqueness of Prime Factorization     Prime Factorization   A prime factorization of a positive integer is an expression of the integer as a product of prime numbers.     Uniqueness of Prime Factorization   The prime factorization of a positive integer greater than 1 is unique up to the order of the factors.    Coming soon...    "
+},
+{
+  "id": "definition-prime_factorization",
+  "level": "2",
+  "url": "chp3sec2.html#definition-prime_factorization",
+  "type": "Definition",
+  "number": "3.2.1",
+  "title": "Prime Factorization.",
+  "body": " Prime Factorization   A prime factorization of a positive integer is an expression of the integer as a product of prime numbers.   "
+},
+{
+  "id": "proposition-uniqueness_of_prime_factorization",
+  "level": "2",
+  "url": "chp3sec2.html#proposition-uniqueness_of_prime_factorization",
+  "type": "Proposition",
+  "number": "3.2.2",
+  "title": "Uniqueness of Prime Factorization.",
+  "body": " Uniqueness of Prime Factorization   The prime factorization of a positive integer greater than 1 is unique up to the order of the factors.    Coming soon...   "
 },
 {
   "id": "backmatter-2",
