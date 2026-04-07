@@ -154,7 +154,7 @@
       Try a proof by cases for <m>a</m>.  If <m> 0\le a \le b </m> then we are done (why???).  So then assume <m> a&gt;b </m>.  Consider the descending sequence 
       
       <me> 
-        S = \{a-bk \mid  k \in \Z \text{ and } a-bk &gt; 0 \}.
+        S = \{a-bk \mid  k \in \Z \text{ and } a-bk \le 0 \}.
       </me>
 
       The set <m>S</m> is nonempty (why???).  The set <m>S</m> has a minimal element (why???).  Call this minimal element <m>r</m>.  Show that this <m>r</m> has the desired properties.  Why must <m>0\le r &lt; b</m>?  Why must it be unique?
