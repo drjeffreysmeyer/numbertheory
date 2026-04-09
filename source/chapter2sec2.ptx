@@ -58,8 +58,8 @@
         <mrow>b  \amp= r_1 q_2 + r_2 \amp\amp\text{where }0 \le r_2 &lt; r_1,</mrow>
         <mrow>r_1  \amp= r_2 q_3 + r_3 \amp\amp\text{where }0 \le r_3 &lt; r_2,</mrow>
         <mrow> \amp\vdots \amp\amp</mrow>  
-        <mrow>r_{n-2}  \amp= r_{n-1} q_{n-1} + r_n \amp\amp\text{where } 0 \le r_n &lt; r_{n-1},</mrow>
-        <mrow>r_{n-1}  \amp= r_n q_n. \amp\amp</mrow>
+        <mrow>r_{n-2}  \amp= r_{n-1} q_{n} + r_n \amp\amp\text{where } 0 \le r_n &lt; r_{n-1},</mrow>
+        <mrow>r_{n-1}  \amp= r_n q_{n+1}. \amp\amp</mrow>
       </md>
       Let <m>r_{n}</m> be the last positive remainder.  Then <m>\gcd(a,b) = r_n</m>. 
     </p>
