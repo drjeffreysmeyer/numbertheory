@@ -14,12 +14,94 @@
     </statement>
   </definition>
 
+<proposition xml:id="proposition-congruence_is_equivalence_relation">
+  <title>Congruence is an Equivalence Relation</title>
+  <statement>
+    <p>
+      If <m>a,b,c,m\in \Z</m> where <m>m&gt;0</m>, then
+      <ol>
+        <li>
+          <p>
+            <m>a \equiv a \pmod m</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>a \equiv b \pmod m</m>, then <m>b \equiv a \pmod m</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>a \equiv b \pmod m</m> and <m>b \equiv c \pmod m</m>, then <m>a \equiv c \pmod m</m>.
+          </p>
+        </li>
+      </ol>
+
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-congruence"/>, <xref ref="definition-divisibility"/>, and <xref ref="proposition-divisibility_is_transitive"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+
+<proposition xml:id="proposition-congruence_preserves_operations">
+  <title>Congruence Preserves Operations</title>
+  <statement>
+    <p>
+      If <m>a,b,a',b'\in \Z</m> where <m>m&gt;0</m>, then
+      <ol>
+        <li>
+          <p>
+            If <m>a \equiv a' \pmod m</m> and <m>b \equiv b' \pmod m</m>, then <m>a + b \equiv a' + b' \pmod m</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>a \equiv a' \pmod m</m> and <m>b \equiv b' \pmod m</m>, then <m>ab \equiv a'b' \pmod m</m>.
+          </p>
+        </li>
+      </ol>
+
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-congruence"/> and <xref ref="definition-divisibility"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+  <definition xml:id="definition-least_residue">
+    <title>Least Residue</title>
+    <statement>
+        <p>
+            If  <m> a </m>  and <m> m </m> are integers and <m> m </m> is a positive integer, the unique <m> r </m> from the division algorithm such that <m>a=qm+r</m> and <m>0\le r &lt; m</m> is called the <term>least residue</term> of <m>a</m> modula <m> m </m>.
+        </p>
+    </statement>
+  </definition>
+
+<proposition xml:id="proposition-congruence_and_least_residue">
+  <title>Congruence and Least Residue</title>
+  <statement>
+    <p>
+      If <m>m\in \Z</m> is positive, then two integers <m>a</m> and <m>b</m> are congruent modulo <m>m</m> if and only if they have the same least residue modulo <m>m</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Coming soon...
+    </p>
+  </proof>
+</proposition>  
 
 <proposition xml:id="proposition-congruence_cancellation_theorem">
   <title>Cancellation Theorem for Congruences</title>
   <statement>
     <p>
-      If <m>a,b,\in \Z</m> are positive relatively prime integers and <m>x,y,\in \Z</m>, then <m>ax \equiv ay \pmod b</m> implies <m>x \equiv y \pmod b</m>.
+      If <m>a,m\in \Z</m> are positive relatively prime integers and <m>x,y,\in \Z</m>, then <m>ax \equiv ay \pmod m</m> implies <m>x \equiv y \pmod m</m>.
     </p>
   </statement>
   <proof>
