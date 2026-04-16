@@ -51,6 +51,22 @@
   <title>Congruence Preserves Operations</title>
   <statement>
     <p>
+      If <m>a,b,a',b'\in \Z</m> where <m>m&gt;0</m> and <m>a \equiv a' \pmod m</m> and <m>b \equiv b' \pmod m</m>, then
+      <ol>
+        <li>
+          <p>
+            <m>a+b \equiv a' + b' \pmod m</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>ab \equiv a'b' \pmod m</m>
+          </p>
+        </li>
+      </ol>
+
+    </p>
+    <p>
       If <m>a,b,a',b'\in \Z</m> where <m>m&gt;0</m>, then
       <ol>
         <li>
@@ -69,7 +85,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-congruence"/> and <xref ref="definition-divisibility"/> useful.
+      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-congruence"/>, <xref ref="definition-divisibility"/>, and <xref ref="proposition-congruence_is_equivalence_relation"/> useful.
     </p>
   </proof>
 </proposition>
@@ -78,7 +94,7 @@
     <title>Least Residue</title>
     <statement>
         <p>
-            If  <m> a </m>  and <m> m </m> are integers and <m> m </m> is a positive integer, the unique <m> r </m> from the division algorithm such that <m>a=qm+r</m> and <m>0\le r &lt; m</m> is called the <term>least residue</term> of <m>a</m> modula <m> m </m>.
+            If  <m> a </m>  and <m> m </m> are integers and <m> m </m> is a positive integer, the unique <m> r </m> from the division algorithm such that <m>a=qm+r</m> and <m>0\le r &lt; m</m> is called the <term>least residue</term> of <m>a</m> modulo <m> m </m>.
         </p>
     </statement>
   </definition>
@@ -92,7 +108,7 @@
   </statement>
   <proof>
     <p>
-      Coming soon...
+      Try a direct proof.  First suppose two integers <m>a</m> and <m>b</m> have the same least residue modulo <m>m</m>.  Write down the expressions and analyze.  Why are they congruent modulo <m>m</m>?  Next suppose the integers are congruent modulo <m>m</m> and let <m>r</m> be the least residue of one of them.  Why must the other have the same least residue modulo <m>m</m>?  You may find  <xref ref="definition-congruence"/>, <xref ref="definition-least_residue"/>, <xref ref="definition-divisibility"/>, and  <xref ref="proposition-congruence_preserves_operations"/> useful.
     </p>
   </proof>
 </proposition>  
@@ -106,7 +122,7 @@
   </statement>
   <proof>
     <p>
-      Coming soon...
+      Try a direct proof.  Try rewriting the congruence.  What is <m>ax - ay</m> congruent to?  Why?  You may find  <xref ref="definition-congruence"/>, <xref ref="definition-commutative_ring"/>, <xref ref="definition-divisibility"/>, <xref ref="definition-relatively_prime"/>, and <xref ref="proposition-congruence_preserves_operations"/> useful.
     </p>
   </proof>
 </proposition>
