@@ -41,7 +41,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-congruence"/>, <xref ref="definition-divisibility"/>, and <xref ref="proposition-divisibility_is_transitive"/> useful.
+      Try a direct proof.  Let the definitions structure your proof.  You may find  <xref ref="definition-congruence"/>, <xref ref="definition-divisibility"/>, <xref ref="proposition-basic_divisibility"/>, and <xref ref="proposition-divisibility_is_transitive"/> useful.
     </p>
   </proof>
 </proposition>
@@ -64,24 +64,7 @@
           </p>
         </li>
       </ol>
-
-    </p>
-    <p>
-      If <m>a,b,a',b'\in \Z</m> where <m>m&gt;0</m>, then
-      <ol>
-        <li>
-          <p>
-            If <m>a \equiv a' \pmod m</m> and <m>b \equiv b' \pmod m</m>, then <m>a + b \equiv a' + b' \pmod m</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            If <m>a \equiv a' \pmod m</m> and <m>b \equiv b' \pmod m</m>, then <m>ab \equiv a'b' \pmod m</m>.
-          </p>
-        </li>
-      </ol>
-
-    </p>
+      </p>
   </statement>
   <proof>
     <p>
