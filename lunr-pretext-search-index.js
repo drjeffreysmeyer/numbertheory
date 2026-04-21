@@ -655,7 +655,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Existence of Prime Factorization",
-  "body": " Existence of Prime Factorization  A prime number is one that is \"irreducible\" in the sense that it cannot be factored into smaller positive integers.   Prime Number   A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself. In symbols, a positive integer is prime if and for all positive integers , if , then or .     Minimal divisor is prime   If is an integer, then the minimal divisor of greater than 1 is a prime number.    Let be the set of positive divisors of that are greater than 1. is nonempty (why???) and has a minimal element (why???), say . Try a proof by contradiction to show that is prime. Leverage minimality. You may find , , , , and useful.    The following few results are elementary properties of order and divisibility we could have proven earlier, but we need them now, so we prove them here.   Product of integers greater than 1 increase size   If are integers greater than 1, then .    Show . Then show . Iterate. Recall that  -many times. Why can you rule out equality and get strict inequality? You may find , and useful.     Proper divisors are smaller   If are distinct integers greater than 1 and , then .    Try a direct proof. Let the definitions structure your proof. You may find , , and useful.     Two positive numbers that divide each other are equal   If are positive integers and both and , then .    Try a direct proof. Let the definitions structure your proof. Substitute some things and reason about what you see. You may find , , and useful.     There are infinitely many prime numbers   There are infinitely many prime numbers.    Try a proof by contradiction. There are many possible proofs of this result, but one of the most famous is attributed to Euclid. Assume for the sake of contradiction that there are only finitely many prime numbers, say . Consider the number . This number is not divisible by any of the primes in our list (why???). Deduce that there must exist a prime divisor of that is not in our list. You may find , , , , and useful.     Prime Factorization (Existence)   Every integer greater than 1 can be expressed as a product of prime numbers.    Let be the set of all positive integers greater than 1 that cannot be expressed as a product of prime numbers. Try a proof by contradiction and assume is nonempty. Then has a minimal element, say (why???). cannot be prime (why???), so it is a product of an integer greater than 1 and a prime (why???). Leverage minimality to deduce a contradiction. You may find , , , and useful.    "
+  "body": " Existence of Prime Factorization  A prime number is one that is \"irreducible\" in the sense that it cannot be factored into smaller positive integers.   Prime Number   A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself. In symbols, a positive integer is prime if and for all positive integers , if , then or .    The following few results are elementary properties of order and divisibility we could have proven earlier, but we need them now, so we prove them here.   Product of integers greater than 1 increase size   If are integers greater than 1, then .    Show . Then show . Iterate. Recall that  -many times. Why can you rule out equality and get strict inequality? You may find , and useful.     Proper divisors are smaller   If are distinct integers greater than 1 and , then .    Try a direct proof. Let the definitions structure your proof. You may find , , and useful.     Two positive numbers that divide each other are equal   If are positive integers and both and , then .    Try a direct proof. Let the definitions structure your proof. Substitute some things and reason about what you see. You may find , , and useful.     Minimal divisor is prime   If is an integer, then the minimal divisor of greater than 1 is a prime number.    Let be the set of positive divisors of that are greater than 1. is nonempty (why???) and has a minimal element (why???), say . Try a proof by contradiction to show that is prime. Leverage minimality. You may find , , , , , and useful.     There are infinitely many prime numbers   There are infinitely many prime numbers.    Try a proof by contradiction. There are many possible proofs of this result, but one of the most famous is attributed to Euclid. Assume for the sake of contradiction that there are only finitely many prime numbers, say . Consider the number . This number is not divisible by any of the primes in our list (why???). Deduce that there must exist a prime divisor of that is not in our list. You may find , , , , and useful.     Prime Factorization (Existence)   Every integer greater than 1 can be expressed as a product of prime numbers.    Let be the set of all positive integers greater than 1 that cannot be expressed as a product of prime numbers. Try a proof by contradiction and assume is nonempty. Then has a minimal element, say (why???). cannot be prime (why???), so it is a product of an integer greater than 1 and a prime (why???). Leverage minimality to deduce a contradiction. You may find , , , and useful.    "
 },
 {
   "id": "definition-prime_number",
@@ -667,20 +667,11 @@ var ptx_lunr_docs = [
   "body": " Prime Number   A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself. In symbols, a positive integer is prime if and for all positive integers , if , then or .   "
 },
 {
-  "id": "proposition-minimal_divisor_is_prime",
-  "level": "2",
-  "url": "chp3sec1.html#proposition-minimal_divisor_is_prime",
-  "type": "Proposition",
-  "number": "3.1.2",
-  "title": "Minimal divisor is prime.",
-  "body": " Minimal divisor is prime   If is an integer, then the minimal divisor of greater than 1 is a prime number.    Let be the set of positive divisors of that are greater than 1. is nonempty (why???) and has a minimal element (why???), say . Try a proof by contradiction to show that is prime. Leverage minimality. You may find , , , , and useful.   "
-},
-{
   "id": "proposition-product_of_integers_greater_than_one_increase_size",
   "level": "2",
   "url": "chp3sec1.html#proposition-product_of_integers_greater_than_one_increase_size",
   "type": "Proposition",
-  "number": "3.1.3",
+  "number": "3.1.2",
   "title": "Product of integers greater than 1 increase size.",
   "body": " Product of integers greater than 1 increase size   If are integers greater than 1, then .    Show . Then show . Iterate. Recall that  -many times. Why can you rule out equality and get strict inequality? You may find , and useful.   "
 },
@@ -689,7 +680,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "chp3sec1.html#proposition-proper_divisors_are_smaller",
   "type": "Proposition",
-  "number": "3.1.4",
+  "number": "3.1.3",
   "title": "Proper divisors are smaller.",
   "body": " Proper divisors are smaller   If are distinct integers greater than 1 and , then .    Try a direct proof. Let the definitions structure your proof. You may find , , and useful.   "
 },
@@ -698,9 +689,18 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "chp3sec1.html#proposition-positive_numbers_dividing_each_other_are_equal",
   "type": "Proposition",
-  "number": "3.1.5",
+  "number": "3.1.4",
   "title": "Two positive numbers that divide each other are equal.",
   "body": " Two positive numbers that divide each other are equal   If are positive integers and both and , then .    Try a direct proof. Let the definitions structure your proof. Substitute some things and reason about what you see. You may find , , and useful.   "
+},
+{
+  "id": "proposition-minimal_divisor_is_prime",
+  "level": "2",
+  "url": "chp3sec1.html#proposition-minimal_divisor_is_prime",
+  "type": "Proposition",
+  "number": "3.1.5",
+  "title": "Minimal divisor is prime.",
+  "body": " Minimal divisor is prime   If is an integer, then the minimal divisor of greater than 1 is a prime number.    Let be the set of positive divisors of that are greater than 1. is nonempty (why???) and has a minimal element (why???), say . Try a proof by contradiction to show that is prime. Leverage minimality. You may find , , , , , and useful.   "
 },
 {
   "id": "proposition-infinite_primes",
