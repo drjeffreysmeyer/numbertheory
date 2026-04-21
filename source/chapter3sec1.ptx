@@ -15,20 +15,6 @@
   </definition>
 
 
-<proposition xml:id="proposition-minimal_divisor_is_prime">
-  <title>Minimal divisor is prime</title>
-  <statement>
-    <p>
-      If <m>n &gt; 1</m> is an integer, then the minimal divisor of <m>n</m> greater than 1 is a prime number.
-    </p>
-  </statement>
-  <proof>
-    <p>
-      Let <m>S</m> be the set of positive divisors of <m>n</m> that are greater than 1.  <m>S</m> is nonempty (why???) and <m>S</m> has a minimal element (why???), say <m>p</m>.  Try a proof by contradiction to show that <m>p</m> is prime.  Leverage minimality.  You may find <xref ref="definition-commutative_ring"/>, <xref ref="definition-divisibility"/>,  <xref ref="definition-well-ordered"/>,   <xref ref="definition-prime_number"/>, and  <xref ref="proposition-divisibility_is_transitive"/> useful.
-    </p>
-  </proof>
-</proposition>
-
 <p>
   The following few results are elementary properties of order and divisibility we could have proven earlier, but we need them now, so we prove them here.
 </p>
@@ -75,6 +61,21 @@
     </p>
   </proof>
 </proposition>
+
+<proposition xml:id="proposition-minimal_divisor_is_prime">
+  <title>Minimal divisor is prime</title>
+  <statement>
+    <p>
+      If <m>n &gt; 1</m> is an integer, then the minimal divisor of <m>n</m> greater than 1 is a prime number.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Let <m>S</m> be the set of positive divisors of <m>n</m> that are greater than 1.  <m>S</m> is nonempty (why???) and <m>S</m> has a minimal element (why???), say <m>p</m>.  Try a proof by contradiction to show that <m>p</m> is prime.  Leverage minimality.  You may find <xref ref="definition-commutative_ring"/>, <xref ref="definition-divisibility"/>,  <xref ref="definition-well-ordered"/>,   <xref ref="definition-prime_number"/>, <xref ref="proposition-proper_divisors_are_smaller"/>, and  <xref ref="proposition-divisibility_is_transitive"/> useful.
+    </p>
+  </proof>
+</proposition>
+
 
 <proposition xml:id="proposition-infinite_primes">
   <title>There are infinitely many prime numbers</title>
