@@ -22,10 +22,18 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof. You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-gcd"/>, and <xref ref="definition-relatively_prime"/> useful.
+      Try a direct proof. You may find  <xref ref="proposition-bezout_identity"/>, <xref ref="definition-gcd"/>,  <xref ref="definition-congruence"/>, and <xref ref="definition-relatively_prime"/> useful.
     </p>
   </proof>
 </proposition>
+
+  <activity>
+		<title>Find the units</title>
+		<p>
+			Find the units modulo 4, 5, and 20.  Can you find a pattern?  
+      Can you guess a formula for the number of units modulo <m>m</m>?
+		</p>
+  </activity>
 
 
   <definition xml:id="definition-phi_function">
@@ -46,7 +54,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof. You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-gcd"/>, and <xref ref="definition-relatively_prime"/> useful.
+      Try a direct proof. You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-phi_function"/>, <xref ref="definition-least_residue"/>, and <xref ref="definition-relatively_prime"/> useful.
     </p>
   </proof>
 </proposition>
@@ -61,21 +69,81 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof. You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-gcd"/>, and <xref ref="definition-relatively_prime"/> useful.
+      Try a direct proof. It is sometimes helpful to think about about least resides modulo <m>p^k</m> as a grid.  Write down the first <m>p</m> many least residues modulo <m>p^k</m>  then go to a new line.  Repeat this process for the remaining rows until you have a <m>p</m> by <m>p^{k-1}</m> grid.   Think about the columns and rows that contain elements relatively prime to <m>p^k</m>.  Try for a few small primes first.  Remember, though, examples never constitute a proof.  You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-gcd"/>, and <xref ref="definition-relatively_prime"/> useful.
     </p>
   </proof>
 </proposition>
 
-<proposition xml:id="proposition-phi_function_of_coprime_product">
-  <title>The phi function of a coprime product</title>
+<proposition xml:id="proposition-relatively_prime_product">
+  <title>Relatively prime with a relatively prime product</title>
   <statement>
     <p>
-      If <m>m,n\in \Z</m> are coprime, then <m>\phi(mn)=\phi(m)\phi(n)</m>.
+      If <m>a,m,n\in \Z</m> integers greater than 1 and <m>m</m> and <m>n</m> are relatively prime, then <m>a</m> is relatively prime with <m>mn</m> if and only if <m>a</m> is relatively prime with both <m>m</m> and <m>n</m>.
     </p>
   </statement>
   <proof>
     <p>
-      Try a direct proof. You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-gcd"/>, and <xref ref="definition-relatively_prime"/> useful.
+      Try a proof by contrapositive. First suppose that <m>a</m> and <m>mn</m> are not relatively prime.  Then there exists a prime <m>p</m> such that <m>p \mid a</m> and <m>p \mid mn</m>.  Deduce that either <m>m</m> or <m>n</m> is not relatively prime with <m>a</m>.  Now prove the other direction.  Without loss of generality, we may suppose (why???) that <m>m</m> and <m>a</m> are not relatively prime.  Deduce <m>a</m> is not relatively prime with <m>mn</m>.    You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-gcd"/>, <xref ref="definition-relatively_prime"/>, <xref ref="proposition-minimal_divisor_is_prime"/>, and <xref ref="proposition-euclid_lemma"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+  <definition xml:id="definition-relatively_prime_diagonal_grid">
+    <title>The Relatively Prime Diagonal Grid</title>
+    <statement>
+        <p>
+            If integers <m>m</m> and <m>n</m> are relatively prime and greater than 1, then the <term>relatively prime diagonal grid</term> is the <m>m</m> by <m>n</m> grid of least residues modulo <m>mn</m> written sequentially diagonally down and to the right, where you loop upon hitting and edge.
+        </p>
+    </statement>
+  </definition>
+
+    <activity>
+		<title>Create the Relatively Prime Diagonal Grid</title>
+		<p>
+			Create the relatively prime diagonal grid for <m>m=4</m> and <m>n=5</m>.  What patterns do you see? Can you find a pattern in the columns and rows?
+		</p>
+  </activity>
+
+
+ <proposition xml:id="proposition-relatively_prime_diagonal_grid_is_filled">
+  <title>The relatively prime diagonal grid is filled</title>
+  <statement>
+    <p>
+      If <m>m,n\in \Z</m> are integers greater than 1 and <m>m</m> and <m>n</m> are relatively prime, each spot in the relatively prime diagonal grid  is filled with precisely one least residue modulo <m>mn</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.
+    </p>
+  </proof>
+</proposition> 
+
+ <proposition xml:id="proposition-columns_and_rows_of_relatively_prime_diagonal_grid">
+  <title>The columns and rows of the relatively prime diagonal grid</title>
+  <statement>
+    <p>
+      If <m>m,n\in \Z</m> are integers greater than 1 and <m>m</m> and <m>n</m> are relatively prime, then the elements of a column are all congruent modulo <m>n</m> and the elements of a row are all congruent modulo <m>m</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.
+    </p>
+  </proof>
+</proposition> 
+
+
+<proposition xml:id="proposition-phi_function_of_relatively_prime_product">
+  <title>The phi function of a relatively prime product</title>
+  <statement>
+    <p>
+      If <m>m,n\in \Z</m> are integers greater than 1 and <m>m</m> and <m>n</m> are relatively prime, then <m>\phi(mn)=\phi(m)\phi(n)</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Analyze the columns and rows of the relatively prime diagonal grid.
     </p>
   </proof>
 </proposition>
@@ -99,47 +167,5 @@
 
 
 
-
-<proposition xml:id="proposition-multiplication_by_relatively_prime_element_permutes_the_units">
-  <title>Multiplication by relatively prime element permutes the units</title>
-  <statement>
-    <p>
-      If <m>a, m \in \Z</m>, <m>m &gt; 1</m> is a positive integer, such that <m>\gcd(a,m)=1</m>, then multiplication by <m>a</m> permutes the elements of <m>U_m</m>.  In other words, the function <m>f: U_m \to U_m</m> defined by <m>f(x) = ax \pmod m</m> is a bijection.
-    </p>
-  </statement>
-  <proof>
-    <p>
-      Coming soon.
-    </p>
-  </proof>
-</proposition>
-
-<proposition xml:id="proposition-generalized_fermat_little_theorem">
-  <title>Generalized Fermat's Little Theorem</title>
-  <statement>
-    <p>
-      If <m>a, m \in \Z</m>, <m>m &gt; 1</m> is a positive integer, such that <m>\gcd(a,m)=1</m>, then <m>a^{\phi(m)} \equiv 1 \pmod{m}</m>.
-    </p>
-  </statement>
-  <proof>
-    <p>
-      Coming soon.
-    </p>
-  </proof>
-</proposition>
-
-<proposition xml:id="proposition-fermat_little_theorem">
-  <title>Fermat's Little Theorem</title>
-  <statement>
-    <p>
-      If <m>a, p \in \Z</m>, <m>p</m> is a prime, and <m>\gcd(a,p)=1</m>, then <m>a^{p-1} \equiv 1 \pmod{p}</m>.
-    </p>
-  </statement>
-  <proof>
-    <p>
-      Coming soon.
-    </p>
-  </proof>
-</proposition>
  
 </section>
