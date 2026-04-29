@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp4sec4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Quadratic Reciprocity</title>
+
+  <p> </p>
+  
+<proposition xml:id="proposition-quadratic_reciprocity">
+  <title>Quadratic Reciprocity</title>
+  <statement>
+    <p>
+      If <m>p</m> and <m>q</m> are distinct odd primes, then the congruences
+      <m>
+        \begin{cases}
+          x^2 \equiv a \pmod{p} \\
+          x^2 \equiv a \pmod{q}
+        \end{cases}
+      </m>
+      have the same solvability.  In other words, <m>a</m> is a quadratic residue modulo <m>p</m> if and only if it is a quadratic residue modulo <m>q</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Coming soon.
+    </p>
+  </proof>
+</proposition>
+
+</section>

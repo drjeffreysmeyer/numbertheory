@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp4sec1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Fermat's Little Theorem</title>
+
+  <p> </p>
+  
+<proposition xml:id="proposition-multiplication_by_relatively_prime_element_permutes_the_units">
+  <title>Multiplication by relatively prime element permutes the units</title>
+  <statement>
+    <p>
+      If <m>a, m \in \Z</m>, <m>m &gt; 1</m> is a positive integer, such that <m>\gcd(a,m)=1</m>, then multiplication by <m>a</m> permutes the elements of <m>U_m</m>.  In other words, the function <m>f: U_m \to U_m</m> defined by <m>f(x) = ax \pmod m</m> is a bijection.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Coming soon.
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="proposition-generalized_fermat_little_theorem">
+  <title>Generalized Fermat's Little Theorem</title>
+  <statement>
+    <p>
+      If <m>a, m \in \Z</m>, <m>m &gt; 1</m> is a positive integer, such that <m>\gcd(a,m)=1</m>, then <m>a^{\phi(m)} \equiv 1 \pmod{m}</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Coming soon.
+    </p>
+  </proof>
+</proposition>
+
+
+
+
+<proposition xml:id="proposition-fermat_little_theorem">
+  <title>Fermat's Little Theorem</title>
+  <statement>
+    <p>
+      If <m>a, p \in \Z</m>, <m>p</m> is a prime, and <m>\gcd(a,p)=1</m>, then <m>a^{p-1} \equiv 1 \pmod{p}</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Coming soon.
+    </p>
+  </proof>
+</proposition>
+
+
+</section>

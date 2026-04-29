@@ -1,93 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="chp3sec3" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Euler Phi Function</title>
+  <title>Relatively Prime Diagonal Grid</title>
 
   <p> </p>
-  <definition xml:id="definition-units_modulo_n">
-    <title>Units Modulo m</title>
-    <statement>
-        <p>
-            The <term>units modulo m</term> are the least residues modulo <m>m</m> that have multiplicative inverses modulo <m>m</m>.  We will denote the set of units modulo <m>m</m> by <m>U_m</m>.
-        </p>
-    </statement>
-  </definition>
-
-<proposition xml:id="proposition-relatively_prime_elements_are_units_modulo_n">
-  <title>Relatively Prime Elements are Units Modulo m</title>
-  <statement>
-    <p>
-      If <m>m &gt; 1</m> is an integer, and <m>a</m> is a least residue modulo <m>m</m> such that <m>\gcd(a,m)=1</m>, then <m>a \in U_m</m>.
-    </p>
-  </statement>
-  <proof>
-    <p>
-      Try a direct proof. You may find  <xref ref="proposition-bezout_identity"/>, <xref ref="definition-gcd"/>,  <xref ref="definition-congruence"/>, and <xref ref="definition-relatively_prime"/> useful.
-    </p>
-  </proof>
-</proposition>
-
-  <activity>
-		<title>Find the units</title>
-		<p>
-			Find the units modulo 4, 5, and 20.  Can you find a pattern?  
-      Can you guess a formula for the number of units modulo <m>m</m>?
-		</p>
-  </activity>
-
-
-  <definition xml:id="definition-phi_function">
-    <title>Euler Phi Function</title>
-    <statement>
-        <p>
-            The <term>Euler phi function</term> <m>\phi(m)</m> (also sometimes called the <term>totient function</term>) is defined as the number of positive integers less than or equal to <m>m</m> that are relatively prime to <m>m</m>.
-        </p>
-    </statement>
-  </definition>
-
-<proposition xml:id="proposition-phi_function_of_prime">
-  <title>The phi function of a prime</title>
-  <statement>
-    <p>
-      If <m>p\in \Z</m> is prime then <m>\phi(p)=p-1</m>.
-    </p>
-  </statement>
-  <proof>
-    <p>
-      Try a direct proof. You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-phi_function"/>, <xref ref="definition-least_residue"/>, and <xref ref="definition-relatively_prime"/> useful.
-    </p>
-  </proof>
-</proposition>
-
-
-<proposition xml:id="proposition-phi_function_of_prime_power">
-  <title>The phi function of a prime power</title>
-  <statement>
-    <p>
-      If <m>p\in \Z</m> is prime and <m>k\in \Z_{>0}</m>, then <m>\phi(p^k)=p^k-p^{k-1}</m>.
-    </p>
-  </statement>
-  <proof>
-    <p>
-      Try a direct proof. It is sometimes helpful to think about about least resides modulo <m>p^k</m> as a grid.  Write down the first <m>p</m> many least residues modulo <m>p^k</m>  then go to a new line.  Repeat this process for the remaining rows until you have a <m>p</m> by <m>p^{k-1}</m> grid.   Think about the columns and rows that contain elements relatively prime to <m>p^k</m>.  Try for a few small primes first.  Remember, though, examples never constitute a proof.  You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-gcd"/>, and <xref ref="definition-relatively_prime"/> useful.
-    </p>
-  </proof>
-</proposition>
-
-<proposition xml:id="proposition-relatively_prime_product">
-  <title>Relatively prime with a relatively prime product</title>
-  <statement>
-    <p>
-      If <m>a,m,n\in \Z</m> integers greater than 1 and <m>m</m> and <m>n</m> are relatively prime, then <m>a</m> is relatively prime with <m>mn</m> if and only if <m>a</m> is relatively prime with both <m>m</m> and <m>n</m>.
-    </p>
-  </statement>
-  <proof>
-    <p>
-      Try a proof by contrapositive. First suppose that <m>a</m> and <m>mn</m> are not relatively prime.  Then there exists a prime <m>p</m> such that <m>p \mid a</m> and <m>p \mid mn</m>.  Deduce that either <m>m</m> or <m>n</m> is not relatively prime with <m>a</m>.  Now prove the other direction.  Without loss of generality, we may suppose (why???) that <m>m</m> and <m>a</m> are not relatively prime.  Deduce <m>a</m> is not relatively prime with <m>mn</m>.    You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-gcd"/>, <xref ref="definition-relatively_prime"/>, <xref ref="proposition-minimal_divisor_is_prime"/>, and <xref ref="proposition-euclid_lemma"/> useful.
-    </p>
-  </proof>
-</proposition>
-
+  
   <definition xml:id="definition-relatively_prime_diagonal_grid">
     <title>The Relatively Prime Diagonal Grid</title>
     <statement>
@@ -97,10 +14,30 @@
     </statement>
   </definition>
 
+  <p>For example, the relatively prime diagonal grid for <m>m=2</m> and <m>n=3</m> is:</p>
+
+  <tabular bottom="minor" top="minor" left="minor" right="minor">
+  <row bottom="minor">
+    <cell right="minor">0</cell>
+    <cell>4</cell>
+    <cell>2</cell>
+  </row>
+  <row>
+    <cell right="minor"
+    >3</cell>
+    <cell>1</cell>
+    <cell>5</cell>
+  </row>
+</tabular>
+
     <activity>
 		<title>Create the Relatively Prime Diagonal Grid</title>
 		<p>
 			Create the relatively prime diagonal grid for <m>m=4</m> and <m>n=5</m>.  What patterns do you see? Can you find a pattern in the columns and rows?
+		</p>
+
+    <p>
+			Try to create a similar grid for <m>m=3</m> and <m>n=6</m>.  What goes wrong?  Why do you think the condition of relatively prime is necessary?  
 		</p>
   </activity>
 
@@ -132,38 +69,6 @@
     </p>
   </proof>
 </proposition> 
-
-
-<proposition xml:id="proposition-phi_function_of_relatively_prime_product">
-  <title>The phi function of a relatively prime product</title>
-  <statement>
-    <p>
-      If <m>m,n\in \Z</m> are integers greater than 1 and <m>m</m> and <m>n</m> are relatively prime, then <m>\phi(mn)=\phi(m)\phi(n)</m>.
-    </p>
-  </statement>
-  <proof>
-    <p>
-      Analyze the columns and rows of the relatively prime diagonal grid.
-    </p>
-  </proof>
-</proposition>
-
-<proposition xml:id="proposition-computing_phi_function">
-  <title>Computing the Phi Function</title>
-  <statement>
-    <p>
-      If <m>m=p_1^{k_1}p_2^{k_2}\cdots p_r^{k_r}</m> is the prime factorization of <m>m</m>, then
-      <m>
-        \phi(m) = m \left(1 - \frac{1}{p_1}\right)\left(1 - \frac{1}{p_2}\right) \cdots \left(1 - \frac{1}{p_r}\right).
-      </m>  
-    </p>
-  </statement>
-  <proof>
-    <p>
-      Try a direct proof.  
-    </p>
-  </proof>
-</proposition>
 
 
 

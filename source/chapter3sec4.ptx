@@ -1,50 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="chp3sec4" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Fermat's Little Theorem</title>
+  <title>Euler Phi Function</title>
 
   <p> </p>
-  
-<proposition xml:id="proposition-multiplication_by_relatively_prime_element_permutes_the_units">
-  <title>Multiplication by relatively prime element permutes the units</title>
+  <definition xml:id="definition-units_modulo_n">
+    <title>Units Modulo m</title>
+    <statement>
+        <p>
+            The <term>units modulo m</term> are the least residues modulo <m>m</m> that have multiplicative inverses modulo <m>m</m>.  We will denote the set of units modulo <m>m</m> by <m>U_m</m>.
+        </p>
+    </statement>
+  </definition>
+
+<proposition xml:id="proposition-relatively_prime_elements_are_units_modulo_n">
+  <title>Relatively Prime Elements are Units Modulo m</title>
   <statement>
     <p>
-      If <m>a, m \in \Z</m>, <m>m &gt; 1</m> is a positive integer, such that <m>\gcd(a,m)=1</m>, then multiplication by <m>a</m> permutes the elements of <m>U_m</m>.  In other words, the function <m>f: U_m \to U_m</m> defined by <m>f(x) = ax \pmod m</m> is a bijection.
+      If <m>m &gt; 1</m> is an integer, and <m>a</m> is a least residue modulo <m>m</m> such that <m>\gcd(a,m)=1</m>, then <m>a \in U_m</m>.
     </p>
   </statement>
   <proof>
     <p>
-      Coming soon.
+      Try a direct proof. You may find  <xref ref="proposition-bezout_identity"/>, <xref ref="definition-gcd"/>,  <xref ref="definition-congruence"/>, and <xref ref="definition-relatively_prime"/> useful.
     </p>
   </proof>
 </proposition>
 
-<proposition xml:id="proposition-generalized_fermat_little_theorem">
-  <title>Generalized Fermat's Little Theorem</title>
+  <activity>
+		<title>Find the units</title>
+		<p>
+			Find the units modulo 4, 5, and 20.  Can you find a pattern?  
+      Can you guess a formula for the number of units modulo <m>m</m>?
+		</p>
+  </activity>
+
+
+  <definition xml:id="definition-phi_function">
+    <title>Euler Phi Function</title>
+    <statement>
+        <p>
+            The <term>Euler phi function</term> <m>\phi(m)</m> (also sometimes called the <term>totient function</term>) is defined as the number of positive integers less than or equal to <m>m</m> that are relatively prime to <m>m</m>.
+        </p>
+    </statement>
+  </definition>
+
+<proposition xml:id="proposition-phi_function_of_prime">
+  <title>The phi function of a prime</title>
   <statement>
     <p>
-      If <m>a, m \in \Z</m>, <m>m &gt; 1</m> is a positive integer, such that <m>\gcd(a,m)=1</m>, then <m>a^{\phi(m)} \equiv 1 \pmod{m}</m>.
+      If <m>p\in \Z</m> is prime then <m>\phi(p)=p-1</m>.
     </p>
   </statement>
   <proof>
     <p>
-      Coming soon.
+      Try a direct proof. You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-phi_function"/>, <xref ref="definition-least_residue"/>, and <xref ref="definition-relatively_prime"/> useful.
     </p>
   </proof>
 </proposition>
 
-<proposition xml:id="proposition-fermat_little_theorem">
-  <title>Fermat's Little Theorem</title>
+
+<proposition xml:id="proposition-phi_function_of_prime_power">
+  <title>The phi function of a prime power</title>
   <statement>
     <p>
-      If <m>a, p \in \Z</m>, <m>p</m> is a prime, and <m>\gcd(a,p)=1</m>, then <m>a^{p-1} \equiv 1 \pmod{p}</m>.
+      If <m>p\in \Z</m> is prime and <m>k\in \Z_{>0}</m>, then <m>\phi(p^k)=p^k-p^{k-1}</m>.
     </p>
   </statement>
   <proof>
     <p>
-      Coming soon.
+      Try a direct proof. It is sometimes helpful to think about about least resides modulo <m>p^k</m> as a grid.  Write down the first <m>p</m> many least residues modulo <m>p^k</m>  then go to a new line.  Repeat this process for the remaining rows until you have a <m>p</m> by <m>p^{k-1}</m> grid.   Think about the columns and rows that contain elements relatively prime to <m>p^k</m>.  Try for a few small primes first.  Remember, though, examples never constitute a proof.  You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-gcd"/>, and <xref ref="definition-relatively_prime"/> useful.
     </p>
   </proof>
 </proposition>
+
+<proposition xml:id="proposition-relatively_prime_product">
+  <title>Relatively prime with a relatively prime product</title>
+  <statement>
+    <p>
+      If <m>a,m,n\in \Z</m> integers greater than 1 and <m>m</m> and <m>n</m> are relatively prime, then <m>a</m> is relatively prime with <m>mn</m> if and only if <m>a</m> is relatively prime with both <m>m</m> and <m>n</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a proof by contrapositive. First suppose that <m>a</m> and <m>mn</m> are not relatively prime.  Then there exists a prime <m>p</m> such that <m>p \mid a</m> and <m>p \mid mn</m>.  Deduce that either <m>m</m> or <m>n</m> is not relatively prime with <m>a</m>.  Now prove the other direction.  Without loss of generality, we may suppose (why???) that <m>m</m> and <m>a</m> are not relatively prime.  Deduce <m>a</m> is not relatively prime with <m>mn</m>.    You may find  <xref ref="definition-prime_number"/>, <xref ref="definition-gcd"/>, <xref ref="definition-relatively_prime"/>, <xref ref="proposition-minimal_divisor_is_prime"/>, and <xref ref="proposition-euclid_lemma"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="proposition-phi_function_of_relatively_prime_product">
+  <title>The phi function of a relatively prime product</title>
+  <statement>
+    <p>
+      If <m>m,n\in \Z</m> are integers greater than 1 and <m>m</m> and <m>n</m> are relatively prime, then <m>\phi(mn)=\phi(m)\phi(n)</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Analyze the columns and rows of the relatively prime diagonal grid.
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="proposition-computing_phi_function">
+  <title>Computing the Phi Function</title>
+  <statement>
+    <p>
+      If <m>m=p_1^{k_1}p_2^{k_2}\cdots p_r^{k_r}</m> is the prime factorization of <m>m</m>, then
+      <m>
+        \phi(m) = m \left(1 - \frac{1}{p_1}\right)\left(1 - \frac{1}{p_2}\right) \cdots \left(1 - \frac{1}{p_r}\right).
+      </m>  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  
+    </p>
+  </proof>
+</proposition>
+
+
+
  
 </section>

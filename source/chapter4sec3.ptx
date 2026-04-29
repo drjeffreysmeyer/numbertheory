@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp4sec3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Chinese Remainder Theorem</title>
+
+  <p> </p>
+  
+<proposition xml:id="proposition-chinese_remainder_theorem">
+  <title>Chinese Remainder Theorem</title>
+  <statement>
+    <p>
+      If <m>m_1, m_2, \ldots, m_k \in \Z</m>, <m>m_i &gt; 1</m> are positive integers such that <m>\gcd(m_i, m_j) = 1</m> for all <m>i \neq j</m>, then the system of congruences
+      <m>
+        \begin{cases}
+          x \equiv a_1 \pmod{m_1} \\
+          x \equiv a_2 \pmod{m_2} \\
+          \vdots \\
+          x \equiv a_k \pmod{m_k}
+        \end{cases}
+      </m>
+      has a unique solution modulo <m>M = m_1 m_2 \cdots m_k</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Coming soon.
+    </p>
+  </proof>
+</proposition>
+
+
+
+</section>

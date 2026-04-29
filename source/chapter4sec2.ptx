@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp4sec2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Wilson's Theorem</title>
+
+  <p> </p>
+  
+  <definition xml:id="definition-factorial">
+    <title>Factorial</title>
+    <statement>
+        <p>
+            The <term>factorial of n</term>, denoted <m>n!</m>, is the product of all positive integers less than or equal to <m>n</m>.
+        </p>
+    </statement>
+  </definition>
+
+<proposition xml:id="proposition-wilsons_theorem">
+  <title>Wilson's Theorem</title>
+  <statement>
+    <p>
+      If <m>p</m> is a prime, then <m>(p-1)! \equiv -1 \pmod{p}</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Coming soon.
+    </p>
+  </proof>
+</proposition>
+
+
+</section>
