@@ -771,26 +771,17 @@ var ptx_lunr_docs = [
   "url": "chp3sec3.html",
   "type": "Section",
   "number": "3.3",
-  "title": "Euler Phi Function",
-  "body": " Euler Phi Function     Units Modulo m   The units modulo m are the least residues modulo that have multiplicative inverses modulo . We will denote the set of units modulo by .     Relatively Prime Elements are Units Modulo m   If is an integer, and is a least residue modulo such that , then .    Try a direct proof. You may find , , , and useful.     Find the units  Find the units modulo 4, 5, and 20. Can you find a pattern? Can you guess a formula for the number of units modulo ?    Euler Phi Function   The Euler phi function  (also sometimes called the totient function ) is defined as the number of positive integers less than or equal to that are relatively prime to .     The phi function of a prime   If is prime then .    Try a direct proof. You may find , , , and useful.     The phi function of a prime power   If is prime and , then .    Try a direct proof. It is sometimes helpful to think about about least resides modulo as a grid. Write down the first many least residues modulo then go to a new line. Repeat this process for the remaining rows until you have a by grid. Think about the columns and rows that contain elements relatively prime to . Try for a few small primes first. Remember, though, examples never constitute a proof. You may find , , and useful.     Relatively prime with a relatively prime product   If integers greater than 1 and and are relatively prime, then is relatively prime with if and only if is relatively prime with both and .    Try a proof by contrapositive. First suppose that and are not relatively prime. Then there exists a prime such that and . Deduce that either or is not relatively prime with . Now prove the other direction. Without loss of generality, we may suppose (why???) that and are not relatively prime. Deduce is not relatively prime with . You may find , , , , and useful.     The Relatively Prime Diagonal Grid   If integers and are relatively prime and greater than 1, then the relatively prime diagonal grid is the by grid of least residues modulo written sequentially diagonally down and to the right, where you loop upon hitting and edge.     Create the Relatively Prime Diagonal Grid  Create the relatively prime diagonal grid for and . What patterns do you see? Can you find a pattern in the columns and rows?    The relatively prime diagonal grid is filled   If are integers greater than 1 and and are relatively prime, each spot in the relatively prime diagonal grid is filled with precisely one least residue modulo .    Try a direct proof.     The columns and rows of the relatively prime diagonal grid   If are integers greater than 1 and and are relatively prime, then the elements of a column are all congruent modulo and the elements of a row are all congruent modulo .    Try a direct proof.     The phi function of a relatively prime product   If are integers greater than 1 and and are relatively prime, then .    Analyze the columns and rows of the relatively prime diagonal grid.     Computing the Phi Function   If is the prime factorization of , then     Try a direct proof.    "
+  "title": "Relatively Prime Diagonal Grid",
+  "body": " Relatively Prime Diagonal Grid     The Relatively Prime Diagonal Grid   If integers and are relatively prime and greater than 1, then the relatively prime diagonal grid is the by grid of least residues modulo written sequentially diagonally down and to the right, where you loop upon hitting and edge.    For example, the relatively prime diagonal grid for and is:   0  4  2    3  1  5      Create the Relatively Prime Diagonal Grid  Create the relatively prime diagonal grid for and . What patterns do you see? Can you find a pattern in the columns and rows?    The relatively prime diagonal grid is filled   If are integers greater than 1 and and are relatively prime, each spot in the relatively prime diagonal grid is filled with precisely one least residue modulo .    Try a direct proof.     The columns and rows of the relatively prime diagonal grid   If are integers greater than 1 and and are relatively prime, then the elements of a column are all congruent modulo and the elements of a row are all congruent modulo .    Try a direct proof.    "
 },
 {
-  "id": "definition-units_modulo_n",
+  "id": "definition-relatively_prime_diagonal_grid",
   "level": "2",
-  "url": "chp3sec3.html#definition-units_modulo_n",
+  "url": "chp3sec3.html#definition-relatively_prime_diagonal_grid",
   "type": "Definition",
   "number": "3.3.1",
-  "title": "Units Modulo m.",
-  "body": " Units Modulo m   The units modulo m are the least residues modulo that have multiplicative inverses modulo . We will denote the set of units modulo by .   "
-},
-{
-  "id": "proposition-relatively_prime_elements_are_units_modulo_n",
-  "level": "2",
-  "url": "chp3sec3.html#proposition-relatively_prime_elements_are_units_modulo_n",
-  "type": "Proposition",
-  "number": "3.3.2",
-  "title": "Relatively Prime Elements are Units Modulo m.",
-  "body": " Relatively Prime Elements are Units Modulo m   If is an integer, and is a least residue modulo such that , then .    Try a direct proof. You may find , , , and useful.   "
+  "title": "The Relatively Prime Diagonal Grid.",
+  "body": " The Relatively Prime Diagonal Grid   If integers and are relatively prime and greater than 1, then the relatively prime diagonal grid is the by grid of least residues modulo written sequentially diagonally down and to the right, where you loop upon hitting and edge.   "
 },
 {
   "id": "chp3sec3-5",
@@ -798,60 +789,6 @@ var ptx_lunr_docs = [
   "url": "chp3sec3.html#chp3sec3-5",
   "type": "Activity",
   "number": "3.3.1",
-  "title": "Find the units.",
-  "body": " Find the units  Find the units modulo 4, 5, and 20. Can you find a pattern? Can you guess a formula for the number of units modulo ?  "
-},
-{
-  "id": "definition-phi_function",
-  "level": "2",
-  "url": "chp3sec3.html#definition-phi_function",
-  "type": "Definition",
-  "number": "3.3.3",
-  "title": "Euler Phi Function.",
-  "body": " Euler Phi Function   The Euler phi function  (also sometimes called the totient function ) is defined as the number of positive integers less than or equal to that are relatively prime to .   "
-},
-{
-  "id": "proposition-phi_function_of_prime",
-  "level": "2",
-  "url": "chp3sec3.html#proposition-phi_function_of_prime",
-  "type": "Proposition",
-  "number": "3.3.4",
-  "title": "The phi function of a prime.",
-  "body": " The phi function of a prime   If is prime then .    Try a direct proof. You may find , , , and useful.   "
-},
-{
-  "id": "proposition-phi_function_of_prime_power",
-  "level": "2",
-  "url": "chp3sec3.html#proposition-phi_function_of_prime_power",
-  "type": "Proposition",
-  "number": "3.3.5",
-  "title": "The phi function of a prime power.",
-  "body": " The phi function of a prime power   If is prime and , then .    Try a direct proof. It is sometimes helpful to think about about least resides modulo as a grid. Write down the first many least residues modulo then go to a new line. Repeat this process for the remaining rows until you have a by grid. Think about the columns and rows that contain elements relatively prime to . Try for a few small primes first. Remember, though, examples never constitute a proof. You may find , , and useful.   "
-},
-{
-  "id": "proposition-relatively_prime_product",
-  "level": "2",
-  "url": "chp3sec3.html#proposition-relatively_prime_product",
-  "type": "Proposition",
-  "number": "3.3.6",
-  "title": "Relatively prime with a relatively prime product.",
-  "body": " Relatively prime with a relatively prime product   If integers greater than 1 and and are relatively prime, then is relatively prime with if and only if is relatively prime with both and .    Try a proof by contrapositive. First suppose that and are not relatively prime. Then there exists a prime such that and . Deduce that either or is not relatively prime with . Now prove the other direction. Without loss of generality, we may suppose (why???) that and are not relatively prime. Deduce is not relatively prime with . You may find , , , , and useful.   "
-},
-{
-  "id": "definition-relatively_prime_diagonal_grid",
-  "level": "2",
-  "url": "chp3sec3.html#definition-relatively_prime_diagonal_grid",
-  "type": "Definition",
-  "number": "3.3.7",
-  "title": "The Relatively Prime Diagonal Grid.",
-  "body": " The Relatively Prime Diagonal Grid   If integers and are relatively prime and greater than 1, then the relatively prime diagonal grid is the by grid of least residues modulo written sequentially diagonally down and to the right, where you loop upon hitting and edge.   "
-},
-{
-  "id": "chp3sec3-11",
-  "level": "2",
-  "url": "chp3sec3.html#chp3sec3-11",
-  "type": "Activity",
-  "number": "3.3.2",
   "title": "Create the Relatively Prime Diagonal Grid.",
   "body": " Create the Relatively Prime Diagonal Grid  Create the relatively prime diagonal grid for and . What patterns do you see? Can you find a pattern in the columns and rows?  "
 },
@@ -860,7 +797,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "chp3sec3.html#proposition-relatively_prime_diagonal_grid_is_filled",
   "type": "Proposition",
-  "number": "3.3.8",
+  "number": "3.3.2",
   "title": "The relatively prime diagonal grid is filled.",
   "body": " The relatively prime diagonal grid is filled   If are integers greater than 1 and and are relatively prime, each spot in the relatively prime diagonal grid is filled with precisely one least residue modulo .    Try a direct proof.   "
 },
@@ -869,27 +806,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "chp3sec3.html#proposition-columns_and_rows_of_relatively_prime_diagonal_grid",
   "type": "Proposition",
-  "number": "3.3.9",
+  "number": "3.3.3",
   "title": "The columns and rows of the relatively prime diagonal grid.",
   "body": " The columns and rows of the relatively prime diagonal grid   If are integers greater than 1 and and are relatively prime, then the elements of a column are all congruent modulo and the elements of a row are all congruent modulo .    Try a direct proof.   "
-},
-{
-  "id": "proposition-phi_function_of_relatively_prime_product",
-  "level": "2",
-  "url": "chp3sec3.html#proposition-phi_function_of_relatively_prime_product",
-  "type": "Proposition",
-  "number": "3.3.10",
-  "title": "The phi function of a relatively prime product.",
-  "body": " The phi function of a relatively prime product   If are integers greater than 1 and and are relatively prime, then .    Analyze the columns and rows of the relatively prime diagonal grid.   "
-},
-{
-  "id": "proposition-computing_phi_function",
-  "level": "2",
-  "url": "chp3sec3.html#proposition-computing_phi_function",
-  "type": "Proposition",
-  "number": "3.3.11",
-  "title": "Computing the Phi Function.",
-  "body": " Computing the Phi Function   If is the prime factorization of , then     Try a direct proof.   "
 },
 {
   "id": "chp3sec4",
@@ -897,35 +816,188 @@ var ptx_lunr_docs = [
   "url": "chp3sec4.html",
   "type": "Section",
   "number": "3.4",
+  "title": "Euler Phi Function",
+  "body": " Euler Phi Function     Units Modulo m   The units modulo m are the least residues modulo that have multiplicative inverses modulo . We will denote the set of units modulo by .     Relatively Prime Elements are Units Modulo m   If is an integer, and is a least residue modulo such that , then .    Try a direct proof. You may find , , , and useful.     Find the units  Find the units modulo 4, 5, and 20. Can you find a pattern? Can you guess a formula for the number of units modulo ?    Euler Phi Function   The Euler phi function  (also sometimes called the totient function ) is defined as the number of positive integers less than or equal to that are relatively prime to .     The phi function of a prime   If is prime then .    Try a direct proof. You may find , , , and useful.     The phi function of a prime power   If is prime and , then .    Try a direct proof. It is sometimes helpful to think about about least resides modulo as a grid. Write down the first many least residues modulo then go to a new line. Repeat this process for the remaining rows until you have a by grid. Think about the columns and rows that contain elements relatively prime to . Try for a few small primes first. Remember, though, examples never constitute a proof. You may find , , and useful.     Relatively prime with a relatively prime product   If integers greater than 1 and and are relatively prime, then is relatively prime with if and only if is relatively prime with both and .    Try a proof by contrapositive. First suppose that and are not relatively prime. Then there exists a prime such that and . Deduce that either or is not relatively prime with . Now prove the other direction. Without loss of generality, we may suppose (why???) that and are not relatively prime. Deduce is not relatively prime with . You may find , , , , and useful.     The phi function of a relatively prime product   If are integers greater than 1 and and are relatively prime, then .    Analyze the columns and rows of the relatively prime diagonal grid.     Computing the Phi Function   If is the prime factorization of , then     Try a direct proof.    "
+},
+{
+  "id": "definition-units_modulo_n",
+  "level": "2",
+  "url": "chp3sec4.html#definition-units_modulo_n",
+  "type": "Definition",
+  "number": "3.4.1",
+  "title": "Units Modulo m.",
+  "body": " Units Modulo m   The units modulo m are the least residues modulo that have multiplicative inverses modulo . We will denote the set of units modulo by .   "
+},
+{
+  "id": "proposition-relatively_prime_elements_are_units_modulo_n",
+  "level": "2",
+  "url": "chp3sec4.html#proposition-relatively_prime_elements_are_units_modulo_n",
+  "type": "Proposition",
+  "number": "3.4.2",
+  "title": "Relatively Prime Elements are Units Modulo m.",
+  "body": " Relatively Prime Elements are Units Modulo m   If is an integer, and is a least residue modulo such that , then .    Try a direct proof. You may find , , , and useful.   "
+},
+{
+  "id": "chp3sec4-5",
+  "level": "2",
+  "url": "chp3sec4.html#chp3sec4-5",
+  "type": "Activity",
+  "number": "3.4.1",
+  "title": "Find the units.",
+  "body": " Find the units  Find the units modulo 4, 5, and 20. Can you find a pattern? Can you guess a formula for the number of units modulo ?  "
+},
+{
+  "id": "definition-phi_function",
+  "level": "2",
+  "url": "chp3sec4.html#definition-phi_function",
+  "type": "Definition",
+  "number": "3.4.3",
+  "title": "Euler Phi Function.",
+  "body": " Euler Phi Function   The Euler phi function  (also sometimes called the totient function ) is defined as the number of positive integers less than or equal to that are relatively prime to .   "
+},
+{
+  "id": "proposition-phi_function_of_prime",
+  "level": "2",
+  "url": "chp3sec4.html#proposition-phi_function_of_prime",
+  "type": "Proposition",
+  "number": "3.4.4",
+  "title": "The phi function of a prime.",
+  "body": " The phi function of a prime   If is prime then .    Try a direct proof. You may find , , , and useful.   "
+},
+{
+  "id": "proposition-phi_function_of_prime_power",
+  "level": "2",
+  "url": "chp3sec4.html#proposition-phi_function_of_prime_power",
+  "type": "Proposition",
+  "number": "3.4.5",
+  "title": "The phi function of a prime power.",
+  "body": " The phi function of a prime power   If is prime and , then .    Try a direct proof. It is sometimes helpful to think about about least resides modulo as a grid. Write down the first many least residues modulo then go to a new line. Repeat this process for the remaining rows until you have a by grid. Think about the columns and rows that contain elements relatively prime to . Try for a few small primes first. Remember, though, examples never constitute a proof. You may find , , and useful.   "
+},
+{
+  "id": "proposition-relatively_prime_product",
+  "level": "2",
+  "url": "chp3sec4.html#proposition-relatively_prime_product",
+  "type": "Proposition",
+  "number": "3.4.6",
+  "title": "Relatively prime with a relatively prime product.",
+  "body": " Relatively prime with a relatively prime product   If integers greater than 1 and and are relatively prime, then is relatively prime with if and only if is relatively prime with both and .    Try a proof by contrapositive. First suppose that and are not relatively prime. Then there exists a prime such that and . Deduce that either or is not relatively prime with . Now prove the other direction. Without loss of generality, we may suppose (why???) that and are not relatively prime. Deduce is not relatively prime with . You may find , , , , and useful.   "
+},
+{
+  "id": "proposition-phi_function_of_relatively_prime_product",
+  "level": "2",
+  "url": "chp3sec4.html#proposition-phi_function_of_relatively_prime_product",
+  "type": "Proposition",
+  "number": "3.4.7",
+  "title": "The phi function of a relatively prime product.",
+  "body": " The phi function of a relatively prime product   If are integers greater than 1 and and are relatively prime, then .    Analyze the columns and rows of the relatively prime diagonal grid.   "
+},
+{
+  "id": "proposition-computing_phi_function",
+  "level": "2",
+  "url": "chp3sec4.html#proposition-computing_phi_function",
+  "type": "Proposition",
+  "number": "3.4.8",
+  "title": "Computing the Phi Function.",
+  "body": " Computing the Phi Function   If is the prime factorization of , then     Try a direct proof.   "
+},
+{
+  "id": "chp4sec1",
+  "level": "1",
+  "url": "chp4sec1.html",
+  "type": "Section",
+  "number": "4.1",
   "title": "Fermat’s Little Theorem",
   "body": " Fermat's Little Theorem     Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    Coming soon.     Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Coming soon.     Fermat's Little Theorem   If , is a prime, and , then .    Coming soon.    "
 },
 {
   "id": "proposition-multiplication_by_relatively_prime_element_permutes_the_units",
   "level": "2",
-  "url": "chp3sec4.html#proposition-multiplication_by_relatively_prime_element_permutes_the_units",
+  "url": "chp4sec1.html#proposition-multiplication_by_relatively_prime_element_permutes_the_units",
   "type": "Proposition",
-  "number": "3.4.1",
+  "number": "4.1.1",
   "title": "Multiplication by relatively prime element permutes the units.",
   "body": " Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    Coming soon.   "
 },
 {
   "id": "proposition-generalized_fermat_little_theorem",
   "level": "2",
-  "url": "chp3sec4.html#proposition-generalized_fermat_little_theorem",
+  "url": "chp4sec1.html#proposition-generalized_fermat_little_theorem",
   "type": "Proposition",
-  "number": "3.4.2",
+  "number": "4.1.2",
   "title": "Generalized Fermat’s Little Theorem.",
   "body": " Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Coming soon.   "
 },
 {
   "id": "proposition-fermat_little_theorem",
   "level": "2",
-  "url": "chp3sec4.html#proposition-fermat_little_theorem",
+  "url": "chp4sec1.html#proposition-fermat_little_theorem",
   "type": "Proposition",
-  "number": "3.4.3",
+  "number": "4.1.3",
   "title": "Fermat’s Little Theorem.",
   "body": " Fermat's Little Theorem   If , is a prime, and , then .    Coming soon.   "
+},
+{
+  "id": "chp4sec2",
+  "level": "1",
+  "url": "chp4sec2.html",
+  "type": "Section",
+  "number": "4.2",
+  "title": "Wilson’s Theorem",
+  "body": " Wilson's Theorem     Factorial   The factorial of n , denoted , is the product of all positive integers less than or equal to .     Wilson's Theorem   If is a prime, then .    Coming soon.    "
+},
+{
+  "id": "definition-factorial",
+  "level": "2",
+  "url": "chp4sec2.html#definition-factorial",
+  "type": "Definition",
+  "number": "4.2.1",
+  "title": "Factorial.",
+  "body": " Factorial   The factorial of n , denoted , is the product of all positive integers less than or equal to .   "
+},
+{
+  "id": "proposition-wilsons_theorem",
+  "level": "2",
+  "url": "chp4sec2.html#proposition-wilsons_theorem",
+  "type": "Proposition",
+  "number": "4.2.2",
+  "title": "Wilson’s Theorem.",
+  "body": " Wilson's Theorem   If is a prime, then .    Coming soon.   "
+},
+{
+  "id": "chp4sec3",
+  "level": "1",
+  "url": "chp4sec3.html",
+  "type": "Section",
+  "number": "4.3",
+  "title": "Chinese Remainder Theorem",
+  "body": " Chinese Remainder Theorem     Chinese Remainder Theorem   If , are positive integers such that for all , then the system of congruences has a unique solution modulo .    Coming soon.    "
+},
+{
+  "id": "proposition-chinese_remainder_theorem",
+  "level": "2",
+  "url": "chp4sec3.html#proposition-chinese_remainder_theorem",
+  "type": "Proposition",
+  "number": "4.3.1",
+  "title": "Chinese Remainder Theorem.",
+  "body": " Chinese Remainder Theorem   If , are positive integers such that for all , then the system of congruences has a unique solution modulo .    Coming soon.   "
+},
+{
+  "id": "chp4sec4",
+  "level": "1",
+  "url": "chp4sec4.html",
+  "type": "Section",
+  "number": "4.4",
+  "title": "Quadratic Reciprocity",
+  "body": " Quadratic Reciprocity     Quadratic Reciprocity   If and are distinct odd primes, then the congruences have the same solvability. In other words, is a quadratic residue modulo if and only if it is a quadratic residue modulo .    Coming soon.    "
+},
+{
+  "id": "proposition-quadratic_reciprocity",
+  "level": "2",
+  "url": "chp4sec4.html#proposition-quadratic_reciprocity",
+  "type": "Proposition",
+  "number": "4.4.1",
+  "title": "Quadratic Reciprocity.",
+  "body": " Quadratic Reciprocity   If and are distinct odd primes, then the congruences have the same solvability. In other words, is a quadratic residue modulo if and only if it is a quadratic residue modulo .    Coming soon.   "
 },
 {
   "id": "backmatter-2",
