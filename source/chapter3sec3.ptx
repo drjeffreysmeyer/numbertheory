@@ -9,7 +9,7 @@
     <title>The Relatively Prime Diagonal Grid</title>
     <statement>
         <p>
-            If integers <m>m</m> and <m>n</m> are relatively prime and greater than 1, then the <term>relatively prime diagonal grid</term> is the <m>m</m> by <m>n</m> grid of least residues modulo <m>mn</m> written sequentially diagonally down and to the right, where you loop upon hitting and edge.
+            If integers <m>m</m> and <m>n</m> are relatively prime and greater than 1, then the <term>relatively prime diagonal grid</term> is the <m>m</m> by <m>n</m> grid of least residues modulo <m>mn</m> written sequentially diagonally down and to the right, where you loop upon hitting and edge.  In symbols, the least residue <m>k\in\{0,1,\ldots,mn-1\}</m> will be placed in row <m>i\equiv k\pmod m</m> and column <m>j\equiv k\pmod n</m>.
         </p>
     </statement>
   </definition>
@@ -28,6 +28,65 @@
     <cell>1</cell>
     <cell>5</cell>
   </row>
+</tabular>
+
+<p>The relatively prime diagonal grid for <m>m=6</m> and <m>n=7</m> is:</p>
+
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+    <row bottom="minor">
+        <cell right="minor">0</cell>
+        <cell right="minor">36</cell>
+        <cell right="minor">30</cell>
+        <cell right="minor">24</cell>
+        <cell right="minor">18</cell>
+        <cell right="minor">12</cell>
+        <cell right="minor">6</cell>
+    </row>
+    <row bottom="minor">
+        <cell right="minor">7</cell>
+        <cell right="minor">1</cell>
+        <cell right="minor">37</cell>
+        <cell right="minor">31</cell>
+        <cell right="minor">25</cell>
+        <cell right="minor">19</cell>
+        <cell right="minor">13</cell>
+    </row>
+    <row bottom="minor">
+        <cell right="minor">14</cell>
+        <cell right="minor">8</cell>
+        <cell right="minor">2</cell>
+        <cell right="minor">38</cell>
+        <cell right="minor">32</cell>
+        <cell right="minor">26</cell>
+        <cell right="minor">20</cell>
+    </row>
+    <row bottom="minor">
+        <cell right="minor">21</cell>
+        <cell right="minor">15</cell>
+        <cell right="minor">9</cell>
+        <cell right="minor">3</cell>
+        <cell right="minor">39</cell>
+        <cell right="minor">33</cell>
+        <cell right="minor">27</cell>
+    </row>
+    <row bottom="minor">
+        <cell right="minor">28</cell>
+        <cell right="minor">22</cell>
+        <cell right="minor">16</cell>
+        <cell right="minor">10</cell>
+        <cell right="minor">4</cell>
+        <cell right="minor">40</cell>
+        <cell right="minor">34</cell>
+    </row>
+    <row bottom="minor">
+        <cell right="minor">35</cell>
+        <cell right="minor">29</cell>
+        <cell right="minor">23</cell>
+        <cell right="minor">17</cell>
+        <cell right="minor">11</cell>
+        <cell right="minor">5</cell>
+        <cell right="minor">41</cell>
+    </row>
 </tabular>
 
     <activity>
@@ -51,7 +110,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.
+      Try a direct proof.  Suppose some spot in the grid is not filled.  What does that mean?  Why is that a problem?  Next suppose some spot in the grid is filled with more than one least residue modulo <m>mn</m>.  What does that mean?  Why is that a problem?  You may find  <xref ref="definition-relatively_prime_diagonal_grid"/>, <xref ref="definition-least_residue"/>, and <xref ref="proposition-congruence_and_least_residue"/> useful.
     </p>
   </proof>
 </proposition> 
@@ -65,7 +124,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.
+      Try a direct proof.  Let <m>c</m> be an element in a column.  Why are all the elements in that column congruent to <m>c</m> modulo <m>n</m>?  Next let <m>r</m> be an element in a row.  Why are all the elements in that row congruent to <m>r</m> modulo <m>m</m>?  You may find  <xref ref="definition-relatively_prime_diagonal_grid"/>, <xref ref="definition-least_residue"/>, and <xref ref="proposition-congruence_and_least_residue"/> useful.
     </p>
   </proof>
 </proposition> 
