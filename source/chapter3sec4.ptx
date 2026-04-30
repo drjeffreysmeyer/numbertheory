@@ -92,12 +92,12 @@
   <title>The phi function of a relatively prime product</title>
   <statement>
     <p>
-      If <m>m,n\in \Z</m> are integers greater than 1 and <m>m</m> and <m>n</m> are relatively prime, then <m>\phi(mn)=\phi(m)\phi(n)</m>.
+      If <m>m,n\in \Z</m> are integers greater than 1 and <m>m</m> and <m>n</m> are relatively prime, then <m>\phi(mn)=\phi(m)\phi(n)</m>. 
     </p>
   </statement>
   <proof>
     <p>
-      Analyze the columns and rows of the relatively prime diagonal grid.
+      Analyze the columns and rows of the relatively prime diagonal grid.  You may find  <xref ref="proposition-relatively_prime_product"/>, <xref ref="definition-relatively_prime_diagonal_grid"/>, <xref ref="definition-relatively_prime"/>, <xref ref="proposition-minimal_divisor_is_prime"/>, and <xref ref="proposition-euclid_lemma"/> useful.
     </p>
   </proof>
 </proposition>
