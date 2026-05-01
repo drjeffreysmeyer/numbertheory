@@ -114,7 +114,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  
+      Try a direct proof.  You may find  <xref ref="proposition-fundamental_theorem_of_arithmetic"/>, <xref ref="proposition-phi_function_of_relatively_prime_product"/>, and <xref ref="proposition-phi_function_of_prime_power"/> useful.
     </p>
   </proof>
 </proposition>

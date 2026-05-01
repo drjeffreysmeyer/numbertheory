@@ -9,7 +9,7 @@
     <title>The Relatively Prime Diagonal Grid</title>
     <statement>
         <p>
-            If integers <m>m</m> and <m>n</m> are relatively prime and greater than 1, then the <term>relatively prime diagonal grid</term> is the <m>m</m> by <m>n</m> grid of least residues modulo <m>mn</m> written sequentially diagonally down and to the right, where you loop upon hitting and edge.  In symbols, the least residue <m>k\in\{0,1,\ldots,mn-1\}</m> will be placed in row <m>i\equiv k\pmod m</m> and column <m>j\equiv k\pmod n</m>.
+            If integers <m>m</m> and <m>n</m> are relatively prime and greater than 1, then the <term>relatively prime diagonal grid</term> (RPDG) is the <m>m</m> by <m>n</m> grid of least residues modulo <m>mn</m> written sequentially diagonally down and to the right, where you loop upon hitting and edge.  In symbols, the least residue <m>k\in\{0,1,\ldots,mn-1\}</m> will be placed in row <m>i\equiv k\pmod m</m> and column <m>j\equiv k\pmod n</m>.
         </p>
     </statement>
   </definition>
@@ -100,23 +100,8 @@
 		</p>
   </activity>
 
-
- <proposition xml:id="proposition-relatively_prime_diagonal_grid_is_filled">
-  <title>The relatively prime diagonal grid is filled</title>
-  <statement>
-    <p>
-      If <m>m,n\in \Z</m> are integers greater than 1 and <m>m</m> and <m>n</m> are relatively prime, each spot in the relatively prime diagonal grid  is filled with precisely one least residue modulo <m>mn</m>.
-    </p>
-  </statement>
-  <proof>
-    <p>
-      Try a direct proof.  Suppose some spot in the grid is not filled.  What does that mean?  Why is that a problem?  Next suppose some spot in the grid is filled with more than one least residue modulo <m>mn</m>.  What does that mean?  Why is that a problem?  You may find  <xref ref="definition-relatively_prime_diagonal_grid"/>, <xref ref="definition-least_residue"/>, and <xref ref="proposition-congruence_and_least_residue"/> useful.
-    </p>
-  </proof>
-</proposition> 
-
- <proposition xml:id="proposition-columns_and_rows_of_relatively_prime_diagonal_grid">
-  <title>The columns and rows of the relatively prime diagonal grid</title>
+   <proposition xml:id="proposition-columns_and_rows_of_relatively_prime_diagonal_grid">
+  <title>Congruence classes of the RPDG columns and rows</title>
   <statement>
     <p>
       If <m>m,n\in \Z</m> are integers greater than 1 and <m>m</m> and <m>n</m> are relatively prime, then the elements of a column are all congruent modulo <m>n</m> and the elements of a row are all congruent modulo <m>m</m>.
@@ -124,10 +109,59 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  Let <m>c</m> be an element in a column.  Why are all the elements in that column congruent to <m>c</m> modulo <m>n</m>?  Next let <m>r</m> be an element in a row.  Why are all the elements in that row congruent to <m>r</m> modulo <m>m</m>?  You may find  <xref ref="definition-relatively_prime_diagonal_grid"/>, <xref ref="definition-least_residue"/>, and <xref ref="proposition-congruence_and_least_residue"/> useful.
+      Try a direct proof.  This is a straightforward application of the definition of the RPDG and the properties of congruence.  Let <m>c</m> be an element in a column.  Why are all the elements in that column congruent to <m>c</m> modulo <m>n</m>?  Next let <m>r</m> be an element in a row.  Why are all the elements in that row congruent to <m>r</m> modulo <m>m</m>?  You may find  <xref ref="definition-congruence"/>, <xref ref="definition-relatively_prime_diagonal_grid"/>, and <xref ref="definition-least_residue"/> useful.
     </p>
   </proof>
 </proposition> 
+
+<p>
+  As is often the case, there are many useful propositions and we only prove a subset of them when we first introduce a new concept.  The following propositions we could have proven a couple sections ago, but we waited until now to state them as they are now useful in the subsequent proof. 
+</p>
+
+ <proposition xml:id="proposition-relatively_prime_euclid_lemma">
+  <title>A relatively prime Euclid's Lemma</title>
+  <statement>
+    <p>
+      If <m>m,n, k \in \Z</m> are positive integers and <m>m</m> and <m>n</m> are relatively prime, such that <m>m</m> divides <m>kn</m>, then <m>m</m> divides <m>k</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Is there a similar proof whose strategy you might be able to leverage?  You may find <xref ref="proposition-euclid_lemma"/> useful.
+    </p>
+  </proof>
+</proposition> 
+
+
+ <proposition xml:id="proposition-relatively_prime_product_divides">
+  <title>If relatively prime integers divide, their product divides</title>
+  <statement>
+    <p>
+      If <m>m,n, c \in \Z</m> are integers greater than 1 and <m>m</m> and <m>n</m> are relatively prime, such that <m>m</m> divides <m>c</m> and <m>n</m> divides <m>c</m>, then <m>mn</m> divides <m>c</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  There exists a constant <m>k</m> such that <m>c = kn</m>.  Then <m>m</m> divides <m>k</m> (why???).  Deduce <m>mn</m> divides <m>c</m>.  You may find  <xref ref="proposition-relatively_prime_euclid_lemma"/>, <xref ref="definition-relatively_prime"/>, and <xref ref="definition-divisibility"/> useful.
+    </p>
+  </proof>
+</proposition> 
+
+ <proposition xml:id="proposition-relatively_prime_diagonal_grid_is_filled">
+  <title>The relatively prime diagonal grid is filled</title>
+  <statement>
+    <p>
+      If <m>m</m> and <m>n</m> are relatively prime integers greater than 1, then each spot in the relatively prime diagonal grid is filled with precisely one least residue modulo <m>mn</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  Suppose some spot in the grid is filled with two least residues modulo <m>mn</m>, say <m>a</m> and <m>b</m>.  What does it mean that they are in the same column?  What does it mean they are in the same row?  Once you know that no spot can be filled with more than one least residue, compare the number of least residues modulo <m>mn</m> with the number of spots in the grid and conclude that the grid is filled (why???).  You may find  <xref ref="definition-relatively_prime_diagonal_grid"/>, <xref ref="definition-congruence"/>, <xref ref="definition-least_residue"/>,  <xref ref="proposition-relatively_prime_product_divides"/>, and <xref ref="proposition-congruence_and_least_residue"/> useful.
+    </p>
+  </proof>
+</proposition> 
+
+
 
 
 
