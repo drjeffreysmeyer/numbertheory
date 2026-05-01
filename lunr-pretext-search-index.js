@@ -772,7 +772,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "Relatively Prime Diagonal Grid",
-  "body": " Relatively Prime Diagonal Grid     The Relatively Prime Diagonal Grid   If integers and are relatively prime and greater than 1, then the relatively prime diagonal grid is the by grid of least residues modulo written sequentially diagonally down and to the right, where you loop upon hitting and edge. In symbols, the least residue will be placed in row and column .    For example, the relatively prime diagonal grid for and is:    0  4  2    3  1  5    The relatively prime diagonal grid for and is:    0  36  30  24  18  12  6    7  1  37  31  25  19  13    14  8  2  38  32  26  20    21  15  9  3  39  33  27    28  22  16  10  4  40  34    35  29  23  17  11  5  41     Create the Relatively Prime Diagonal Grid  Create the relatively prime diagonal grid for and . What patterns do you see? Can you find a pattern in the columns and rows?  Try to create a similar grid for and . What goes wrong? Why do you think the condition of relatively prime is necessary?    The relatively prime diagonal grid is filled   If are integers greater than 1 and and are relatively prime, each spot in the relatively prime diagonal grid is filled with precisely one least residue modulo .    Try a direct proof. Suppose some spot in the grid is not filled. What does that mean? Why is that a problem? Next suppose some spot in the grid is filled with more than one least residue modulo . What does that mean? Why is that a problem? You may find , , and useful.     The columns and rows of the relatively prime diagonal grid   If are integers greater than 1 and and are relatively prime, then the elements of a column are all congruent modulo and the elements of a row are all congruent modulo .    Try a direct proof. Let be an element in a column. Why are all the elements in that column congruent to modulo ? Next let be an element in a row. Why are all the elements in that row congruent to modulo ? You may find , , and useful.    "
+  "body": " Relatively Prime Diagonal Grid     The Relatively Prime Diagonal Grid   If integers and are relatively prime and greater than 1, then the relatively prime diagonal grid (RPDG) is the by grid of least residues modulo written sequentially diagonally down and to the right, where you loop upon hitting and edge. In symbols, the least residue will be placed in row and column .    For example, the relatively prime diagonal grid for and is:    0  4  2    3  1  5    The relatively prime diagonal grid for and is:    0  36  30  24  18  12  6    7  1  37  31  25  19  13    14  8  2  38  32  26  20    21  15  9  3  39  33  27    28  22  16  10  4  40  34    35  29  23  17  11  5  41     Create the Relatively Prime Diagonal Grid  Create the relatively prime diagonal grid for and . What patterns do you see? Can you find a pattern in the columns and rows?  Try to create a similar grid for and . What goes wrong? Why do you think the condition of relatively prime is necessary?    Congruence classes of the RPDG columns and rows   If are integers greater than 1 and and are relatively prime, then the elements of a column are all congruent modulo and the elements of a row are all congruent modulo .    Try a direct proof. This is a straightforward application of the definition of the RPDG and the properties of congruence. Let be an element in a column. Why are all the elements in that column congruent to modulo ? Next let be an element in a row. Why are all the elements in that row congruent to modulo ? You may find , , and useful.    As is often the case, there are many useful propositions and we only prove a subset of them when we first introduce a new concept. The following propositions we could have proven a couple sections ago, but we waited until now to state them as they are now useful in the subsequent proof.   A relatively prime Euclid's Lemma   If are positive integers and and are relatively prime, such that divides , then divides .    Is there a similar proof whose strategy you might be able to leverage? You may find useful.     If relatively prime integers divide, their product divides   If are integers greater than 1 and and are relatively prime, such that divides and divides , then divides .    Try a direct proof. There exists a constant such that . Then divides (why???). Deduce divides . You may find , , and useful.     The relatively prime diagonal grid is filled   If and are relatively prime integers greater than 1, then each spot in the relatively prime diagonal grid is filled with precisely one least residue modulo .    Try a direct proof. Suppose some spot in the grid is filled with two least residues modulo , say and . What does it mean that they are in the same column? What does it mean they are in the same row? Once you know that no spot can be filled with more than one least residue, compare the number of least residues modulo with the number of spots in the grid and conclude that the grid is filled (why???). You may find , , , , and useful.    "
 },
 {
   "id": "definition-relatively_prime_diagonal_grid",
@@ -781,7 +781,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.3.1",
   "title": "The Relatively Prime Diagonal Grid.",
-  "body": " The Relatively Prime Diagonal Grid   If integers and are relatively prime and greater than 1, then the relatively prime diagonal grid is the by grid of least residues modulo written sequentially diagonally down and to the right, where you loop upon hitting and edge. In symbols, the least residue will be placed in row and column .   "
+  "body": " The Relatively Prime Diagonal Grid   If integers and are relatively prime and greater than 1, then the relatively prime diagonal grid (RPDG) is the by grid of least residues modulo written sequentially diagonally down and to the right, where you loop upon hitting and edge. In symbols, the least residue will be placed in row and column .   "
 },
 {
   "id": "chp3sec3-8",
@@ -793,22 +793,40 @@ var ptx_lunr_docs = [
   "body": " Create the Relatively Prime Diagonal Grid  Create the relatively prime diagonal grid for and . What patterns do you see? Can you find a pattern in the columns and rows?  Try to create a similar grid for and . What goes wrong? Why do you think the condition of relatively prime is necessary?  "
 },
 {
-  "id": "proposition-relatively_prime_diagonal_grid_is_filled",
-  "level": "2",
-  "url": "chp3sec3.html#proposition-relatively_prime_diagonal_grid_is_filled",
-  "type": "Proposition",
-  "number": "3.3.2",
-  "title": "The relatively prime diagonal grid is filled.",
-  "body": " The relatively prime diagonal grid is filled   If are integers greater than 1 and and are relatively prime, each spot in the relatively prime diagonal grid is filled with precisely one least residue modulo .    Try a direct proof. Suppose some spot in the grid is not filled. What does that mean? Why is that a problem? Next suppose some spot in the grid is filled with more than one least residue modulo . What does that mean? Why is that a problem? You may find , , and useful.   "
-},
-{
   "id": "proposition-columns_and_rows_of_relatively_prime_diagonal_grid",
   "level": "2",
   "url": "chp3sec3.html#proposition-columns_and_rows_of_relatively_prime_diagonal_grid",
   "type": "Proposition",
+  "number": "3.3.2",
+  "title": "Congruence classes of the RPDG columns and rows.",
+  "body": " Congruence classes of the RPDG columns and rows   If are integers greater than 1 and and are relatively prime, then the elements of a column are all congruent modulo and the elements of a row are all congruent modulo .    Try a direct proof. This is a straightforward application of the definition of the RPDG and the properties of congruence. Let be an element in a column. Why are all the elements in that column congruent to modulo ? Next let be an element in a row. Why are all the elements in that row congruent to modulo ? You may find , , and useful.   "
+},
+{
+  "id": "proposition-relatively_prime_euclid_lemma",
+  "level": "2",
+  "url": "chp3sec3.html#proposition-relatively_prime_euclid_lemma",
+  "type": "Proposition",
   "number": "3.3.3",
-  "title": "The columns and rows of the relatively prime diagonal grid.",
-  "body": " The columns and rows of the relatively prime diagonal grid   If are integers greater than 1 and and are relatively prime, then the elements of a column are all congruent modulo and the elements of a row are all congruent modulo .    Try a direct proof. Let be an element in a column. Why are all the elements in that column congruent to modulo ? Next let be an element in a row. Why are all the elements in that row congruent to modulo ? You may find , , and useful.   "
+  "title": "A relatively prime Euclid’s Lemma.",
+  "body": " A relatively prime Euclid's Lemma   If are positive integers and and are relatively prime, such that divides , then divides .    Is there a similar proof whose strategy you might be able to leverage? You may find useful.   "
+},
+{
+  "id": "proposition-relatively_prime_product_divides",
+  "level": "2",
+  "url": "chp3sec3.html#proposition-relatively_prime_product_divides",
+  "type": "Proposition",
+  "number": "3.3.4",
+  "title": "If relatively prime integers divide, their product divides.",
+  "body": " If relatively prime integers divide, their product divides   If are integers greater than 1 and and are relatively prime, such that divides and divides , then divides .    Try a direct proof. There exists a constant such that . Then divides (why???). Deduce divides . You may find , , and useful.   "
+},
+{
+  "id": "proposition-relatively_prime_diagonal_grid_is_filled",
+  "level": "2",
+  "url": "chp3sec3.html#proposition-relatively_prime_diagonal_grid_is_filled",
+  "type": "Proposition",
+  "number": "3.3.5",
+  "title": "The relatively prime diagonal grid is filled.",
+  "body": " The relatively prime diagonal grid is filled   If and are relatively prime integers greater than 1, then each spot in the relatively prime diagonal grid is filled with precisely one least residue modulo .    Try a direct proof. Suppose some spot in the grid is filled with two least residues modulo , say and . What does it mean that they are in the same column? What does it mean they are in the same row? Once you know that no spot can be filled with more than one least residue, compare the number of least residues modulo with the number of spots in the grid and conclude that the grid is filled (why???). You may find , , , , and useful.   "
 },
 {
   "id": "chp3sec4",
@@ -817,7 +835,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Euler Phi Function",
-  "body": " Euler Phi Function     Units Modulo m   The units modulo m are the least residues modulo that have multiplicative inverses modulo . We will denote the set of units modulo by .     Relatively Prime Elements are Units Modulo m   If is an integer, and is a least residue modulo such that , then .    Try a direct proof. You may find , , , and useful.     Find the units  Find the units modulo 4, 5, and 20. Can you find a pattern? Can you guess a formula for the number of units modulo ?    Euler Phi Function   The Euler phi function  (also sometimes called the totient function ) is defined as the number of positive integers less than or equal to that are relatively prime to .     The phi function of a prime   If is prime then .    Try a direct proof. You may find , , , and useful.     The phi function of a prime power   If is prime and , then .    Try a direct proof. It is sometimes helpful to think about about least resides modulo as a grid. Write down the first many least residues modulo then go to a new line. Repeat this process for the remaining rows until you have a by grid. Think about the columns and rows that contain elements relatively prime to . Try for a few small primes first. Remember, though, examples never constitute a proof. You may find , , and useful.     Relatively prime with a relatively prime product   If integers greater than 1 and and are relatively prime, then is relatively prime with if and only if is relatively prime with both and .    Try a proof by contrapositive. First suppose that and are not relatively prime. Then there exists a prime such that and . Deduce that either or is not relatively prime with . Now prove the other direction. Without loss of generality, we may suppose (why???) that and are not relatively prime. Deduce is not relatively prime with . You may find , , , , and useful.     The phi function of a relatively prime product   If are integers greater than 1 and and are relatively prime, then .    Analyze the columns and rows of the relatively prime diagonal grid. You may find , , , , and useful.     Computing the Phi Function   If is the prime factorization of , then     Try a direct proof.    "
+  "body": " Euler Phi Function     Units Modulo m   The units modulo m are the least residues modulo that have multiplicative inverses modulo . We will denote the set of units modulo by .     Relatively Prime Elements are Units Modulo m   If is an integer, and is a least residue modulo such that , then .    Try a direct proof. You may find , , , and useful.     Find the units  Find the units modulo 4, 5, and 20. Can you find a pattern? Can you guess a formula for the number of units modulo ?    Euler Phi Function   The Euler phi function  (also sometimes called the totient function ) is defined as the number of positive integers less than or equal to that are relatively prime to .     The phi function of a prime   If is prime then .    Try a direct proof. You may find , , , and useful.     The phi function of a prime power   If is prime and , then .    Try a direct proof. It is sometimes helpful to think about about least resides modulo as a grid. Write down the first many least residues modulo then go to a new line. Repeat this process for the remaining rows until you have a by grid. Think about the columns and rows that contain elements relatively prime to . Try for a few small primes first. Remember, though, examples never constitute a proof. You may find , , and useful.     Relatively prime with a relatively prime product   If integers greater than 1 and and are relatively prime, then is relatively prime with if and only if is relatively prime with both and .    Try a proof by contrapositive. First suppose that and are not relatively prime. Then there exists a prime such that and . Deduce that either or is not relatively prime with . Now prove the other direction. Without loss of generality, we may suppose (why???) that and are not relatively prime. Deduce is not relatively prime with . You may find , , , , and useful.     The phi function of a relatively prime product   If are integers greater than 1 and and are relatively prime, then .    Analyze the columns and rows of the relatively prime diagonal grid. You may find , , , , and useful.     Computing the Phi Function   If is the prime factorization of , then     Try a direct proof. You may find , , and useful.    "
 },
 {
   "id": "definition-units_modulo_n",
@@ -898,7 +916,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "3.4.8",
   "title": "Computing the Phi Function.",
-  "body": " Computing the Phi Function   If is the prime factorization of , then     Try a direct proof.   "
+  "body": " Computing the Phi Function   If is the prime factorization of , then     Try a direct proof. You may find , , and useful.   "
 },
 {
   "id": "chp4sec1",
