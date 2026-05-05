@@ -925,7 +925,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Fermat’s Little Theorem",
-  "body": " Fermat's Little Theorem     Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    Try a direct proof. First, if , then (why???). Then, suppose that for some . Deduce that . You may find , , , and useful.     Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Try a direct proof. Let be the elements of . What is and why?Analyze the product in two different ways (and do not forget that multiplication by permutes the elements of (why???)). You may find , , , and useful.     Fermat's Little Theorem   If , is a prime, and , then .    You may find , , and useful.    "
+  "body": " Fermat's Little Theorem     Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    There are many ways to do this one. Here is one way, but can you find others? First, show that if , then . How??? Suppose divides both and . If , then there exists a prime dividing (why???). Deduce a contradiction. Next, suppose that for some . Deduce that . You may find , , , , , and useful.     Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Try a direct proof. Let be the elements of . What is and why?Analyze the product in two different ways (and do not forget that multiplication by permutes the elements of (why???)). You may find , , , and useful.     Fermat's Little Theorem   If , is a prime, and , then .    You may find , , and useful.    "
 },
 {
   "id": "proposition-multiplication_by_relatively_prime_element_permutes_the_units",
@@ -934,7 +934,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "4.1.1",
   "title": "Multiplication by relatively prime element permutes the units.",
-  "body": " Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    Try a direct proof. First, if , then (why???). Then, suppose that for some . Deduce that . You may find , , , and useful.   "
+  "body": " Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    There are many ways to do this one. Here is one way, but can you find others? First, show that if , then . How??? Suppose divides both and . If , then there exists a prime dividing (why???). Deduce a contradiction. Next, suppose that for some . Deduce that . You may find , , , , , and useful.   "
 },
 {
   "id": "proposition-generalized_fermat_little_theorem",
@@ -961,7 +961,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Wilson’s Theorem",
-  "body": " Wilson's Theorem     Factorial   The factorial of n , denoted , is the product of all positive integers less than or equal to .     Wilson's Theorem   If is a prime, then .    Coming soon.    "
+  "body": " Wilson's Theorem     Factorial   The factorial of n , denoted , is the product of all positive integers less than or equal to .     Squares of Roots of One Modulo a Prime   If is a prime and is an integer, then if and only if or .    Try a direct proof. Begin with the forward direction. Rewrite this as . Factor the left and analyze. The other direction is immediate. You may find , , , and useful.     Wilson's Theorem   If is a prime, then .    Try a direct proof. Check by hand. Now suppose . Try grouping the numbers together in pairs. You may find , , and useful.    "
 },
 {
   "id": "definition-factorial",
@@ -973,13 +973,22 @@ var ptx_lunr_docs = [
   "body": " Factorial   The factorial of n , denoted , is the product of all positive integers less than or equal to .   "
 },
 {
+  "id": "proposition-squares_roots_of_one_modulo_a_prime",
+  "level": "2",
+  "url": "chp4sec2.html#proposition-squares_roots_of_one_modulo_a_prime",
+  "type": "Proposition",
+  "number": "4.2.2",
+  "title": "Squares of Roots of One Modulo a Prime.",
+  "body": " Squares of Roots of One Modulo a Prime   If is a prime and is an integer, then if and only if or .    Try a direct proof. Begin with the forward direction. Rewrite this as . Factor the left and analyze. The other direction is immediate. You may find , , , and useful.   "
+},
+{
   "id": "proposition-wilsons_theorem",
   "level": "2",
   "url": "chp4sec2.html#proposition-wilsons_theorem",
   "type": "Proposition",
-  "number": "4.2.2",
+  "number": "4.2.3",
   "title": "Wilson’s Theorem.",
-  "body": " Wilson's Theorem   If is a prime, then .    Coming soon.   "
+  "body": " Wilson's Theorem   If is a prime, then .    Try a direct proof. Check by hand. Now suppose . Try grouping the numbers together in pairs. You may find , , and useful.   "
 },
 {
   "id": "chp4sec3",
