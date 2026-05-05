@@ -14,7 +14,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  First, if <m>r\in U_m</m>, then <m>gcd(ar,m)=1</m> (why???).  Then, suppose that <m>ar_1 \equiv ar_2 \pmod m</m> for some <m>r_1, r_2 \in U_m</m>.  Deduce that <m>r_1 \equiv r_2 \pmod m</m>.  You may find  <xref ref="proposition-relatively_prime_elements_are_units_modulo_n"/>, <xref ref="definition-units_modulo_n"/>,  <xref ref="definition-congruence"/>, and <xref ref="proposition-congruence_cancellation_theorem"/> useful.
+      There are many ways to do this one.  Here is one way, but can you find others?  Try a direct proof.  First, show that if <m>r\in U_m</m>, then <m>gcd(ar,m)=1</m>.  Suppose <m> d </m> divides both <m>ar</m> and <m>m</m>.  Next, suppose that <m>ar_1 \equiv ar_2 \pmod m</m> for some <m>r_1, r_2 \in U_m</m>.  Deduce that <m>r_1 \equiv r_2 \pmod m</m>.  You may find  <xref ref="proposition-relatively_prime_elements_are_units_modulo_n"/>, <xref ref="definition-units_modulo_n"/>,  <xref ref="definition-congruence"/>, and <xref ref="proposition-congruence_cancellation_theorem"/> useful.
     </p>
   </proof>
 </proposition>
