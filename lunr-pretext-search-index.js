@@ -835,7 +835,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Euler Phi Function",
-  "body": " Euler Phi Function     Units Modulo m   The units modulo m are the least residues modulo that have multiplicative inverses modulo . We will denote the set of units modulo by .     Relatively Prime Elements are Units Modulo m   If is an integer, and is a least residue modulo such that , then .    Try a direct proof. You may find , , , and useful.     Find the units  Find the units modulo 4, 5, and 20. Can you find a pattern? Can you guess a formula for the number of units modulo ?    Euler Phi Function   The Euler phi function  (also sometimes called the totient function ) is defined as the number of positive integers less than or equal to that are relatively prime to .     The phi function of a prime   If is prime then .    Try a direct proof. You may find , , , and useful.     The phi function of a prime power   If is prime and , then .    Try a direct proof. It is sometimes helpful to think about about least resides modulo as a grid. Write down the first many least residues modulo then go to a new line. Repeat this process for the remaining rows until you have a by grid. Think about the columns and rows that contain elements relatively prime to . Try for a few small primes first. Remember, though, examples never constitute a proof. You may find , , and useful.     Relatively prime with a relatively prime product   If integers greater than 1 and and are relatively prime, then is relatively prime with if and only if is relatively prime with both and .    Try a proof by contrapositive. First suppose that and are not relatively prime. Then there exists a prime such that and . Deduce that either or is not relatively prime with . Now prove the other direction. Without loss of generality, we may suppose (why???) that and are not relatively prime. Deduce is not relatively prime with . You may find , , , , and useful.     The phi function of a relatively prime product   If are integers greater than 1 and and are relatively prime, then .    Analyze the columns and rows of the relatively prime diagonal grid. You may find , , , , and useful.     Computing the Phi Function   If is the prime factorization of , then     Try a direct proof. You may find , , and useful.    "
+  "body": " Euler Phi Function     Units Modulo m   The units modulo m are the least residues modulo that have multiplicative inverses modulo . We will denote the set of units modulo by .     Relatively Prime Elements are Units Modulo m   If is an integer, and is a least residue modulo such that , then .    Try a direct proof. You may find , , , and useful.     Find the units  Find the units modulo 4, 5, and 20. Can you find a pattern? Can you guess a formula for the number of units modulo ?    Euler Phi Function   The Euler phi function  (also sometimes called the totient function ) is defined as the number of positive integers less than or equal to that are relatively prime to .     The phi function of a prime   If is prime then .    Try a direct proof. You may find , , , and useful.     The phi function of a prime power   If is prime and , then .    Try a direct proof. It is sometimes helpful to think about about least resides modulo as a grid. Write down the first many least residues modulo then go to a new line. Repeat this process for the remaining rows until you have a by grid. Think about the columns and rows that contain elements relatively prime to . Try for a few small primes first. Remember, though, examples never constitute a proof. You may find , , and useful.     Relatively prime with a relatively prime product   If integers greater than 1 and and are relatively prime, then is relatively prime with if and only if is relatively prime with both and .    Try a proof by contrapositive. First suppose that and are not relatively prime. Then there exists a prime such that and . Deduce that either or is not relatively prime with . Now prove the other direction. Without loss of generality, we may suppose (why???) that and are not relatively prime. Deduce is not relatively prime with . You may find , , , , and useful.     The phi function of a relatively prime product   If are integers greater than 1 and and are relatively prime, then .    Analyze the columns and rows of the relatively prime diagonal grid. You may find , , , , and useful.     Computing the Phi Function   If is the prime factorization of , then     Try a direct proof. You may find , , and useful.    Below is plot of the Euler phi function for the first 1,000 integers. What patterns do you notice? Can you explain any of the patterns you see? Do you have any conjectures about the behavior of the phi function?   Plot of the Euler phi function for the first 1,000 integers.   A plot showing the values of the Euler phi function for the first 1,000 positive integers.    "
 },
 {
   "id": "definition-units_modulo_n",
@@ -925,7 +925,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Fermat’s Little Theorem",
-  "body": " Fermat's Little Theorem     Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    Coming soon.     Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Coming soon.     Fermat's Little Theorem   If , is a prime, and , then .    Coming soon.    "
+  "body": " Fermat's Little Theorem     Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    Try a direct proof. First, if , then (why???). Then, suppose that for some . Deduce that . You may find , , , and useful.     Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Try a direct proof. Let be the elements of . What is and why?Analyze the product in two different ways (and do not forget that multiplication by permutes the elements of (why???)). You may find , , , and useful.     Fermat's Little Theorem   If , is a prime, and , then .    You may find , , and useful.    "
 },
 {
   "id": "proposition-multiplication_by_relatively_prime_element_permutes_the_units",
@@ -934,7 +934,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "4.1.1",
   "title": "Multiplication by relatively prime element permutes the units.",
-  "body": " Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    Coming soon.   "
+  "body": " Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    Try a direct proof. First, if , then (why???). Then, suppose that for some . Deduce that . You may find , , , and useful.   "
 },
 {
   "id": "proposition-generalized_fermat_little_theorem",
@@ -943,7 +943,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "4.1.2",
   "title": "Generalized Fermat’s Little Theorem.",
-  "body": " Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Coming soon.   "
+  "body": " Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Try a direct proof. Let be the elements of . What is and why?Analyze the product in two different ways (and do not forget that multiplication by permutes the elements of (why???)). You may find , , , and useful.   "
 },
 {
   "id": "proposition-fermat_little_theorem",
@@ -952,7 +952,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "4.1.3",
   "title": "Fermat’s Little Theorem.",
-  "body": " Fermat's Little Theorem   If , is a prime, and , then .    Coming soon.   "
+  "body": " Fermat's Little Theorem   If , is a prime, and , then .    You may find , , and useful.   "
 },
 {
   "id": "chp4sec2",
