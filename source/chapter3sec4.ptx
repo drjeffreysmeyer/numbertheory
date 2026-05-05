@@ -119,7 +119,17 @@
   </proof>
 </proposition>
 
+<p>
+  Below is plot of the Euler phi function for the first 1,000 integers.  What patterns do you notice?  Can you explain any of the patterns you see?  Do you have any conjectures about the behavior of the phi function?
+</p>
 
-
+<image source="images/eulerphi.png" width="100%">
+    <shortdescription>Plot of the Euler phi function for the first 1,000 integers.</shortdescription>
+    <description>
+        <p>
+            A plot showing the values of the Euler phi function for the first 1,000 positive integers.
+        </p>
+    </description>
+</image>
  
 </section>

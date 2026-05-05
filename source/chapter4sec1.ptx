@@ -14,7 +14,7 @@
   </statement>
   <proof>
     <p>
-      Coming soon.
+      Try a direct proof.  First, if <m>r\in U_m</m>, then <m>gcd(ar,m)=1</m> (why???).  Then, suppose that <m>ar_1 \equiv ar_2 \pmod m</m> for some <m>r_1, r_2 \in U_m</m>.  Deduce that <m>r_1 \equiv r_2 \pmod m</m>.  You may find  <xref ref="proposition-relatively_prime_elements_are_units_modulo_n"/>, <xref ref="definition-units_modulo_n"/>,  <xref ref="definition-congruence"/>, and <xref ref="proposition-congruence_cancellation_theorem"/> useful.
     </p>
   </proof>
 </proposition>
@@ -28,7 +28,9 @@
   </statement>
   <proof>
     <p>
-      Coming soon.
+      Try a direct proof. Let <m>r_1,\ldots,r_k</m> be the elements of <m>U_m</m>.  What is <m>k</m> and why?Analyze the product 
+      <m> \prod_{i=1}^{k} ar_i = (ar_1)(ar_2)\cdots(ar_{k})</m> in two different ways (and do not forget that multiplication by <m>a</m> permutes the elements of <m>U_m</m> (why???)).  
+      You may find  <xref ref="proposition-multiplication_by_relatively_prime_element_permutes_the_units"/>, <xref ref="definition-phi_function"/>, <xref ref="definition-units_modulo_n"/>, and <xref ref="definition-congruence"/> useful.
     </p>
   </proof>
 </proposition>
@@ -45,7 +47,7 @@
   </statement>
   <proof>
     <p>
-      Coming soon.
+      You may find  <xref ref="proposition-generalized_fermat_little_theorem"/>, <xref ref="proposition-phi_function_of_prime"/>, and <xref ref="definition-phi_function"/> useful.
     </p>
   </proof>
 </proposition>
