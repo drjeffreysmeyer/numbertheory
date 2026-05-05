@@ -14,6 +14,20 @@
     </statement>
   </definition>
 
+<proposition xml:id="proposition-squares_roots_of_one_modulo_a_prime">
+  <title>Squares of Roots of One Modulo a Prime</title>
+  <statement>
+    <p>
+      If <m>p</m> is a prime and <m>r</m> is an integer, then <m>r^2 \equiv 1 \pmod p</m> if and only if <m>r \equiv 1 \pmod p</m> or <m>r \equiv -1 \pmod p</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  Begin with the forward direction.  Rewrite this as <m>r^2 - 1 \equiv 0 \pmod p</m>.  Factor the left and analyze.  The other direction is immediate.  You may find  <xref ref="proposition-congruence_preserves_operations"/>, <xref ref="definition-prime_number"/>, <xref ref="definition-congruence"/>, and <xref ref="proposition-euclid_lemma"/> useful.
+    </p>
+  </proof>
+</proposition>
+
 <proposition xml:id="proposition-wilsons_theorem">
   <title>Wilson's Theorem</title>
   <statement>
@@ -23,7 +37,7 @@
   </statement>
   <proof>
     <p>
-      Coming soon.
+      Try a direct proof.  Check <m> p=2,3</m> by hand.  Now suppose <m> p&gt;5</m>.   Try grouping the numbers together in pairs.  You may find  <xref ref="proposition-squares_roots_of_one_modulo_a_prime"/>, <xref ref="definition-units_modulo_n"/>, and <xref ref="definition-congruence"/> useful.
     </p>
   </proof>
 </proposition>
