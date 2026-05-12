@@ -9,7 +9,7 @@
     <title>Prime Number</title>
     <statement>
         <p>
-            A <term>prime number</term> is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself.  In symbols, a positive integer <m>p</m> is prime if <m>p&gt;1</m> and for all positive integers <m>d</m>, if <m>d \mid p</m>, then <m>d=1</m> or <m>d=p</m>.
+            A <term>prime number</term> is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself.  In symbols, a positive integer <m>p</m> is prime if <m>p&gt;1</m> and for all positive integers <m>d</m>, if <m>d \mid p</m>, then <m>d=1</m> or <m>d=p</m>.  If a positive integer is not prime, we say it is <term>composite</term>.
         </p>
     </statement>
   </definition>

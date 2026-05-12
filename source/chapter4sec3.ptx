@@ -3,15 +3,112 @@
 <section xml:id="chp4sec3" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Chinese Remainder Theorem</title>
 
-  <p> </p>
+  <p>
+    Imagine you are an ancient astronomer tasked with synchronizing the heavens. You are tracking two major cycles that govern the seasons and the tides: 
   
-<proposition xml:id="proposition-chinese_remainder_theorem">
-  <title>Chinese Remainder Theorem</title>
+
+    <ol>
+      <li>
+
+        <p>
+          <alert>The Solar Cycle:</alert> The sun returns to its winter solstice position every 365 days.
+        </p>
+      </li>
+      <li>
+        <p>
+          <alert>The Lunar Cycle:</alert> The moon returns to its "New Moon" phase every 29 days.
+        </p>
+      </li>
+    </ol>
+
+  
+    As you record your observations this year, you notice a discrepancy: the Winter Solstice has just occurred, but the New Moon is not for another 11 days.  You wish to know how far back in time one must travel to find the theoretical "Year Zero" — the legendary day when the Winter Solstice and the New Moon happened at the exact same moment.  If we let <m>x</m> be the number of days passed since that perfect alignment, we can describe our current sky using the language of remainders: <m>x \equiv 0 \pmod{365}</m>  (The sun has completed its cycles perfectly) <m>x \equiv -11 \pmod{29}</m>   (The moon is 11 days short of completing its next cycle) 
+  </p>
+
+  <p>
+    This historical problem is a special case of a more general phenomenon in number theory, which we will explore in this section: solving systems of congruences.  In our astronomical example, it will help us determine the exact number of days since the last perfect alignment of the sun and moon.  Ancient Chinese mathematicians solved this problem and for this reason we call it the Chinese Remainder Theorem.
+  </p>
+
+  <definition xml:id="definition-system_of_congruences">
+    <title>System of Congruences</title>
+    <statement>
+        <p>
+            Given <m>m_1, m_2, \ldots, m_k \in \Z</m>, <m>m_i &gt; 1</m>, a <term>system of congruences</term> is a set of congruence equations.  In symbols, a system of congruences looks is:
+            <m>
+                \begin{cases}
+                    x \equiv a_1 \pmod{m_1} \\
+                    x \equiv a_2 \pmod{m_2} \\
+                    \vdots \\
+                    x \equiv a_k \pmod{m_k}
+                \end{cases}
+            </m>
+          </p>
+          <p>
+            A <term>solution to a system of congruences</term> is an integer <m>x</m> that satisfies all the congruences simultaneously.
+        </p>
+    </statement>
+  </definition>
+
+  <p>
+    As is often the case, we will want to understand if a solution exists, and if so, how many solutions there are.  
+  </p>
+
+  <proposition xml:id="proposition-chinese_remainder_theorem_v1">
+  <title>Chinese Remainder Theorem (Simple Version)</title>
   <statement>
     <p>
-      If <m>m_1, m_2, \ldots, m_k \in \Z</m>, <m>m_i &gt; 1</m> are positive integers such that <m>\gcd(m_i, m_j) = 1</m> for all <m>i \neq j</m>, then the system of congruences
+      If <m>m_1</m> and <m>m_2</m> are relatively prime positive integers and <m>a_1, a_2</m> are any integers, then the system of congruences
       <m>
         \begin{cases}
+          x \equiv a_1 \pmod{m_1} \\
+          x \equiv a_2 \pmod{m_2}
+        \end{cases}
+      </m>
+      has a unique solution modulo <m>M = m_1 m_2</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  First show existence, then uniqueness.  There exists integers <m>s_1, s_2</m>such that <m> m_1s_1 + m_2s_2 = a_1-a_2</m> (why???).  Show <m>x = a_1 - m_2s_2</m> is a solution to the system of congruences.  Now show that there is a unique solution modulo <m>M</m>.  Suppose that <m>x_1</m> and <m>x_2</m> are two solutions.  Then <m>x_1 \equiv x_2 \pmod{m_1}</m> and <m>x_1 \equiv x_2 \pmod{m_2}</m>.  Show that this implies <m>x_1 \equiv x_2 \pmod{mn}</m>.   You may find  <xref ref="definition-relatively_prime"/>, <xref ref="proposition-solvability_of_linear_diophantine_equations"/>, <xref ref="definition-congruence"/>,  <xref ref="proposition-relatively_prime_product_divides"/>, and <xref ref="proposition-congruence_and_least_residue"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<p>
+  Observe that the proof is <em>constructive</em>.  It gives us a method for explicitly finding the solution.
+</p>
+
+  <definition xml:id="definition-pairwise_relatively_prime">
+    <title>Pairwise Relatively Prime</title>
+    <statement>
+        <p>
+            Given integers <m>m_1, m_2, \ldots, m_k</m>, we say they are <term>pairwise relatively prime</term> if <m>\gcd(m_i, m_j) = 1</m> for all <m>i \neq j</m>.
+        </p>
+    </statement>
+  </definition>
+
+  <proposition xml:id="proposition-iterative_criterion_for_pairwise_relatively_prime_integers">
+  <title>Iterative Criterion for Pairwise Relatively Prime Integers</title>
+  <statement>
+    <p>
+      If <m>a,b,c</m> are positive integers, then they are pairwise relatively prime if and only if <m>a</m> and <m>b</m> are relatively prime, and <m>ab</m> and <m>c</m> are relatively prime
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  First show the forward direction.  If <m>a,b,c</m> are pairwise relatively prime, then <m>\gcd(a,b)=1</m> and <m>\gcd(b,c)=1</m>.  Show that this implies <m>\gcd(ab,c)=1</m>.  Now show the backward direction.  If <m>a</m> and <m>b</m> are relatively prime, and <m>ab</m> and <m>c</m> are relatively prime, then show that <m>\gcd(a,c)=1</m> and <m>\gcd(b,c)=1</m>.  You may find  <xref ref="proposition-euclid_lemma"/>, <xref ref="definition-gcd"/>, and <xref ref="definition-relatively_prime"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="proposition-chinese_remainder_theorem_v2">
+  <title>Chinese Remainder Theorem (General Version)</title>
+  <statement>
+    <p>
+      If <m>m_1, m_2, \ldots, m_k \in \Z</m>, <m>m_i &gt; 1</m> are pairwise relatively prime, then the system of congruences
+      <m>
+        \begin{cases}
+        
           x \equiv a_1 \pmod{m_1} \\
           x \equiv a_2 \pmod{m_2} \\
           \vdots \\
@@ -23,11 +120,59 @@
   </statement>
   <proof>
     <p>
-      Coming soon.
+      Try a direct proof.  Iterate the simple version of the Chinese Remainder Theorem.  You may find  <xref ref="proposition-chinese_remainder_theorem_v1"/>, <xref ref="proposition-iterative_criterion_for_pairwise_relatively_prime_integers"/>, <xref ref="definition-pairwise_relatively_prime"/> useful.
     </p>
   </proof>
 </proposition>
 
+<exercises xml:id="exercises-chinese_remainder_theorem_exercises">
+  <exercisegroup>
+    <title>Systems of Congruences</title>
+    <introduction>
+      <p>
+        Solve each of the following systems of congruences. 
+      </p>
+    </introduction>
 
+    <exercise>
+      <p>
+    <m>
+      \begin{cases}
+      
+        x \equiv 3 \pmod{4} \\
+        x \equiv 1 \pmod{5}
+      \end{cases}
+    </m>
+  </p>
+  </exercise>
+
+    <exercise>
+      <p>
+    <m>
+      \begin{cases}
+      
+        x \equiv 1 \pmod{2} \\
+        x \equiv 0 \pmod{3} \\
+        x \equiv 4 \pmod{5}
+      \end{cases}
+    </m>
+  </p>
+</exercise>
+
+    <exercise>
+      <p>
+    <m>
+      \begin{cases}
+      
+        x \equiv 3 \pmod{4} \\
+        x \equiv 1 \pmod{7} \\
+        x \equiv 8 \pmod{9}
+      \end{cases}
+    </m>
+  </p>
+</exercise>
+      
+  </exercisegroup>
+</exercises>
 
 </section>

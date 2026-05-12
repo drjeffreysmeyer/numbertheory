@@ -28,7 +28,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof. Let <m>r_1,\ldots,r_k</m> be the elements of <m>U_m</m>.  What is <m>k</m> and why?Analyze the product 
+      Try a direct proof. Let <m>r_1,\ldots,r_k</m> be the elements of <m>U_m</m>.  What is <m>k</m> and why? Analyze the product 
       <m> \prod_{i=1}^{k} ar_i = (ar_1)(ar_2)\cdots(ar_{k})</m> in two different ways (and do not forget that multiplication by <m>a</m> permutes the elements of <m>U_m</m> (why???)).  
       You may find  <xref ref="proposition-multiplication_by_relatively_prime_element_permutes_the_units"/>, <xref ref="definition-phi_function"/>, <xref ref="definition-units_modulo_n"/>, and <xref ref="definition-congruence"/> useful.
     </p>

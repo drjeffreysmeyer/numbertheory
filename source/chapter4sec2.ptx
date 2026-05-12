@@ -37,7 +37,21 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  Check <m> p=2,3</m> by hand.  Now suppose <m> p&gt;5</m>.   Try grouping the numbers together in pairs.  You may find  <xref ref="proposition-squares_roots_of_one_modulo_a_prime"/>, <xref ref="definition-units_modulo_n"/>, and <xref ref="definition-congruence"/> useful.
+      Try a direct proof.  Check <m> p=2,3</m> by hand.  Now suppose <m> p&gt;5</m>.   Every least residue modulo <m>p</m> has a unique multiplicative inverse modulo <m>p</m> (why???).  When are these distinct?  When they are distinct, pair an element with its inverse.  Use these observations to group the elements of the product <m>1 \cdot 2 \cdot \cdots \cdot (p-1)</m> in a useful way.    You may find  <xref ref="definition-commutative_ring"/>, <xref ref="proposition-relatively_prime_elements_are_units_modulo_n"/>, <xref ref="proposition-squares_roots_of_one_modulo_a_prime"/>, <xref ref="definition-units_modulo_n"/>, and <xref ref="definition-congruence"/> useful.
+    </p>
+  </proof>
+</proposition>
+
+<proposition xml:id="proposition-wilsons_converse_theorem">
+  <title>Wilson's Converse Theorem</title>
+  <statement>
+    <p>
+      If <m>p</m> is a not prime, then <m>(p-1)! \equiv 0 \pmod{p}</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  You may find  <xref ref="definition-prime_number"/> and <xref ref="definition-congruence"/> useful.
     </p>
   </proof>
 </proposition>
