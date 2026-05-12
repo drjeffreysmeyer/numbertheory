@@ -655,7 +655,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Primes",
-  "body": " Primes  A prime number is one that is \"irreducible\" in the sense that it cannot be factored into smaller positive integers.   Prime Number   A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself. In symbols, a positive integer is prime if and for all positive integers , if , then or .    The following few results are elementary properties of order and divisibility we could have proven earlier, but we need them now, so we prove them here.   Product of integers greater than 1 increase size   If are integers greater than 1, then .    Show . Then show . Iterate. Recall that  -many times. Why can you rule out equality and get strict inequality? You may find , and useful.     Proper divisors are smaller   If are distinct integers greater than 1 and , then .    Try a direct proof. Let the definitions structure your proof. You may find , , and useful.     Two positive numbers that divide each other are equal   If are positive integers and both and , then .    Try a direct proof. Let the definitions structure your proof. Substitute some things and reason about what you see. You may find , , and useful.     Minimal divisor is prime   If is an integer, then the minimal divisor of greater than 1 is a prime number.    Let be the set of positive divisors of that are greater than 1. is nonempty (why???) and has a minimal element (why???), say . Try a proof by contradiction to show that is prime. Leverage minimality. You may find , , , , , and useful.     There are infinitely many prime numbers   There are infinitely many prime numbers.    Try a proof by contradiction. There are many possible proofs of this result, but one of the most famous is attributed to Euclid. Assume for the sake of contradiction that there are only finitely many prime numbers, say . Consider the number . This number is not divisible by any of the primes in our list (why???). Deduce that there must exist a prime divisor of that is not in our list. You may find , , , , and useful.    "
+  "body": " Primes  A prime number is one that is \"irreducible\" in the sense that it cannot be factored into smaller positive integers.   Prime Number   A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself. In symbols, a positive integer is prime if and for all positive integers , if , then or . If a positive integer is not prime, we say it is composite .    The following few results are elementary properties of order and divisibility we could have proven earlier, but we need them now, so we prove them here.   Product of integers greater than 1 increase size   If are integers greater than 1, then .    Show . Then show . Iterate. Recall that  -many times. Why can you rule out equality and get strict inequality? You may find , and useful.     Proper divisors are smaller   If are distinct integers greater than 1 and , then .    Try a direct proof. Let the definitions structure your proof. You may find , , and useful.     Two positive numbers that divide each other are equal   If are positive integers and both and , then .    Try a direct proof. Let the definitions structure your proof. Substitute some things and reason about what you see. You may find , , and useful.     Minimal divisor is prime   If is an integer, then the minimal divisor of greater than 1 is a prime number.    Let be the set of positive divisors of that are greater than 1. is nonempty (why???) and has a minimal element (why???), say . Try a proof by contradiction to show that is prime. Leverage minimality. You may find , , , , , and useful.     There are infinitely many prime numbers   There are infinitely many prime numbers.    Try a proof by contradiction. There are many possible proofs of this result, but one of the most famous is attributed to Euclid. Assume for the sake of contradiction that there are only finitely many prime numbers, say . Consider the number . This number is not divisible by any of the primes in our list (why???). Deduce that there must exist a prime divisor of that is not in our list. You may find , , , , and useful.    "
 },
 {
   "id": "definition-prime_number",
@@ -664,7 +664,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.1.1",
   "title": "Prime Number.",
-  "body": " Prime Number   A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself. In symbols, a positive integer is prime if and for all positive integers , if , then or .   "
+  "body": " Prime Number   A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself. In symbols, a positive integer is prime if and for all positive integers , if , then or . If a positive integer is not prime, we say it is composite .   "
 },
 {
   "id": "proposition-product_of_integers_greater_than_one_increase_size",
@@ -925,7 +925,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Fermat’s Little Theorem",
-  "body": " Fermat's Little Theorem     Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    There are many ways to do this one. Here is one way, but can you find others? First, show that if , then . How??? Suppose divides both and . If , then there exists a prime dividing (why???). Deduce a contradiction. Next, suppose that for some . Deduce that . You may find , , , , , and useful.     Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Try a direct proof. Let be the elements of . What is and why?Analyze the product in two different ways (and do not forget that multiplication by permutes the elements of (why???)). You may find , , , and useful.     Fermat's Little Theorem   If , is a prime, and , then .    You may find , , and useful.    "
+  "body": " Fermat's Little Theorem     Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    There are many ways to do this one. Here is one way, but can you find others? First, show that if , then . How??? Suppose divides both and . If , then there exists a prime dividing (why???). Deduce a contradiction. Next, suppose that for some . Deduce that . You may find , , , , , and useful.     Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Try a direct proof. Let be the elements of . What is and why? Analyze the product in two different ways (and do not forget that multiplication by permutes the elements of (why???)). You may find , , , and useful.     Fermat's Little Theorem   If , is a prime, and , then .    You may find , , and useful.    "
 },
 {
   "id": "proposition-multiplication_by_relatively_prime_element_permutes_the_units",
@@ -943,7 +943,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "4.1.2",
   "title": "Generalized Fermat’s Little Theorem.",
-  "body": " Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Try a direct proof. Let be the elements of . What is and why?Analyze the product in two different ways (and do not forget that multiplication by permutes the elements of (why???)). You may find , , , and useful.   "
+  "body": " Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Try a direct proof. Let be the elements of . What is and why? Analyze the product in two different ways (and do not forget that multiplication by permutes the elements of (why???)). You may find , , , and useful.   "
 },
 {
   "id": "proposition-fermat_little_theorem",
@@ -955,20 +955,74 @@ var ptx_lunr_docs = [
   "body": " Fermat's Little Theorem   If , is a prime, and , then .    You may find , , and useful.   "
 },
 {
+  "id": "chp4sec1rsa",
+  "level": "1",
+  "url": "chp4sec1rsa.html",
+  "type": "Section",
+  "number": "4.2",
+  "title": "RSA Encryption",
+  "body": " RSA Encryption  In this section, we will discuss the RSA encryption scheme, which is one of the most important applications of number theory to our day-to-day live and is one of the most widely used public-key cryptosystems.  The big idea is we want to create a way for people to send us secret numbers in a way that only we can read them. We will do this by creating a public key that anyone can use to encrypt a message, and a private key that only we can use to decrypt the message.  We first select two primes and , and let .   Semiprime   A semiprime is an integer that is the product of exactly two prime numbers.    The security of our encryption scheme relies on the fact that it is easy to compute given and , but it is \"hard\" to compute and given only . To be more precise, the best known algorithm for factoring a large semiprime (the General Number Field Sieve ) runs in time that is subexponential time in the number of digits of the semiprime. So if we select and to be large enough, then it will be infeasible for an attacker to factor and recover and . In practice, it is standard to select and to be large primes, so that is a large semiprime.  For example, the RSA-2048 semiprime has 617 decimal digits! As of Spring 2026, it has not been factored and successfully factoring would give a prize of $200,000.  We then select a public exponent  such that and . We then compute the private exponent  such that . The public key is the pair , and our private key is .  We post our public key on our website, and we keep our private key secret. If someone wants to send us a secret number such that , they compute the ciphertext  . They publish the ciphertext on our website.   RSA Decryption   If and are distinct primes, , and are integers such that and , and is an integer with , then .    Try a direct proof. Let the definitions structure your proof. You may find , , and useful.    We can then decrypt the ciphertext by computing .  "
+},
+{
+  "id": "definition-semiprime",
+  "level": "2",
+  "url": "chp4sec1rsa.html#definition-semiprime",
+  "type": "Definition",
+  "number": "4.2.1",
+  "title": "Semiprime.",
+  "body": " Semiprime   A semiprime is an integer that is the product of exactly two prime numbers.   "
+},
+{
+  "id": "chp4sec1rsa-6",
+  "level": "2",
+  "url": "chp4sec1rsa.html#chp4sec1rsa-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "General Number Field Sieve "
+},
+{
+  "id": "chp4sec1rsa-8",
+  "level": "2",
+  "url": "chp4sec1rsa.html#chp4sec1rsa-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "public exponent private exponent public key private key "
+},
+{
+  "id": "chp4sec1rsa-9",
+  "level": "2",
+  "url": "chp4sec1rsa.html#chp4sec1rsa-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "ciphertext "
+},
+{
+  "id": "proposition-rsa_decryption",
+  "level": "2",
+  "url": "chp4sec1rsa.html#proposition-rsa_decryption",
+  "type": "Proposition",
+  "number": "4.2.2",
+  "title": "RSA Decryption.",
+  "body": " RSA Decryption   If and are distinct primes, , and are integers such that and , and is an integer with , then .    Try a direct proof. Let the definitions structure your proof. You may find , , and useful.   "
+},
+{
   "id": "chp4sec2",
   "level": "1",
   "url": "chp4sec2.html",
   "type": "Section",
-  "number": "4.2",
+  "number": "4.3",
   "title": "Wilson’s Theorem",
-  "body": " Wilson's Theorem     Factorial   The factorial of n , denoted , is the product of all positive integers less than or equal to .     Squares of Roots of One Modulo a Prime   If is a prime and is an integer, then if and only if or .    Try a direct proof. Begin with the forward direction. Rewrite this as . Factor the left and analyze. The other direction is immediate. You may find , , , and useful.     Wilson's Theorem   If is a prime, then .    Try a direct proof. Check by hand. Now suppose . Try grouping the numbers together in pairs. You may find , , and useful.    "
+  "body": " Wilson's Theorem     Factorial   The factorial of n , denoted , is the product of all positive integers less than or equal to .     Squares of Roots of One Modulo a Prime   If is a prime and is an integer, then if and only if or .    Try a direct proof. Begin with the forward direction. Rewrite this as . Factor the left and analyze. The other direction is immediate. You may find , , , and useful.     Wilson's Theorem   If is a prime, then .    Try a direct proof. Check by hand. Now suppose . Every least residue modulo has a unique multiplicative inverse modulo (why???). When are these distinct? When they are distinct, pair an element with its inverse. Use these observations to group the elements of the product in a useful way. You may find , , , , and useful.     Wilson's Converse Theorem   If is a not prime, then .    Try a direct proof. You may find and useful.    "
 },
 {
   "id": "definition-factorial",
   "level": "2",
   "url": "chp4sec2.html#definition-factorial",
   "type": "Definition",
-  "number": "4.2.1",
+  "number": "4.3.1",
   "title": "Factorial.",
   "body": " Factorial   The factorial of n , denoted , is the product of all positive integers less than or equal to .   "
 },
@@ -977,7 +1031,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "chp4sec2.html#proposition-squares_roots_of_one_modulo_a_prime",
   "type": "Proposition",
-  "number": "4.2.2",
+  "number": "4.3.2",
   "title": "Squares of Roots of One Modulo a Prime.",
   "body": " Squares of Roots of One Modulo a Prime   If is a prime and is an integer, then if and only if or .    Try a direct proof. Begin with the forward direction. Rewrite this as . Factor the left and analyze. The other direction is immediate. You may find , , , and useful.   "
 },
@@ -986,34 +1040,106 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "chp4sec2.html#proposition-wilsons_theorem",
   "type": "Proposition",
-  "number": "4.2.3",
+  "number": "4.3.3",
   "title": "Wilson’s Theorem.",
-  "body": " Wilson's Theorem   If is a prime, then .    Try a direct proof. Check by hand. Now suppose . Try grouping the numbers together in pairs. You may find , , and useful.   "
+  "body": " Wilson's Theorem   If is a prime, then .    Try a direct proof. Check by hand. Now suppose . Every least residue modulo has a unique multiplicative inverse modulo (why???). When are these distinct? When they are distinct, pair an element with its inverse. Use these observations to group the elements of the product in a useful way. You may find , , , , and useful.   "
+},
+{
+  "id": "proposition-wilsons_converse_theorem",
+  "level": "2",
+  "url": "chp4sec2.html#proposition-wilsons_converse_theorem",
+  "type": "Proposition",
+  "number": "4.3.4",
+  "title": "Wilson’s Converse Theorem.",
+  "body": " Wilson's Converse Theorem   If is a not prime, then .    Try a direct proof. You may find and useful.   "
 },
 {
   "id": "chp4sec3",
   "level": "1",
   "url": "chp4sec3.html",
   "type": "Section",
-  "number": "4.3",
+  "number": "4.4",
   "title": "Chinese Remainder Theorem",
-  "body": " Chinese Remainder Theorem     Chinese Remainder Theorem   If , are positive integers such that for all , then the system of congruences has a unique solution modulo .    Coming soon.    "
+  "body": " Chinese Remainder Theorem  Imagine you are an ancient astronomer tasked with synchronizing the heavens. You are tracking two major cycles that govern the seasons and the tides:    The Solar Cycle: The sun returns to its winter solstice position every 365 days.     The Lunar Cycle: The moon returns to its \"New Moon\" phase every 29 days.   As you record your observations this year, you notice a discrepancy: the Winter Solstice has just occurred, but the New Moon is not for another 11 days. You wish to know how far back in time one must travel to find the theoretical \"Year Zero\" — the legendary day when the Winter Solstice and the New Moon happened at the exact same moment. If we let be the number of days passed since that perfect alignment, we can describe our current sky using the language of remainders: (The sun has completed its cycles perfectly) (The moon is 11 days short of completing its next cycle)  This historical problem is a special case of a more general phenomenon in number theory, which we will explore in this section: solving systems of congruences. In our astronomical example, it will help us determine the exact number of days since the last perfect alignment of the sun and moon. Ancient Chinese mathematicians solved this problem and for this reason we call it the Chinese Remainder Theorem.   System of Congruences   Given , , a system of congruences is a set of congruence equations. In symbols, a system of congruences looks is:   A solution to a system of congruences is an integer that satisfies all the congruences simultaneously.    As is often the case, we will want to understand if a solution exists, and if so, how many solutions there are.   Chinese Remainder Theorem (Simple Version)   If and are relatively prime positive integers and are any integers, then the system of congruences has a unique solution modulo .    Try a direct proof. First show existence, then uniqueness. There exists integers such that (why???). Show is a solution to the system of congruences. Now show that there is a unique solution modulo . Suppose that and are two solutions. Then and . Show that this implies . You may find , , , , and useful.    Observe that the proof is constructive . It gives us a method for explicitly finding the solution.   Pairwise Relatively Prime   Given integers , we say they are pairwise relatively prime if for all .     Iterative Criterion for Pairwise Relatively Prime Integers   If are positive integers, then they are pairwise relatively prime if and only if and are relatively prime, and and are relatively prime    Try a direct proof. First show the forward direction. If are pairwise relatively prime, then and . Show that this implies . Now show the backward direction. If and are relatively prime, and and are relatively prime, then show that and . You may find , , and useful.     Chinese Remainder Theorem (General Version)   If , are pairwise relatively prime, then the system of congruences has a unique solution modulo .    Try a direct proof. Iterate the simple version of the Chinese Remainder Theorem. You may find , , useful.      Systems of Congruences   Solve each of the following systems of congruences.                    "
 },
 {
-  "id": "proposition-chinese_remainder_theorem",
+  "id": "definition-system_of_congruences",
   "level": "2",
-  "url": "chp4sec3.html#proposition-chinese_remainder_theorem",
+  "url": "chp4sec3.html#definition-system_of_congruences",
+  "type": "Definition",
+  "number": "4.4.1",
+  "title": "System of Congruences.",
+  "body": " System of Congruences   Given , , a system of congruences is a set of congruence equations. In symbols, a system of congruences looks is:   A solution to a system of congruences is an integer that satisfies all the congruences simultaneously.   "
+},
+{
+  "id": "proposition-chinese_remainder_theorem_v1",
+  "level": "2",
+  "url": "chp4sec3.html#proposition-chinese_remainder_theorem_v1",
   "type": "Proposition",
-  "number": "4.3.1",
-  "title": "Chinese Remainder Theorem.",
-  "body": " Chinese Remainder Theorem   If , are positive integers such that for all , then the system of congruences has a unique solution modulo .    Coming soon.   "
+  "number": "4.4.2",
+  "title": "Chinese Remainder Theorem (Simple Version).",
+  "body": " Chinese Remainder Theorem (Simple Version)   If and are relatively prime positive integers and are any integers, then the system of congruences has a unique solution modulo .    Try a direct proof. First show existence, then uniqueness. There exists integers such that (why???). Show is a solution to the system of congruences. Now show that there is a unique solution modulo . Suppose that and are two solutions. Then and . Show that this implies . You may find , , , , and useful.   "
+},
+{
+  "id": "definition-pairwise_relatively_prime",
+  "level": "2",
+  "url": "chp4sec3.html#definition-pairwise_relatively_prime",
+  "type": "Definition",
+  "number": "4.4.3",
+  "title": "Pairwise Relatively Prime.",
+  "body": " Pairwise Relatively Prime   Given integers , we say they are pairwise relatively prime if for all .   "
+},
+{
+  "id": "proposition-iterative_criterion_for_pairwise_relatively_prime_integers",
+  "level": "2",
+  "url": "chp4sec3.html#proposition-iterative_criterion_for_pairwise_relatively_prime_integers",
+  "type": "Proposition",
+  "number": "4.4.4",
+  "title": "Iterative Criterion for Pairwise Relatively Prime Integers.",
+  "body": " Iterative Criterion for Pairwise Relatively Prime Integers   If are positive integers, then they are pairwise relatively prime if and only if and are relatively prime, and and are relatively prime    Try a direct proof. First show the forward direction. If are pairwise relatively prime, then and . Show that this implies . Now show the backward direction. If and are relatively prime, and and are relatively prime, then show that and . You may find , , and useful.   "
+},
+{
+  "id": "proposition-chinese_remainder_theorem_v2",
+  "level": "2",
+  "url": "chp4sec3.html#proposition-chinese_remainder_theorem_v2",
+  "type": "Proposition",
+  "number": "4.4.5",
+  "title": "Chinese Remainder Theorem (General Version).",
+  "body": " Chinese Remainder Theorem (General Version)   If , are pairwise relatively prime, then the system of congruences has a unique solution modulo .    Try a direct proof. Iterate the simple version of the Chinese Remainder Theorem. You may find , , useful.   "
+},
+{
+  "id": "exercises-chinese_remainder_theorem_exercises-1-3",
+  "level": "2",
+  "url": "chp4sec3.html#exercises-chinese_remainder_theorem_exercises-1-3",
+  "type": "Exercise",
+  "number": "4.4.1",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercises-chinese_remainder_theorem_exercises-1-4",
+  "level": "2",
+  "url": "chp4sec3.html#exercises-chinese_remainder_theorem_exercises-1-4",
+  "type": "Exercise",
+  "number": "4.4.2",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercises-chinese_remainder_theorem_exercises-1-5",
+  "level": "2",
+  "url": "chp4sec3.html#exercises-chinese_remainder_theorem_exercises-1-5",
+  "type": "Exercise",
+  "number": "4.4.3",
+  "title": "",
+  "body": "    "
 },
 {
   "id": "chp4sec4",
   "level": "1",
   "url": "chp4sec4.html",
   "type": "Section",
-  "number": "4.4",
+  "number": "4.5",
   "title": "Quadratic Reciprocity",
   "body": " Quadratic Reciprocity     Quadratic Reciprocity   If and are distinct odd primes, then the congruences have the same solvability. In other words, is a quadratic residue modulo if and only if it is a quadratic residue modulo .    Coming soon.    "
 },
@@ -1022,7 +1148,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "chp4sec4.html#proposition-quadratic_reciprocity",
   "type": "Proposition",
-  "number": "4.4.1",
+  "number": "4.5.1",
   "title": "Quadratic Reciprocity.",
   "body": " Quadratic Reciprocity   If and are distinct odd primes, then the congruences have the same solvability. In other words, is a quadratic residue modulo if and only if it is a quadratic residue modulo .    Coming soon.   "
 },
