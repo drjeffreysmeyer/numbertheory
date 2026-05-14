@@ -46,7 +46,7 @@
   <title>Wilson's Converse Theorem</title>
   <statement>
     <p>
-      If <m>p</m> is a not prime, then <m>(p-1)! \equiv 0 \pmod{p}</m>.
+      If <m>p</m> is a not prime, then <m>(p-1)! \not\equiv -1 \pmod{p}</m>.
     </p>
   </statement>
   <proof>
