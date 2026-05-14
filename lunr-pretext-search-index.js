@@ -961,7 +961,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "RSA Encryption",
-  "body": " RSA Encryption  In this section, we will discuss the RSA encryption scheme, which is one of the most important applications of number theory to our day-to-day live and is one of the most widely used public-key cryptosystems.  The big idea is we want to create a way for people to send us secret numbers in a way that only we can read them. We will do this by creating a public key that anyone can use to encrypt a message, and a private key that only we can use to decrypt the message.  We first select two primes and , and let .   Semiprime   A semiprime is an integer that is the product of exactly two prime numbers.    The security of our encryption scheme relies on the fact that it is easy to compute given and , but it is \"hard\" to compute and given only . To be more precise, the best known algorithm for factoring a large semiprime (the General Number Field Sieve ) runs in time that is subexponential time in the number of digits of the semiprime. So if we select and to be large enough, then it will be infeasible for an attacker to factor and recover and . In practice, it is standard to select and to be large primes, so that is a large semiprime.  For example, the RSA-2048 semiprime has 617 decimal digits! As of Spring 2026, it has not been factored and successfully factoring would give a prize of $200,000.  We then select a public exponent  such that and . We then compute the private exponent  such that . The public key is the pair , and our private key is .  We post our public key on our website, and we keep our private key secret. If someone wants to send us a secret number such that , they compute the ciphertext  . They publish the ciphertext on our website.   RSA Decryption   If and are distinct primes, , and are integers such that and , and is an integer with , then .    Try a direct proof. Let the definitions structure your proof. You may find , , and useful.    We can then decrypt the ciphertext by computing .  "
+  "body": " RSA Encryption  In this section, we will discuss the RSA encryption scheme, which is one of the most important applications of number theory to our day-to-day live and is one of the most widely used public-key cryptosystems.  The big idea is we want to create a way for people to send us secret numbers in a way that only we can read them. We will do this by creating a public key that anyone can use to encrypt a message, and a private key that only we can use to decrypt the message.  We first select two primes and , and let .   Semiprime   A semiprime is an integer that is the product of exactly two prime numbers.    The security of our encryption scheme relies on the fact that it is easy to compute given and , but it is \"hard\" to compute and given only . To be more precise, the best known algorithm for factoring a large semiprime (the General Number Field Sieve ) runs in time that is subexponential time in the number of digits of the semiprime. So if we select and to be large enough, then it will be infeasible for an attacker to factor and recover and . In practice, it is standard to select and to be large primes, so that is a large semiprime.   For example, the RSA-2048 semiprime has 617 decimal digits! As of Spring 2026, it has not been factored and successfully factoring would give a prize of $200,000.  We then select a public exponent  such that and . We then compute the private exponent  such that . The public key is the pair , and our private key is .   We post our public key on our website, and we keep our private key secret. If someone wants to send us a secret number such that , they compute the ciphertext  . They publish the ciphertext on our website.    RSA Decryption   If and are distinct primes, , and are integers such that and , and is an integer with , then .    Try a direct proof. Let the definitions structure your proof. You may find , , and useful.    We can then decrypt the ciphertext by computing .   "
 },
 {
   "id": "definition-semiprime",
@@ -982,18 +982,18 @@ var ptx_lunr_docs = [
   "body": "General Number Field Sieve "
 },
 {
-  "id": "chp4sec1rsa-8",
+  "id": "chp4sec1rsa-9",
   "level": "2",
-  "url": "chp4sec1rsa.html#chp4sec1rsa-8",
+  "url": "chp4sec1rsa.html#chp4sec1rsa-9",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "public exponent private exponent public key private key "
 },
 {
-  "id": "chp4sec1rsa-9",
+  "id": "chp4sec1rsa-11",
   "level": "2",
-  "url": "chp4sec1rsa.html#chp4sec1rsa-9",
+  "url": "chp4sec1rsa.html#chp4sec1rsa-11",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
