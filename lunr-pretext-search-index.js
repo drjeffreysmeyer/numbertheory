@@ -718,7 +718,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Prime Factorization",
-  "body": " Prime Factorization     Prime Factorization (Existence)   Every integer greater than 1 can be expressed as a product of prime numbers.    Let be the set of all positive integers greater than 1 that cannot be expressed as a product of prime numbers. Try a proof by contradiction and assume is nonempty. Then has a minimal element, say (why???). cannot be prime (why???), so it is a product of an integer greater than 1 and a prime (why???). Leverage minimality to deduce a contradiction. You may find , , , and useful.     Euclid's Lemma   If is prime and for some , then or .    Try a direct proof. Suppose . The (why???). Deduce that there exist integers such that . Use this to show that . You may find , , , and useful.    The property stated in Euclid's Lemma is not just a consequence of the definition of prime numbers; it is a deeper property that distinguishes prime numbers from composite numbers. In fact, the converse of Euclid's Lemma is also true.   Euclid's Converse   If is a number greater than 1 with the property that whenever for some , then or , then is prime.    Try a direct proof. Suppose . Then there exists a such that . Either or . Analyze both cases and deduce that must either be 1 or . You may find , , and useful.    Euclid's Lemma ( )is a fundamental property of prime numbers that plays a crucial role in number theory, particularly in the proof of the uniqueness of prime factorization.   Prime Factorization (Uniqueness)   The prime factorization of a positive integer greater than 1 is unique up to the order of the factors.    Suppose that a positive integer has two prime factorizations: where and are prime numbers. You want to show that and that the sets of primes are the same (up to order). Show that must divide one of the 's, up to relabelling . Deduce that . We can then cancel and from both factorizations and repeat the argument to show that must, up to relabelling, equal , and so on. You may find , , , useful.     Fundamental Theorem of Arithmetic   Every positive integer greater than 1 can be uniquely expressed as a product of prime numbers, up to the order of the factors.    You may find and useful.    "
+  "body": " Prime Factorization     Prime Factorization (Existence)   Every integer greater than 1 can be expressed as a product of prime numbers.    Let be the set of all positive integers greater than 1 that cannot be expressed as a product of prime numbers. Try a proof by contradiction and assume is nonempty. Then has a minimal element, say (why???). cannot be prime (why???), so it is a product of an integer greater than 1 and a prime (why???). Leverage minimality to deduce a contradiction. You may find , , , and useful.     Euclid's Lemma   If is prime and for some , then or .    Try a direct proof. Suppose . The (why???). Deduce that there exist integers such that . Use this to show that . You may find , , , and useful.    The property stated in Euclid's Lemma is not just a consequence of the definition of prime numbers; it is a deeper property that distinguishes prime numbers from composite numbers. In fact, the converse of Euclid's Lemma is also true.   Euclid's Converse   If is a number greater than 1 with the property that whenever for some , then or , then is prime.    Try a direct proof. Suppose . Then there exists a such that . Either or . Analyze both cases and deduce that must either be 1 or . You may find , , and useful.    Euclid's Lemma ( )is a fundamental property of prime numbers that plays a crucial role in number theory, particularly in the proof of the uniqueness of prime factorization.   Prime Factorization (Uniqueness)   The prime factorization of a positive integer greater than 1 is unique up to the order of the factors.    Suppose that a positive integer has two prime factorizations: where and are prime numbers. You want to show that and that the sets of primes are the same (up to order). Show that must divide one of the 's, up to relabelling . Deduce that . We can then cancel and from both factorizations and repeat the argument to show that must, up to relabelling, equal , and so on. You may find , , , useful.     Fundamental Theorem of Arithmetic   Every positive integer greater than 1 can be uniquely expressed as a product of prime numbers, up to the order of the factors.    You may find and useful.     "
 },
 {
   "id": "proposition-prime_factorization_existence",
@@ -835,7 +835,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Euler Phi Function",
-  "body": " Euler Phi Function     Units Modulo m   The units modulo m are the least residues modulo that have multiplicative inverses modulo . We will denote the set of units modulo by .     Relatively Prime Elements are Units Modulo m   If is an integer, and is a least residue modulo such that , then .    Try a direct proof. You may find , , , and useful.     Find the units  Find the units modulo 4, 5, and 20. Can you find a pattern? Can you guess a formula for the number of units modulo ?    Euler Phi Function   The Euler phi function  (also sometimes called the totient function ) is defined as the number of positive integers less than or equal to that are relatively prime to .     The phi function of a prime   If is prime then .    Try a direct proof. You may find , , , and useful.     The phi function of a prime power   If is prime and , then .    Try a direct proof. It is sometimes helpful to think about about least resides modulo as a grid. Write down the first many least residues modulo then go to a new line. Repeat this process for the remaining rows until you have a by grid. Think about the columns and rows that contain elements relatively prime to . Try for a few small primes first. Remember, though, examples never constitute a proof. You may find , , and useful.     Relatively prime with a relatively prime product   If integers greater than 1 and and are relatively prime, then is relatively prime with if and only if is relatively prime with both and .    Try a proof by contrapositive. First suppose that and are not relatively prime. Then there exists a prime such that and . Deduce that either or is not relatively prime with . Now prove the other direction. Without loss of generality, we may suppose (why???) that and are not relatively prime. Deduce is not relatively prime with . You may find , , , , and useful.     The phi function of a relatively prime product   If are integers greater than 1 and and are relatively prime, then .    Analyze the columns and rows of the relatively prime diagonal grid. You may find , , , , and useful.     Computing the Phi Function   If is the prime factorization of , then     Try a direct proof. You may find , , and useful.    Below is plot of the Euler phi function for the first 1,000 integers. What patterns do you notice? Can you explain any of the patterns you see? Do you have any conjectures about the behavior of the phi function?   Plot of the Euler phi function for the first 1,000 integers.   A plot showing the values of the Euler phi function for the first 1,000 positive integers.    "
+  "body": " Euler Phi Function     Units Modulo m   The units modulo m are the least residues modulo that have multiplicative inverses modulo . We will denote the set of units modulo by .     Relatively Prime Elements are Units Modulo m   If is an integer, and is a least residue modulo such that , then .    Try a direct proof. You may find , , , and useful.     Find the units  Find the units modulo 4, 5, and 20. Can you find a pattern? Can you guess a formula for the number of units modulo ?    Euler Phi Function   The Euler phi function  (also sometimes called the totient function ) is defined as the number of positive integers less than or equal to that are relatively prime to .      The phi function of a prime   If is prime then .    Try a direct proof. You may find , , , and useful.     The phi function of a prime power   If is prime and , then .    Try a direct proof. It is sometimes helpful to think about about least resides modulo as a grid. Write down the first many least residues modulo then go to a new line. Repeat this process for the remaining rows until you have a by grid. Think about the columns and rows that contain elements relatively prime to . Try for a few small primes first. Remember, though, examples never constitute a proof. You may find , , and useful.     Relatively prime with a relatively prime product   If integers greater than 1 and and are relatively prime, then is relatively prime with if and only if is relatively prime with both and .    Try a proof by contrapositive. First suppose that and are not relatively prime. Then there exists a prime such that and . Deduce that either or is not relatively prime with . Now prove the other direction. Without loss of generality, we may suppose (why???) that and are not relatively prime. Deduce is not relatively prime with . You may find , , , , and useful.     The phi function of a relatively prime product   If are integers greater than 1 and and are relatively prime, then .    Analyze the columns and rows of the relatively prime diagonal grid. You may find , , , , and useful.     Computing the Phi Function   If is the prime factorization of , then     Try a direct proof. You may find , , and useful.    Below is plot of the Euler phi function for the first 1,000 integers. What patterns do you notice? Can you explain any of the patterns you see? Do you have any conjectures about the behavior of the phi function?   Plot of the Euler phi function for the first 1,000 integers.   A plot showing the values of the Euler phi function for the first 1,000 positive integers.    "
 },
 {
   "id": "definition-units_modulo_n",
@@ -925,7 +925,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Fermat’s Little Theorem",
-  "body": " Fermat's Little Theorem     Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    There are many ways to do this one. Here is one way, but can you find others? First, show that if , then . How??? Suppose divides both and . If , then there exists a prime dividing (why???). Deduce a contradiction. Next, suppose that for some . Deduce that . You may find , , , , , and useful.     Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Try a direct proof. Let be the elements of . What is and why? Analyze the product in two different ways (and do not forget that multiplication by permutes the elements of (why???)). You may find , , , and useful.     Fermat's Little Theorem   If , is a prime, and , then .    You may find , , and useful.    "
+  "body": " Fermat's Little Theorem     Multiplication by relatively prime element permutes the units   If , is a positive integer, such that , then multiplication by permutes the elements of . In other words, the function defined by is a bijection.    There are many ways to do this one. Here is one way, but can you find others? First, show that if , then . How??? Suppose divides both and . If , then there exists a prime dividing (why???). Deduce a contradiction. Next, suppose that for some . Deduce that . You may find , , , , , and useful.      Generalized Fermat's Little Theorem   If , is a positive integer, such that , then .    Try a direct proof. Let be the elements of . What is and why? Analyze the product in two different ways (and do not forget that multiplication by permutes the elements of (why???)). You may find , , , and useful.     Fermat's Little Theorem   If , is a prime, and , then .    You may find , , and useful.    "
 },
 {
   "id": "proposition-multiplication_by_relatively_prime_element_permutes_the_units",
@@ -1015,7 +1015,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.3",
   "title": "Wilson’s Theorem",
-  "body": " Wilson's Theorem     Factorial   The factorial of n , denoted , is the product of all positive integers less than or equal to .     Squares of Roots of One Modulo a Prime   If is a prime and is an integer, then if and only if or .    Try a direct proof. Begin with the forward direction. Rewrite this as . Factor the left and analyze. The other direction is immediate. You may find , , , and useful.     Wilson's Theorem   If is a prime, then .    Try a direct proof. Check by hand. Now suppose . Every least residue modulo has a unique multiplicative inverse modulo (why???). When are these distinct? When they are distinct, pair an element with its inverse. Use these observations to group the elements of the product in a useful way. You may find , , , , and useful.     Wilson's Converse Theorem   If is a not prime, then .    Try a direct proof. You may find and useful.    "
+  "body": " Wilson's Theorem     Factorial   The factorial of n , denoted , is the product of all positive integers less than or equal to .     Squares of Roots of One Modulo a Prime   If is a prime and is an integer, then if and only if or .    Try a direct proof. Begin with the forward direction. Rewrite this as . Factor the left and analyze. The other direction is immediate. You may find , , , and useful.      Wilson's Theorem   If is a prime, then .    Try a direct proof. Check by hand. Now suppose . The big idea is you will want to group the elements of the product in a useful way. You may find it useful to observe that and compute first. Every least residue modulo has a unique multiplicative inverse modulo (why???). When are these distinct? When they are distinct, pair an element with its inverse. You may find , , , , and useful.      Wilson's Converse Theorem   If is a not prime, then .    Try a direct proof by cases. First check . Next suppose where is a prime greater than 2. Then and are both distinct least residues modulo (why???). What are the implications? Lastly, suppose is not the square of a prime. Then there are distinct least residues and modulo such that (why???). What are the implications? You may find and useful.    "
 },
 {
   "id": "definition-factorial",
@@ -1042,7 +1042,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "4.3.3",
   "title": "Wilson’s Theorem.",
-  "body": " Wilson's Theorem   If is a prime, then .    Try a direct proof. Check by hand. Now suppose . Every least residue modulo has a unique multiplicative inverse modulo (why???). When are these distinct? When they are distinct, pair an element with its inverse. Use these observations to group the elements of the product in a useful way. You may find , , , , and useful.   "
+  "body": " Wilson's Theorem   If is a prime, then .    Try a direct proof. Check by hand. Now suppose . The big idea is you will want to group the elements of the product in a useful way. You may find it useful to observe that and compute first. Every least residue modulo has a unique multiplicative inverse modulo (why???). When are these distinct? When they are distinct, pair an element with its inverse. You may find , , , , and useful.   "
 },
 {
   "id": "proposition-wilsons_converse_theorem",
@@ -1051,7 +1051,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "4.3.4",
   "title": "Wilson’s Converse Theorem.",
-  "body": " Wilson's Converse Theorem   If is a not prime, then .    Try a direct proof. You may find and useful.   "
+  "body": " Wilson's Converse Theorem   If is a not prime, then .    Try a direct proof by cases. First check . Next suppose where is a prime greater than 2. Then and are both distinct least residues modulo (why???). What are the implications? Lastly, suppose is not the square of a prime. Then there are distinct least residues and modulo such that (why???). What are the implications? You may find and useful.   "
 },
 {
   "id": "chp4sec3",
@@ -1135,22 +1135,31 @@ var ptx_lunr_docs = [
   "body": "    "
 },
 {
-  "id": "chp4sec4",
+  "id": "chp5sec1",
   "level": "1",
-  "url": "chp4sec4.html",
+  "url": "chp5sec1.html",
   "type": "Section",
-  "number": "4.5",
-  "title": "Quadratic Reciprocity",
-  "body": " Quadratic Reciprocity     Quadratic Reciprocity   If and are distinct odd primes, then the congruences have the same solvability. In other words, is a quadratic residue modulo if and only if it is a quadratic residue modulo .    Coming soon.    "
+  "number": "5.1",
+  "title": "Quadratic Residues",
+  "body": " Quadratic Residues     Quadratic Residues   Given an odd prime and an integer such that , we say that is a quadratic residue modulo if there exists an integer such that In this case, we also say that is a square modulo .     Legendre Symbol   Given an odd prime and an integer such that , the Legendre symbol  is defined as     "
 },
 {
-  "id": "proposition-quadratic_reciprocity",
+  "id": "definition-quadratic_residues",
   "level": "2",
-  "url": "chp4sec4.html#proposition-quadratic_reciprocity",
-  "type": "Proposition",
-  "number": "4.5.1",
-  "title": "Quadratic Reciprocity.",
-  "body": " Quadratic Reciprocity   If and are distinct odd primes, then the congruences have the same solvability. In other words, is a quadratic residue modulo if and only if it is a quadratic residue modulo .    Coming soon.   "
+  "url": "chp5sec1.html#definition-quadratic_residues",
+  "type": "Definition",
+  "number": "5.1.1",
+  "title": "Quadratic Residues.",
+  "body": " Quadratic Residues   Given an odd prime and an integer such that , we say that is a quadratic residue modulo if there exists an integer such that In this case, we also say that is a square modulo .   "
+},
+{
+  "id": "definition-legendre_symbol",
+  "level": "2",
+  "url": "chp5sec1.html#definition-legendre_symbol",
+  "type": "Definition",
+  "number": "5.1.2",
+  "title": "Legendre Symbol.",
+  "body": " Legendre Symbol   Given an odd prime and an integer such that , the Legendre symbol  is defined as    "
 },
 {
   "id": "backmatter-2",
