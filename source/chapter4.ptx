@@ -12,5 +12,4 @@
   <xi:include href="chapter4sec1rsa.ptx" />
   <xi:include href="chapter4sec2.ptx" />
   <xi:include href="chapter4sec3.ptx" />
-  <xi:include href="chapter4sec4.ptx" />
 </chapter>

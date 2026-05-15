@@ -95,4 +95,15 @@
   </proof>
 </proposition>
 
+
+<sage>
+<input>
+m = 12
+factor(m)
+</input>
+<output>
+</output>
+</sage>
+
+
 </section>

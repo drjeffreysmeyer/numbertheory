@@ -45,6 +45,15 @@
     </statement>
   </definition>
 
+<sage>
+<input>
+m = 12
+euler_phi(m)
+</input>
+<output>
+</output>
+</sage>
+
 <proposition xml:id="proposition-phi_function_of_prime">
   <title>The phi function of a prime</title>
   <statement>

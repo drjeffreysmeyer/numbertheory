@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="chp5sec1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Quadratic Residues</title>
+
+  <p> </p>
+  
+  <definition xml:id="definition-quadratic_residues">
+    <title>Quadratic Residues</title>
+    <statement>
+        <p>
+            Given an odd prime <m>p</m> and an integer <m>a</m> such that <m>\gcd(a,p) = 1</m>, we say that <m>a</m> is a <term>quadratic residue modulo <m>p</m></term> if there exists an integer <m>x</m> such that
+            <m>
+                x^2 \equiv a \pmod{p}
+            </m>
+            In this case, we also say that <m>a</m> is a <term>square modulo <m>p</m></term>.
+        </p>
+    </statement>
+  </definition>
+
+  <definition xml:id="definition-legendre_symbol">
+    <title>Legendre Symbol</title>
+    <statement>
+        <p>
+            Given an odd prime <m>p</m> and an integer <m>a</m> such that <m>\gcd(a,p) = 1</m>, the <term>Legendre symbol</term> <m>\left(\frac{a}{p}\right)</m> is defined as
+            <m>
+                \left(\frac{a}{p}\right) = \begin{cases}
+                    1 \amp \text{if } a \text{ is a quadratic residue modulo } p \\
+                    -1 \amp \text{if } a \text{ is a quadratic non-residue modulo } p
+                \end{cases}
+            </m>
+        </p>
+    </statement>
+  </definition>
+
+</section>

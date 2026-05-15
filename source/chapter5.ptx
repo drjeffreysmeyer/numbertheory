@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="chapter05" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Quadratic Reciprocity</title>
+
+  <introduction>
+    <p></p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="chapter5sec1.ptx" />
+</chapter>

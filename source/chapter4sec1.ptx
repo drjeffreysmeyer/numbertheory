@@ -19,6 +19,17 @@
   </proof>
 </proposition>
 
+<sage>
+<input>
+m = 100
+a = 97
+e = euler_phi(m)
+print(pow(a,e,m))
+</input>
+<output>
+</output>
+</sage>
+
 <proposition xml:id="proposition-generalized_fermat_little_theorem">
   <title>Generalized Fermat's Little Theorem</title>
   <statement>
