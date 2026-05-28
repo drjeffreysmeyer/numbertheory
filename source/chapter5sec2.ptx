@@ -3,7 +3,7 @@
 <section xml:id="chp5sec2" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Legendre Symbol</title>
 
-  <p> </p>
+  <p>In this section, we will introduce the Legendre symbol, a useful tool notations for efficiently denoting quadratic residues and non-residues.  The notation allows for a type of arithmetic with the symbols themselves</p>
 
   <definition xml:id="definition-legendre_symbol">
     <title>Legendre Symbol</title>
@@ -39,6 +39,7 @@ for a in range(p):
     We now compute some decomposition results that will enable us to compute complicated Legendre symbols in terms of simpler ones.
   </p>
 
+  
 
   <proposition xml:id="proposition-legendre_symbol_properties">
     <title>Properties of the Legendre Symbol</title>
@@ -75,7 +76,7 @@ for a in range(p):
     </statement>
     <proof>
         <p>
-            Try a direct proof.  Let the definitions structure your proofs.  You may find  <xref ref="definition-legendre_symbol"/> useful.
+            Try a direct proof.  Let the definitions structure your proofs.  Proceed linearly.  (1) is straight forward (why???). You can use similar tools for (2) or break it into three cases.  (3) is straightforward.  (4) uses the previous properties. You may find  <xref ref="definition-legendre_symbol"/>, <xref ref="proposition-eulers_criterion"/>, <xref ref="proposition-congruence_and_least_residue"/>, useful.
         </p>
     </proof>
   </proposition>
@@ -107,7 +108,7 @@ for a in range(p):
     </statement>
     <proof>
         <p>
-            Try a direct proof.  Let the definitions structure your proofs.  You may find  <xref ref="definition-legendre_symbol"/> useful.
+            Try a direct proof.  Let the definitions structure your proofs.  You may find  <xref ref="definition-legendre_symbol"/> and <xref ref="proposition-negative_one_is_a_quadratic_residue_modulo_p_congruent_to_1_mod_4"/> useful.
         </p>
     </proof>
   </proposition>
@@ -121,7 +122,7 @@ for a in range(p):
     </statement>
     <proof>
         <p>
-            Try a direct proof.  Let the definitions structure your proofs.  You may find  <xref ref="definition-legendre_symbol"/> useful.
+            Try a direct proof.  Let the definitions structure your proofs.  You may find  <xref ref="definition-legendre_symbol"/> and <xref ref="proposition-two_is_a_quadratic_residue_modulo_p_congruent_to_pm1_mod_8"/> useful.
         </p>
     </proof>
   </proposition>
