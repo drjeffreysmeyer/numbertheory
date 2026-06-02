@@ -122,7 +122,7 @@ for a in range(p):
     </statement>
     <proof>
         <p>
-            Try a direct proof.  Let the definitions structure your proofs.  You may find  <xref ref="definition-legendre_symbol"/> and <xref ref="proposition-two_is_a_quadratic_residue_modulo_p_congruent_to_pm1_mod_8"/> useful.
+            Try a direct proof.  Let the definitions structure your proofs.  Think about the following statement: what does it mean if half of a half if even? You may find  <xref ref="definition-legendre_symbol"/> and <xref ref="proposition-two_is_a_quadratic_residue_modulo_p_congruent_to_pm1_mod_8"/> useful.
         </p>
     </proof>
   </proposition>

@@ -103,7 +103,7 @@ for p in prime_range(3,100):
   </proof>
 </proposition>
 
-<definition xml:id="definition-flip_function">
+<definition xml:id="definition-flip_count">
   <title>Flip count</title>
   <statement>
       <p>
@@ -122,7 +122,7 @@ for p in prime_range(3,100):
   <proof>
     <p>
       Try a direct proof.  Compute the product modulo <m>p</m> of all elements in the set <m>\{ar \mod p \mid r = 1, 2, \ldots, \frac{p-1}{2}\}</m> in two ways.  Keep in mind that <m>ar\equiv C_a(r) \pmod{p}</m> when <m>r_a \leq \frac{p-1}{2}</m>  <m>ar\equiv (-1)C_a(r) \pmod{p}</m> when <m>r_a &gt; \frac{p-1}{2}</m> (why???).   Show <m>(-1)^{\beta(a,p)}=a^{(p-1)/2}</m>.  
-      You may find  <xref ref="definition-quadratic_residues"/>, <xref ref="definition-congruence"/>, <xref ref="definition-flip_function"/>, <xref ref="proposition-eulers_criterion"/>, <xref ref="proposition-centering_map_is_bijection"/>, <xref ref="proposition-congruence_preserves_operations"/>, <xref ref="proposition-multiplication_by_relatively_prime_element_permutes_the_units"/>, and <xref ref="proposition-congruence_cancellation_theorem"/>useful.
+      You may find  <xref ref="definition-quadratic_residues"/>, <xref ref="definition-congruence"/>, <xref ref="definition-flip_count"/>, <xref ref="proposition-eulers_criterion"/>, <xref ref="proposition-centering_map_is_bijection"/>, <xref ref="proposition-congruence_preserves_operations"/>, <xref ref="proposition-multiplication_by_relatively_prime_element_permutes_the_units"/>, and <xref ref="proposition-congruence_cancellation_theorem"/> useful.
     </p>
   </proof>
 </proposition>

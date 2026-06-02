@@ -3,8 +3,73 @@
 <section xml:id="chp5sec3" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Quadratic Reciprocity</title>
 
-  <p> </p>
-  
+  <p>
+    In this section, we develop and prove the celebrated Quadratic Reciprocity Law.  There are in fact hundreds of different proofs of this result, and we will present one of the more intuitive and well-known ones.  
+  </p>
+
+  <definition xml:id="definition-floor_function">
+    <title>Floor function</title>
+    <statement>
+        <p>
+            If <m>m</m> and <m>n</m> are relatively prime integers with <m>n &gt; 0</m>, and then we call the unique <m>q</m> such that <m>n = mq+r</m> the <term>floor</term> of the ratio <m>\frac{m}{n}</m>.  In symbols, we write <m>\lfloor \frac{m}{n} \rfloor = q</m>.
+        </p>
+    </statement>
+  </definition>
+
+  <p> 
+    We may take it as given the characterization that the floor of a ratio is the greatest integer less than or equal to the ratio.  
+  </p>
+
+
+ <proposition xml:id="proposition-triangle_lattice_count">
+  <title>Triangle Lattice Count</title>
+  <statement>
+    <p>
+      If <m>p</m> is an odd prime and <m>\gcd(a,p)=1</m>, then <m>\sum_{r=1}^{(p-1)/2} \left\lfloor \frac{ar}{p} \right\rfloor</m> counts the number of lattice points properly contained in the triangular region in the first quadrant that is strictly below the line <m>y = \frac{a}{p}x</m> and to the left of the line <m>x = \frac{p}{2}</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  For each <m>r</m> with <m>1 \leq r \leq (p-1)/2</m>, how many lattice points are above <m>(r,0)</m> and below the point <m>(r, \frac{a}{p}r)</m>?  It might help to draw some pictures to help you visualize the situation. 
+    </p>
+  </proof>
+</proposition>
+
+
+<definition xml:id="definition-lattice_count">
+  <title>Triangle lattice count</title>
+  <statement>
+      <p>
+          If <m>p</m> is an odd prime and <m>a</m> relatively prime to <m>p</m>, then define <m>\gamma(a,p)=\sum_{r=1}^{(p-1)/2} \left\lfloor \frac{ar}{p} \right\rfloor </m>.    We will say <m>\gamma(a,p)</m> is the <term>triangle lattice count</term>.
+      </p>
+  </statement>
+</definition>
+
+<p>
+  We now prove the technical but crucial result that the triangle lattice count is congruent to the beta function modulo 2.  This will be the key step in our proof of quadratic reciprocity.
+</p>
+
+ <proposition xml:id="proposition-eisensteins_lemma">
+  <title>Eisenstein's Lemma</title>
+  <statement>
+    <p>
+      If <m>p</m> is an odd prime and <m>a</m> is an odd integer relatively prime to <m>p</m>, then <m>\gamma(a,p) \equiv \beta(a,p) \pmod{2}</m>.
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Try a direct proof.  Rewrite and compare two sums: <m>\sum_{r=1}^{(p-1)/2} r</m> and <m>\sum_{r=1}^{(p-1)/2} ar</m>.  First, carefully show that 
+      <md>\sum_{r=1}^{(p-1)/2} r = \sum_{r=1}^{(p-1)/2} C_a(r)  = p \beta(a,p) + \sum_{r_a &lt; \frac{p}{2}}r_a - \sum_{r_a &gt; \frac{p}{2}}r_a.</md>
+      Recall that, for each <m>r</m> with <m>1 \leq r \leq (p-1)/2</m>,  <m>ar =  p \left\lfloor \frac{ar}{p} \right\rfloor + r_a</m> (why???).  With this in mind, show that
+       <md>\sum_{r=1}^{(p-1)/2} ar = \sum_{r=1}^{(p-1)/2} \left(p \left\lfloor \frac{ar}{p} \right\rfloor + r_a\right)  = p \gamma(a,p) + \sum_{r=1}^{(p-1)/2} r_a.</md>
+      Look at their difference to deduce that
+      <md>(a-1)\sum_{r=1}^{(p-1)/2} r = p (\gamma(a,p)-\beta(a,p)) + 2\sum_{r_a &gt; \frac{p}{2}}r_a.</md> 
+      Deduce the result. 
+      You may find  <xref ref="definition-centering_map"/>, <xref ref="proposition-centering_map_is_bijection"/>, <xref ref="definition-flip_count"/>, <xref ref="definition-commutative_ring"/>, <xref ref="proposition-division_algorithm"/>, and <xref ref="definition-congruence"/>, useful.
+    </p>
+  </proof>
+</proposition>
+
 <proposition xml:id="proposition-quadratic_reciprocity">
   <title>Quadratic Reciprocity</title>
   <statement>
@@ -18,9 +83,51 @@
   </statement>
   <proof>
     <p>
-      Coming soon.
+      Try a direct proof.  Consider the rectangle in the first quadrant with vertices at <m>(0,0)</m>, <m>(\frac{p-1}{2},0)</m>, <m>(\frac{p-1}{2},\frac{q-1}{2})</m>, and <m>(0,\frac{q-1}{2})</m>.  Compute that lattice points properly contained in this rectangle in two ways.  First do a direct count.  Next draw the diagonal line from <m>(0,0)</m> to <m>(\frac{p-1}{2},\frac{q-1}{2})</m>.  Compute the lattice points below the line.  By a symmetry of argument, reversing the roles of <m>p</m> and <m>q</m>, compute the lattice points above the line.  Why do no lattice points lie on the line?  Deduce that 
+      <md>\gamma(p,q) + \gamma(q,p) =\left(\frac{p-1}{2}\right)\left(\frac{q-1}{2}\right).</md>  Analyze the expression 
+      <md>(-1)^{\gamma(p,q)}(-1)^{\gamma(q,p)}</md> and deduce the desired result.  You may find  <xref ref="proposition-triangle_lattice_count"/>, <xref ref="definition-lattice_count"/>,  <xref ref="proposition-eisensteins_lemma"/>, <xref ref="proposition-gauss_lemma"/>, <xref ref="definition-legendre_symbol"/> useful.
     </p>
   </proof>
 </proposition>
+
+
+<exercises xml:id="exercises-quadratic_reciprocity">
+  <exercisegroup>
+    <title>Compute Legendre symbols</title>
+    <introduction>
+      <p>
+        Compute each of the following Legendre symbols.  
+      </p>
+    </introduction>
+
+    <exercise>
+      <p>
+    <m>
+      \legendre{-42}{67}
+    </m>
+  </p>
+  </exercise>
+
+    <exercise>
+      <p>
+    <m>
+      \legendre{12}{17}
+    </m>
+  </p>
+</exercise>
+
+    <exercise>
+      <p>
+    <m>
+      \legendre{5}{227}
+    </m>
+  </p>
+</exercise>
+      
+  </exercisegroup>
+</exercises>
+
+
+
 
 </section>
