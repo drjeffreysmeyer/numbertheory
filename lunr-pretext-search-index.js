@@ -1198,9 +1198,9 @@ var ptx_lunr_docs = [
   "body": " Centering Map is a Bijection   The centering map is a bijection.    First show this map is one-to-one and then deduce it is onto. Suppose and are least resides modulo such that . Show by three cases that . You may find , , , , and useful.   "
 },
 {
-  "id": "definition-flip_function",
+  "id": "definition-flip_count",
   "level": "2",
-  "url": "chp5sec1.html#definition-flip_function",
+  "url": "chp5sec1.html#definition-flip_count",
   "type": "Definition",
   "number": "5.1.6",
   "title": "Flip count.",
@@ -1231,7 +1231,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Legendre Symbol",
-  "body": " Legendre Symbol  In this section, we will introduce the Legendre symbol, a useful tool notations for efficiently denoting quadratic residues and non-residues. The notation allows for a type of arithmetic with the symbols themselves   Legendre Symbol   Given an odd prime and an integer , the Legendre symbol  is defined as     For reasons we will not discuss here, Python quickly computes the Legendre symbol using the built in function .   We now compute some decomposition results that will enable us to compute complicated Legendre symbols in terms of simpler ones.   Properties of the Legendre Symbol   If is an odd prime and , then             If , then .    If , then .       Try a direct proof. Let the definitions structure your proofs. Proceed linearly. (1) is straight forward (why???). You can use similar tools for (2) or break it into three cases. (3) is straightforward. (4) uses the previous properties. You may find , , , useful.    We now compute the Legendre symbol for some special cases. In particular, a few simple values of as we range across .   The Legendre Symbol for   If is an odd prime, then .    Try a direct proof. Let the definitions structure your proofs. You may find useful.     The Legendre Symbol for   If is an odd prime, then .    Try a direct proof. Let the definitions structure your proofs. You may find and useful.     The Legendre Symbol for   If is an odd prime, then .    Try a direct proof. Let the definitions structure your proofs. You may find and useful.     "
+  "body": " Legendre Symbol  In this section, we will introduce the Legendre symbol, a useful tool notations for efficiently denoting quadratic residues and non-residues. The notation allows for a type of arithmetic with the symbols themselves   Legendre Symbol   Given an odd prime and an integer , the Legendre symbol  is defined as     For reasons we will not discuss here, Python quickly computes the Legendre symbol using the built in function .   We now compute some decomposition results that will enable us to compute complicated Legendre symbols in terms of simpler ones.   Properties of the Legendre Symbol   If is an odd prime and , then             If , then .    If , then .       Try a direct proof. Let the definitions structure your proofs. Proceed linearly. (1) is straight forward (why???). You can use similar tools for (2) or break it into three cases. (3) is straightforward. (4) uses the previous properties. You may find , , , useful.    We now compute the Legendre symbol for some special cases. In particular, a few simple values of as we range across .   The Legendre Symbol for   If is an odd prime, then .    Try a direct proof. Let the definitions structure your proofs. You may find useful.     The Legendre Symbol for   If is an odd prime, then .    Try a direct proof. Let the definitions structure your proofs. You may find and useful.     The Legendre Symbol for   If is an odd prime, then .    Try a direct proof. Let the definitions structure your proofs. Think about the following statement: what does it mean if half of a half if even? You may find and useful.     "
 },
 {
   "id": "definition-legendre_symbol",
@@ -1276,7 +1276,7 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "5.2.5",
   "title": "The Legendre Symbol for <span class=\"process-math\">\\(2\\)<\/span>.",
-  "body": " The Legendre Symbol for   If is an odd prime, then .    Try a direct proof. Let the definitions structure your proofs. You may find and useful.   "
+  "body": " The Legendre Symbol for   If is an odd prime, then .    Try a direct proof. Let the definitions structure your proofs. Think about the following statement: what does it mean if half of a half if even? You may find and useful.   "
 },
 {
   "id": "chp5sec3",
@@ -1285,16 +1285,79 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.3",
   "title": "Quadratic Reciprocity",
-  "body": " Quadratic Reciprocity     Quadratic Reciprocity   If and are distinct odd primes, then In other words, if at least one of and is congruent to , and if both and are congruent to .    Coming soon.    "
+  "body": " Quadratic Reciprocity  In this section, we develop and prove the celebrated Quadratic Reciprocity Law. There are in fact hundreds of different proofs of this result, and we will present one of the more intuitive and well-known ones.   Floor function   If and are relatively prime integers with , and then we call the unique such that the floor of the ratio . In symbols, we write .    We may take it as given the characterization that the floor of a ratio is the greatest integer less than or equal to the ratio.   Triangle Lattice Count   If is an odd prime and , then counts the number of lattice points properly contained in the triangular region in the first quadrant that is strictly below the line and to the left of the line .    Try a direct proof. For each with , how many lattice points are above and below the point ? It might help to draw some pictures to help you visualize the situation.     Triangle lattice count   If is an odd prime and relatively prime to , then define . We will say is the triangle lattice count .    We now prove the technical but crucial result that the triangle lattice count is congruent to the beta function modulo 2. This will be the key step in our proof of quadratic reciprocity.   Eisenstein's Lemma   If is an odd prime and is an odd integer relatively prime to , then .    Try a direct proof. Rewrite and compare two sums: and . First, carefully show that Recall that, for each with , (why???). With this in mind, show that Look at their difference to deduce that Deduce the result. You may find , , , , , and , useful.     Quadratic Reciprocity   If and are distinct odd primes, then In other words, if at least one of and is congruent to , and if both and are congruent to .    Try a direct proof. Consider the rectangle in the first quadrant with vertices at , , , and . Compute that lattice points properly contained in this rectangle in two ways. First do a direct count. Next draw the diagonal line from to . Compute the lattice points below the line. By a symmetry of argument, reversing the roles of and , compute the lattice points above the line. Why do no lattice points lie on the line? Deduce that Analyze the expression and deduce the desired result. You may find , , , , useful.      Compute Legendre symbols   Compute each of the following Legendre symbols.                    "
+},
+{
+  "id": "definition-floor_function",
+  "level": "2",
+  "url": "chp5sec3.html#definition-floor_function",
+  "type": "Definition",
+  "number": "5.3.1",
+  "title": "Floor function.",
+  "body": " Floor function   If and are relatively prime integers with , and then we call the unique such that the floor of the ratio . In symbols, we write .   "
+},
+{
+  "id": "proposition-triangle_lattice_count",
+  "level": "2",
+  "url": "chp5sec3.html#proposition-triangle_lattice_count",
+  "type": "Proposition",
+  "number": "5.3.2",
+  "title": "Triangle Lattice Count.",
+  "body": " Triangle Lattice Count   If is an odd prime and , then counts the number of lattice points properly contained in the triangular region in the first quadrant that is strictly below the line and to the left of the line .    Try a direct proof. For each with , how many lattice points are above and below the point ? It might help to draw some pictures to help you visualize the situation.   "
+},
+{
+  "id": "definition-lattice_count",
+  "level": "2",
+  "url": "chp5sec3.html#definition-lattice_count",
+  "type": "Definition",
+  "number": "5.3.3",
+  "title": "Triangle lattice count.",
+  "body": " Triangle lattice count   If is an odd prime and relatively prime to , then define . We will say is the triangle lattice count .   "
+},
+{
+  "id": "proposition-eisensteins_lemma",
+  "level": "2",
+  "url": "chp5sec3.html#proposition-eisensteins_lemma",
+  "type": "Proposition",
+  "number": "5.3.4",
+  "title": "Eisenstein’s Lemma.",
+  "body": " Eisenstein's Lemma   If is an odd prime and is an odd integer relatively prime to , then .    Try a direct proof. Rewrite and compare two sums: and . First, carefully show that Recall that, for each with , (why???). With this in mind, show that Look at their difference to deduce that Deduce the result. You may find , , , , , and , useful.   "
 },
 {
   "id": "proposition-quadratic_reciprocity",
   "level": "2",
   "url": "chp5sec3.html#proposition-quadratic_reciprocity",
   "type": "Proposition",
-  "number": "5.3.1",
+  "number": "5.3.5",
   "title": "Quadratic Reciprocity.",
-  "body": " Quadratic Reciprocity   If and are distinct odd primes, then In other words, if at least one of and is congruent to , and if both and are congruent to .    Coming soon.   "
+  "body": " Quadratic Reciprocity   If and are distinct odd primes, then In other words, if at least one of and is congruent to , and if both and are congruent to .    Try a direct proof. Consider the rectangle in the first quadrant with vertices at , , , and . Compute that lattice points properly contained in this rectangle in two ways. First do a direct count. Next draw the diagonal line from to . Compute the lattice points below the line. By a symmetry of argument, reversing the roles of and , compute the lattice points above the line. Why do no lattice points lie on the line? Deduce that Analyze the expression and deduce the desired result. You may find , , , , useful.   "
+},
+{
+  "id": "exercises-quadratic_reciprocity-1-3",
+  "level": "2",
+  "url": "chp5sec3.html#exercises-quadratic_reciprocity-1-3",
+  "type": "Exercise",
+  "number": "5.3.1",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercises-quadratic_reciprocity-1-4",
+  "level": "2",
+  "url": "chp5sec3.html#exercises-quadratic_reciprocity-1-4",
+  "type": "Exercise",
+  "number": "5.3.2",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercises-quadratic_reciprocity-1-5",
+  "level": "2",
+  "url": "chp5sec3.html#exercises-quadratic_reciprocity-1-5",
+  "type": "Exercise",
+  "number": "5.3.3",
+  "title": "",
+  "body": "    "
 },
 {
   "id": "backmatter-2",

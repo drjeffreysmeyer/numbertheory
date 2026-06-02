@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="proposition theorem-like"><h3 class="heading">
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Eisenstein’s Lemma.</span>
+</h3>
+<div class="para">If <span class="process-math">\(p\)</span> is an odd prime and <span class="process-math">\(a\)</span> is an odd integer relatively prime to <span class="process-math">\(p\text{,}\)</span> then <span class="process-math">\(\gamma(a,p) \equiv \beta(a,p) \pmod{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#proposition-eisensteins_lemma-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proposition 5.3.4: Eisenstein’s Lemma"><a href="#proposition-eisensteins_lemma" title="Copy heading and permalink for Proposition 5.3.4: Eisenstein’s Lemma" aria-label="Copy heading and permalink for Proposition 5.3.4: Eisenstein’s Lemma">🔗</a></div></article><details class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Hint<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary><article class="hiddenproof knowl__content"><div class="para logical">
+<div class="para">Try a direct proof.  Rewrite and compare two sums: <span class="process-math">\(\sum_{r=1}^{(p-1)/2} r\)</span> and <span class="process-math">\(\sum_{r=1}^{(p-1)/2} ar\text{.}\)</span>  First, carefully show that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-centering_map.html ./knowl/xref/proposition-centering_map_is_bijection.html ./knowl/xref/definition-flip_count.html ./knowl/xref/definition-commutative_ring.html ./knowl/xref/proposition-division_algorithm.html ./knowl/xref/definition-congruence.html">
+\begin{equation*}
+\sum_{r=1}^{(p-1)/2} r = \sum_{r=1}^{(p-1)/2} C_a(r)  = p \beta(a,p) + \sum_{r_a &lt; \frac{p}{2}}r_a - \sum_{r_a &gt; \frac{p}{2}}r_a.
+\end{equation*}
+</div>
+<div class="para">Recall that, for each <span class="process-math">\(r\)</span> with <span class="process-math">\(1 \leq r \leq (p-1)/2\text{,}\)</span>  <span class="process-math">\(ar =  p \left\lfloor \frac{ar}{p} \right\rfloor + r_a\)</span> (why???).  With this in mind, show that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-centering_map.html ./knowl/xref/proposition-centering_map_is_bijection.html ./knowl/xref/definition-flip_count.html ./knowl/xref/definition-commutative_ring.html ./knowl/xref/proposition-division_algorithm.html ./knowl/xref/definition-congruence.html">
+\begin{equation*}
+\sum_{r=1}^{(p-1)/2} ar = \sum_{r=1}^{(p-1)/2} \left(p \left\lfloor \frac{ar}{p} \right\rfloor + r_a\right)  = p \gamma(a,p) + \sum_{r=1}^{(p-1)/2} r_a.
+\end{equation*}
+</div>
+<div class="para">Look at their difference to deduce that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-centering_map.html ./knowl/xref/proposition-centering_map_is_bijection.html ./knowl/xref/definition-flip_count.html ./knowl/xref/definition-commutative_ring.html ./knowl/xref/proposition-division_algorithm.html ./knowl/xref/definition-congruence.html">
+\begin{equation*}
+(a-1)\sum_{r=1}^{(p-1)/2} r = p (\gamma(a,p)-\beta(a,p)) + 2\sum_{r_a &gt; \frac{p}{2}}r_a.
+\end{equation*}
+</div>
+<div class="para">Deduce the result. You may find  <a href="chp5sec1.html#definition-centering_map" class="xref" data-knowl="./knowl/xref/definition-centering_map.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 5.1.4: Centering Map">Definition 5.1.4</a>, <a href="chp5sec1.html#proposition-centering_map_is_bijection" class="xref" data-knowl="./knowl/xref/proposition-centering_map_is_bijection.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 5.1.5: Centering Map is a Bijection">Proposition 5.1.5</a>, <a href="chp5sec1.html#definition-flip_count" class="xref" data-knowl="./knowl/xref/definition-flip_count.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 5.1.6: Flip count">Definition 5.1.6</a>, <a href="chp1sec1.html#definition-commutative_ring" class="xref" data-knowl="./knowl/xref/definition-commutative_ring.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.1.1: Commutative Ring with Identity">Definition 1.1.1</a>, <a href="chp2sec1.html#proposition-division_algorithm" class="xref" data-knowl="./knowl/xref/proposition-division_algorithm.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 2.1.6: The Division Algorithm">Proposition 2.1.6</a>, and <a href="chp2sec4.html#definition-congruence" class="xref" data-knowl="./knowl/xref/definition-congruence.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.4.1: Congruence">Definition 2.4.1</a>, useful.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#proposition-eisensteins_lemma-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 5.3.4.1"><a href="#proposition-eisensteins_lemma-3" title="Copy heading and permalink for Hint 5.3.4.1" aria-label="Copy heading and permalink for Hint 5.3.4.1">🔗</a></div></article></details><span class="incontext"><a class="internal" href="chp5sec3.html#proposition-eisensteins_lemma">in-context</a></span>
+</body>
+</html>
