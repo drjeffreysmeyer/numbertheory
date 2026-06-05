@@ -11,7 +11,7 @@
     <title>Floor function</title>
     <statement>
         <p>
-            If <m>m</m> and <m>n</m> are relatively prime integers with <m>n &gt; 0</m>, and then we call the unique <m>q</m> such that <m>n = mq+r</m> the <term>floor</term> of the ratio <m>\frac{m}{n}</m>.  In symbols, we write <m>\lfloor \frac{m}{n} \rfloor = q</m>.
+            If <m>m</m> and <m>n</m> are relatively prime integers with <m>n &gt; 0</m>, and then we call the unique <m>q</m> such that <m>m = nq+r</m> the <term>floor</term> of the ratio <m>\frac{m}{n}</m>.  In symbols, we write <m>\lfloor \frac{m}{n} \rfloor = q</m>.
         </p>
     </statement>
   </definition>
@@ -83,7 +83,7 @@
   </statement>
   <proof>
     <p>
-      Try a direct proof.  Consider the rectangle in the first quadrant with vertices at <m>(0,0)</m>, <m>(\frac{p-1}{2},0)</m>, <m>(\frac{p-1}{2},\frac{q-1}{2})</m>, and <m>(0,\frac{q-1}{2})</m>.  Compute that lattice points properly contained in this rectangle in two ways.  First do a direct count.  Next draw the diagonal line from <m>(0,0)</m> to <m>(\frac{p-1}{2},\frac{q-1}{2})</m>.  Compute the lattice points below the line.  By a symmetry of argument, reversing the roles of <m>p</m> and <m>q</m>, compute the lattice points above the line.  Why do no lattice points lie on the line?  Deduce that 
+      Try a direct proof.  Consider the rectangle in the first quadrant with vertices at <m>(0,0)</m>, <m>(\frac{p}{2},0)</m>, <m>(\frac{p}{2},\frac{1}{2})</m>, and <m>(0,\frac{q}{2})</m>.  Compute that lattice points properly contained in this rectangle in two ways.  First do a direct count.  Next draw the diagonal line from <m>(0,0)</m> to <m>(\frac{p}{2},\frac{q}{2})</m>.  Compute the lattice points below the line.  By a symmetry of argument, reversing the roles of <m>p</m> and <m>q</m>, compute the lattice points above the line.  Why do no lattice points lie on the line?  Deduce that 
       <md>\gamma(p,q) + \gamma(q,p) =\left(\frac{p-1}{2}\right)\left(\frac{q-1}{2}\right).</md>  Analyze the expression 
       <md>(-1)^{\gamma(p,q)}(-1)^{\gamma(q,p)}</md> and deduce the desired result.  You may find  <xref ref="proposition-triangle_lattice_count"/>, <xref ref="definition-lattice_count"/>,  <xref ref="proposition-eisensteins_lemma"/>, <xref ref="proposition-gauss_lemma"/>, <xref ref="definition-legendre_symbol"/> useful.
     </p>
